@@ -31,7 +31,7 @@ task('minify-css', function(done) {
   }); */
 
   task('minify-js2', function () {
-    return src('js/index.js', { allowEmpty: true })
+    return src('js/*.js', { allowEmpty: true })
     .pipe(minify({noSource: true}))
       .pipe(dest('dist/js'));
   });
