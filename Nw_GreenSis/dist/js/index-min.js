@@ -1,1 +1,0 @@
-const section=document.querySelectorAll(".home-page section"),forEach=function(e,o){Array.prototype.forEach.call(e,o)},resizeBox=()=>{forEach(section,function(e){const o=e.querySelector(".image").clientHeight;e.querySelector(".text").style.minHeight=`${o}px`})};window.addEventListener("load",function(e){resizeBox()}),window.addEventListener("resize",function(e){resizeBox()});

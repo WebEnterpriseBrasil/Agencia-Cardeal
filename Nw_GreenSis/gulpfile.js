@@ -1,3 +1,14 @@
+/* function defaultTask(cb) {
+    // place code for your default task here
+    cb();
+  }
+  
+  exports.default = defaultTask */
+
+
+
+const gulp = require('gulp');
+/* or */
 const { dest, series, src, task, watch } = require('gulp');
 
 const rename = require('gulp-rename');
@@ -5,10 +16,9 @@ const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-const minify = require("gulp-minify");
 
 task('minify-css', function(done) {
-    src('css/*.css')
+    src('css/estilo.css')
     .pipe(autoprefixer({
         "overrideBrowserslist": [
           "> 1%",
@@ -22,20 +32,6 @@ task('minify-css', function(done) {
       done();
   });
 
-  /* task('minify-js', function () {
-    src('js/index.js')
-      .pipe(uglify())
-      .pipe(rename({ suffix: '.min' }))
-      .pipe(dest('dist/js'));
-
-  }); */
-
-  task('minify-js2', function () {
-    return src('js/*.js', { allowEmpty: true })
-    .pipe(minify({noSource: true}))
-      .pipe(dest('dist/js'));
-  });
-
 task('javascript', function() {
     return src('js/**/*.js')
     .pipe(babel({
@@ -44,4 +40,13 @@ task('javascript', function() {
     .pipe(dest('dist/js'));
   });
 
-  task('default', series('minify-css', 'javascript', 'minify-js2'));
+  task('minify-js', function () {
+    return src('dist/scripts.js',{
+        allowEmpty: true
+    })
+      .pipe(uglify())
+      .pipe(rename({ suffix: '.min' }))
+      .pipe(dest('dist'));
+  });
+
+  task('default', series('minify-css', 'javascript', 'minify-js'));
