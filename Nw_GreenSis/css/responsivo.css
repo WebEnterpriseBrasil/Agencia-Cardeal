@@ -1,18 +1,18 @@
-@media only screen and (max-device-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     /* .menu { width:100%; } */
     .home-page section .block {
         width: 100%;
         }
     }
 
-@media only screen and (max-device-width: 990px) {
+@media only screen and (max-width: 990px) {
         /* .menu { width:100%; } */
         .home-page section .block {
             width: 100%;
             }
         }
 
-@media only screen and (max-device-width: 770px) {
+@media only screen and (max-width: 770px) {
     /* .menu { width:100%; } */
     .home-page section .block {
         width: 100%;
@@ -20,10 +20,11 @@
     
 }
 
-@media only screen and (max-device-width: 570px) {
-                /* .menu { width:100%; } */
-.home-page section .block {
-width: 100%;
+@media only screen and (max-width: 570px) {
+    .hidden-desktop {
+        display: block;
+      }
+      .hidden-mobile {
+        display: none;
+      }
 }
-                
- }
