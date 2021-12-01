@@ -300,8 +300,6 @@ header, section, footer, main {
 main{
     font-size: 22px;
     font-family: sans-serif;
-    width: 90%;
-    margin: auto;
 }
 
 /*Edição Sessão Sis*/
@@ -387,7 +385,6 @@ main{
 /* Edição Contacto */
 .contacto{
     width: 100%;
-    max-width: 1280px;
     background-color: #ffb967;
     padding: 5%;
 }
