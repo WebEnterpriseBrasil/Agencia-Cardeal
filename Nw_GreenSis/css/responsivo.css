@@ -30,4 +30,7 @@
     .menu-action {
         display: flex;
     }
+    .g-letter {
+        display: none;
+    }
 }
