@@ -141,9 +141,34 @@
     font-size: 20px;
     
 }
+/* generics */
 .img-responsive{
     width: auto;
     max-width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hidden-desktop {
+    display: none
+}
+.hidden-mobile {
+    display: block;
+}
+/* /generics */
+header, section, footer {
+   width: 100%;
+   display: block;
+   float: left;
+   clear: both;
 }
 .home-page section{
     
@@ -306,9 +331,7 @@ main{
     border-radius: 10px 0px 10px 0px;
     padding: 10px;
     margin-left: 80px;
-    border: #ff9f48 solid 1px;
-
-    
+    border: #ff9f48 solid 1px;    
 }
     
 
