@@ -16,9 +16,10 @@ const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
+const minify = require("gulp-minify");
 
 task('minify-css', function(done) {
-    src('css/estilo.css')
+    src('css/*.css')
     .pipe(autoprefixer({
         "overrideBrowserslist": [
           "> 1%",
@@ -41,12 +42,9 @@ task('javascript', function() {
   });
 
   task('minify-js', function () {
-    return src('dist/scripts.js',{
-        allowEmpty: true
-    })
-      .pipe(uglify())
-      .pipe(rename({ suffix: '.min' }))
-      .pipe(dest('dist'));
+    return src('js/*.js', { allowEmpty: true })
+    .pipe(minify({noSource: true}))
+      .pipe(dest('dist/js'));
   });
 
   task('default', series('minify-css', 'javascript', 'minify-js'));

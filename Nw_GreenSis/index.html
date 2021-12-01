@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/responsivo.css">
 
-    <script src="dist/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" integrity="sha512-QAV866KcCo2YSgj8D7BW+Zn3Fe5wVKTWwzKtWy8mkW+tePcJL7JYilvdfrBFQcdz4ODD48GpIPnhTp9UDI37uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <title>GreenSis</title>
 </head>
@@ -22,15 +22,31 @@
 
                 <a class="logo" href="index.html"><img src="imagens_paginas_1_a_8/Logo_GreenSis.png"/></a>
                    
-                <ul class="menu-lista">
+                <ul class="menu-lista" class="hidden-mobile">
                     <li><a href="Sis.html">sis |</a></li>
                     <li><a href="Loja.html">loja |</a></li>
                     <li><a href="Contacto.html">contacto</a></li>
                 </ul>
-                <ul class="menu-social">
+                <ul class="menu-social" class="hidden-mobile">
                     <li><a href=""><img src="imagens_paginas_1_a_8/ico_facebook.png"/></a></li>
                     <li><a href=""><img src="imagens_paginas_1_a_8/ico_instagran.png"/></a></li>
                 </ul>
+            </div>
+            <div class="menu-action">
+                <span></span>
+                <span></span>
+                <span></span>    
+            </div>
+            <div class="menu-mobile">
+                <ul>
+                    <li><a href="Sis.html">sis</a></li>
+                    <li><a href="Loja.html">loja</a></li>
+                    <li><a href="Contacto.html">contacto</a></li>
+                </ul>
+                <nav>
+                    <a href=""><img src="imagens_paginas_1_a_8/ico_facebook.png"/></a>
+                    <a href=""><img src="imagens_paginas_1_a_8/ico_instagran.png"/></a>
+                </nav>
             </div>
         </div>
     </header>
@@ -77,11 +93,16 @@
             <div>
                 <p>Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
 
-            <p>Envios e devolução | Termos & condições | Politica de Privacidade | Livro de reclamações</p>
-            <h4>Copyright 2021 © greensis</h4>
+                <p>Envios e devolução | Termos & condições | Politica de Privacidade | Livro de reclamações</p>
+                <h4>Copyright 2021 © greensis</h4>
             </div>
+            <div class="g-letter"></div>
         </div>
     </footer>
+    <div class="overlay d-none"></div>
+    
+    <script src="dist/js/template-min.js"></script>
+    <script src="dist/js/index-min.js"></script>
 
 </body>
 </html>
