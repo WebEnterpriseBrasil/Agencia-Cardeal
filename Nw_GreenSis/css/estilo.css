@@ -36,22 +36,7 @@ header .content {
     display: flex;
     justify-content: space-between;
 }
-header .menu-social {
-    list-style: none;
-    margin-top: 60px;
-    float: left;
-}
-header .menu-social li {
-    float: left;
-}
 
-header .menu-social > a{    
-    letter-spacing: 10px;
-}
-header .menu-social img{
-    width: 40px;
-    height: 40px;
-}
 
 .menu-lista { 
     margin-top: 70px;
@@ -65,18 +50,39 @@ header .menu-social img{
     color: black;
     text-decoration: none;
     letter-spacing: 4px;
-    /* argin-left: auto;
-    align-items: right;
-    position: relative;
-    top: 60px;
-    left: 500px; */
     font-family: Regular;
 
 }
 .menu-lista {
     list-style: none;
     /* display: flex; */
+    margin-right: 20px;
     
+}
+header  .social { 
+    float: left;
+    text-align: right;
+}
+header .social .menu-social {  
+    list-style: none;
+    float: right;
+    margin-top: 30px
+}
+header .social  .menu-social li {
+    float: left;
+}
+
+header .social  .menu-social > a{    
+    letter-spacing: 10px;
+}
+header .social  .menu-social img{
+    width: 40px;
+    height: 40px;
+}
+
+header .social .icons {
+    float: left;
+    width: 100%;
 }
 .logo > a{
     width: 100px;
