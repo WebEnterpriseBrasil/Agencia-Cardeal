@@ -27,49 +27,61 @@
 *{ 
     box-sizing: border-box;
 }
-#menu{
+
+header {
+    background: #fff;
+}
+
+header .content {
     display: flex;
-    margin-top: -10px;
+    justify-content: space-between;
+}
+header .menu-social {
+    list-style: none;
+    margin-top: 60px;
+    float: left;
+}
+header .menu-social li {
+    float: left;
+}
+
+header .menu-social > a{    
+    letter-spacing: 10px;
+}
+header .menu-social img{
+    width: 40px;
+    height: 40px;
+}
+
+.menu-lista { 
+    margin-top: 70px;
+    float: left;
+}
+.menu-lista li { 
+    float: left;
 }
 .menu-lista li > a{
     font-size: 22px;
     color: black;
     text-decoration: none;
     letter-spacing: 4px;
-    margin-left: auto;
+    /* argin-left: auto;
     align-items: right;
     position: relative;
     top: 60px;
-    left: 500px;
+    left: 500px; */
     font-family: Regular;
 
 }
 .menu-lista {
     list-style: none;
-    display: flex;
+    /* display: flex; */
     
 }
 .logo > a{
     width: 100px;
     height: 100px;
 }
-.menu-social{
-    list-style: none;
-    display: flex;
-}
-.menu-social li > a{
-    
-    letter-spacing: 10px;
-    align-items: right;
-    position: relative;
-    top: 50px;
-    left: 480px;
-}
-.menu-social img{
-    width: 40px;
-    height: 40px;
-}
-
 
 
 #container-a > h1{
@@ -203,7 +215,7 @@ h1 {
 }
 /* /menu mobile */
 
-header, section, footer {
+header, section, footer, main {
    width: 100%;
    display: block;
    float: left;
