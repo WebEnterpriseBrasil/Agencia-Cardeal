@@ -69,40 +69,17 @@
     width: 40px;
     height: 40px;
 }
-/* Edição Containers*/
-/*.foto-sorriso{
-    margin-top: 0;
-    width: 100%;
-    height: 400px;
-    display: flex; }*/
 
-#container-a{
-    background-color: #f89f77;
-   /* height: 400px;
-    width: 100%; */
-    color: white;
-   
-}
+
+
 #container-a > h1{
     font-size: 40px;
     /*padding: 70px;
     padding-top: 40px;*/
     font-family: Regular;
 }
-/*#container-b img{
-    width: 700px;
-    height: 400px;
-        
-}*/
-/*.segunda-sessão{
-    margin-top: 0;
-    width: 100%;
-    height: 400px;
-    display: flex;
-}*/
-#container-c{
-    background-color: white;
-}
+
+
 #container-c p{
     font-family: Light;
     font-size: 22px;
@@ -124,26 +101,39 @@
     display: flex;
 }*/
 
-#container-f{
-    /*height: 320px;
-    width: 100%;*/
-    background-color: #d2795b;
-    /*padding-left: 50px;
-    padding: 40px;*/
-}
-#container-f h1{
+/* typography */
+h1 {
     font-family: Regular;
-    font-size: 2.0em;
-    color: white;
 }
-#container-f h2{
-    font-family: Light;
-    font-size: 20px;
-    
-}
+/* /typography */
+/* generics */
 .img-responsive{
     width: auto;
     max-width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hidden-desktop {
+    display: none
+}
+.hidden-mobile {
+    display: block;
+}
+/* /generics */
+header, section, footer {
+   width: 100%;
+   display: block;
+   float: left;
+   clear: both;
 }
 .home-page section{
     
@@ -158,6 +148,25 @@
 .home-page section .text{
     padding: 5%;
 }
+
+.foto-sorriso .text {
+    background-color: #f89f77;
+    color: white;
+}
+.segunda-sessao {}
+
+.terceira-sessao {
+    background-color: #d2795b;
+}
+.terceira-sessao h1 {
+    font-size: 2.0em;
+    color: white;
+}
+.terceira-sessao h2 {
+    font-family: Light;
+    font-size: 20px;
+}
+
 /* Edição do Rodape*/
 
 .rodape{
@@ -306,9 +315,7 @@ main{
     border-radius: 10px 0px 10px 0px;
     padding: 10px;
     margin-left: 80px;
-    border: #ff9f48 solid 1px;
-
-    
+    border: #ff9f48 solid 1px;    
 }
     
 
