@@ -23,8 +23,14 @@
 @media only screen and (max-width: 570px) {
     .hidden-desktop {
         display: block;
-      }
-      .hidden-mobile {
+    }
+    .hidden-mobile {
         display: none;
-      }
+    }
+    .menu-action {
+        display: flex;
+    }
+    .g-letter {
+        display: none;
+    }
 }
