@@ -373,11 +373,27 @@ main{
     margin-top: 20px;
 }
 /* Edição Contacto */
-.content{
+.contacto{
     width: 100%;
-    height: 450px;
+    max-width: 1280px;
+    background-color: #ffb967;
+    padding: 5%;
 }
-.content p{
+.contacto h1{
+font-family: Regular;
+font-size: 2.0em;
+color: white;
+}
+.contacto h2{
+    font-family: Regular;
+    font-size: 20px;
+    color: black;
+}
+.contacto h4{
+    font-family: Light;
+    font-size: 15px;
+}
+.contacto p{
     font-size: 15px;
     font-family: Light;
 }  
@@ -392,7 +408,7 @@ main{
 .mensagem{
     padding: 50px;
     margin-bottom: 5px;
-    border: 1px solid #ffb967;  
+    border: 1px solid #292624;  
     margin-left:7%;
     min-width: 30%
 }
@@ -402,7 +418,16 @@ main{
     border-radius: 10px 0px 10px 0px;
     padding: 10px;
     margin-left: 80px;
-    border: #ff9f48 solid 1px;    
+    border: #ff9f48 solid 1px;  
+    margin-bottom: 5%;  
+}
+.g-letter {
+    position: absolute;
+    width: 50%;
+    min-height: 400px;
+    bottom: 0;
+    right: 0;
+    background: url('../img/g-letter-2.png') no-repeat 100% 100%;
 }
     
 
