@@ -20,3 +20,6 @@ jQuery('.menu-action').on('click', function () {
 jQuery('.overlay').on('click', function () {
   closeMenuMobile();
 });
+window.addEventListener('resize', function (event) {
+  closeMenuMobile();
+});
