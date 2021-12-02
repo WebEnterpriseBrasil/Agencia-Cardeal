@@ -418,7 +418,6 @@ color: white;
     padding: 10px;
     margin-bottom: 5px;
     border: 1px solid #ffb967;  
-    left: 200px;
     width: 30%;
     margin-left: 7%;
 }
@@ -438,13 +437,15 @@ color: white;
     border: #ff9f48 solid 1px;  
     margin-bottom: 5%;  
 }
-.g-letter {
+.contacto .g-letter {
     position: absolute;
     width: 50%;
     min-height: 400px;
-    bottom: 0;
+    bottom: 110px;
     right: 0;
-    background: url('../img/g-letter-2.png') no-repeat 100% 100%;
+    background: url('../img/ge.png') no-repeat 100% 100%;
+    background-size: 40%;
+    opacity: 0.5;
 }
     
 
