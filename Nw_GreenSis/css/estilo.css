@@ -84,6 +84,9 @@ header .social .icons {
     float: left;
     width: 100%;
 }
+header .social .icons a {
+    color: #f89f77;
+}
 .logo > a{
     width: 100px;
     height: 100px;
