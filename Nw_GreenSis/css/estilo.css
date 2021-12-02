@@ -247,7 +247,7 @@ header, section, footer, main {
 }
 .segunda-sessao {}
 
-.terceira-sessao {
+.terceira-sessao .text {
     background-color: #d2795b;
 }
 .terceira-sessao h1 {
@@ -299,7 +299,9 @@ header, section, footer, main {
     min-height: 400px;
     bottom: 0;
     right: 0;
-    background: url('../img/g-letter-2.png') no-repeat 100% 100%;
+    background: url('../img/ge.png') no-repeat 100% 100%;
+    background-size: 56%;
+    opacity: 0.5;
 }
 /*edição página sis*/
 
