@@ -1,11 +1,5 @@
 "use strict";
 
-var section = document.querySelectorAll(".home-page section");
-
-var forEach = function forEach(arr, callback) {
-  Array.prototype.forEach.call(arr, callback);
-};
-
 var resizeBox = function resizeBox() {
   jQuery('.home-page .terceira-sessao .text').addClass('foo');
   jQuery('.home-page section').each(function () {
