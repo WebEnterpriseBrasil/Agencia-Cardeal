@@ -1,12 +1,32 @@
 @media only screen and (max-width: 1200px) {
-}
+    /* .menu { width:100%; } */
+    .home-page section .block {
+        width: 100%;
+        }
+    }
 
 @media only screen and (max-width: 990px) {
-}
+        /* .menu { width:100%; } */
+        .home-page section .block {
+            width: 100%;
+            }
+        }
 
 @media only screen and (max-width: 770px) {
     /* .menu { width:100%; } */
-   
+    .home-page section .block {
+        width: 100%;
+        }
+    .loja-page .servicos{
+        display: block;
+        width: 100%;
+        padding: 5%;
+    }    
+    .loja-page .servicos .produto{
+        width: 100%;
+        padding: 5%;
+        display: block;
+    }
     
 }
 
@@ -23,7 +43,7 @@
     .g-letter {
         display: none;
     }
-    .home-page section .block {
-        width: 100%;
+    .g-letter-pequeno{ 
+        display: none;
     }
-};
+}
