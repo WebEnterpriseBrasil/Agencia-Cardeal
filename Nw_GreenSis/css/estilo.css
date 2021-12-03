@@ -181,14 +181,27 @@ header .social {
 header .social .menu-social {  
     list-style: none;
     float: right;
-    margin-top: 15px
+    margin-top: 35px
 }
 header .social .menu-social li {
     float: left;
 }
 
-header .social .menu-social > a{    
+header .social .menu-social a{    
     letter-spacing: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-right: 10px;
+}
+header .social .menu-social .facebook {    
+    background-image: url('../img/face-icon.png');
+}
+header .social .menu-social .instagram {    
+    background-image: url('../img/insta-icon.png');
 }
 header .social .menu-social img{
     width: 40px;
