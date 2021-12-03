@@ -275,6 +275,17 @@ header .social .icons .user {
     background-size: 56%;
     opacity: 0.5;
 }
+.rodape .g-letter-pequeno {
+    position: absolute;
+    width: 40%;
+    min-height: 380px;
+    bottom: 0;
+    right: 0;
+    background: url('../img/ge.png') no-repeat 100% 100%;
+    background-size: 56%;
+    opacity: 0.5;
+}
+
 /* *** /footer *** */
 
 header, section, footer, main {
