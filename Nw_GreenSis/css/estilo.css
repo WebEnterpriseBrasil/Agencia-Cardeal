@@ -203,15 +203,20 @@ header .social .icons a {
     color: #f89f77;
     margin-right: 10px;
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 header .social .icons .cart {
-    color: #f89f77;
-    margin-right: 10px;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+    background-image: url('../img/cart-icon.png');
+}
+header .social .icons .search {
+    background-image: url('../img/lupa-icon.png');
+}
+header .social .icons .user {
+    background-image: url('../img/user-icon.png');
 }
 /* *** /header *** */
 
