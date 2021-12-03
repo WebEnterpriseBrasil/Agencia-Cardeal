@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+*{ 
+    box-sizing: border-box;
+}
+
+/* *** fonts *** */
 @font-face{
     font-family: bold;
     src: url('../fontes/OpenSans-Bold.ttf') format('truetype');
@@ -24,114 +29,9 @@
     font-family: Lightitalic;
     src: url(../fontes/OpenSans-LightItalic.ttf) format('truetype');
 }
-*{ 
-    box-sizing: border-box;
-}
+/* *** /fonts *** */
 
-header {
-    background: #fff;
-}
-
-header .content {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.menu-lista { 
-    margin-top: 70px;
-    float: left;
-}
-.menu-lista li { 
-    float: left;
-}
-.menu-lista li a, 
-.menu-lista li span {
-    font-size: 22px;
-    color: black;
-    text-decoration: none;
-    letter-spacing: 4px;
-    font-family: Regular;
-    padding: 0 8px;
-}
-.menu-lista li a:hover {
-    text-decoration: underline;
-}
-.menu-lista {
-    list-style: none;
-    
-}
-header  .social { 
-    float: left;
-    text-align: right;
-    width: 130px;
-}
-header .social .menu-social {  
-    list-style: none;
-    float: right;
-    margin-top: 15px
-}
-header .social  .menu-social li {
-    float: left;
-}
-
-header .social  .menu-social > a{    
-    letter-spacing: 10px;
-}
-header .social  .menu-social img{
-    width: 40px;
-    height: 40px;
-}
-
-header .social .icons {
-    float: left;
-    width: 100%;
-}
-header .social .icons a {
-    color: #f89f77;
-    margin-right: 10px;
-}
-.logo > a{
-    width: 100px;
-    height: 100px;
-}
-
-
-#container-a > h1{
-    font-size: 40px;
-    /*padding: 70px;
-    padding-top: 40px;*/
-    font-family: Regular;
-}
-
-
-#container-c p{
-    font-family: Light;
-    font-size: 22px;
-}
-#container-c a{
-    background-color:#ffb967;
-    color: white;
-    width: 100px;
-    border-radius: 10px 0px 10px 0px;
-    padding: 8px;
-    text-decoration: none;
-    font-family: SemiBold;
-}
-
-/*.terceira-sessão{
-    margin-top: 0;
-    width: 100%;
-    height: 400px;
-    display: flex;
-}*/
-
-/* typography */
-h1 {
-    font-family: Regular;
-}
-/* /typography */
-/* generics */
+/* *** generics *** */
 .img-responsive{
     width: auto;
     max-width: 100%;
@@ -156,9 +56,6 @@ h1 {
 .d-none {
     display: none;
 }
-/* /generics */
-
-/* menu mobile */
 .overlay {
     position: fixed;
     width: 100%;
@@ -169,6 +66,55 @@ h1 {
     top: 0;
     left: 0;
 }
+/* *** /generics *** */
+
+
+/* typography */
+h2 {
+    font-family: Regular;
+}
+/* /typography */
+
+
+/* *** header *** */
+header {
+    background: #fff;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+}
+header .logo > a{
+    width: 100px;
+    height: 100px;
+}
+header #menu {}
+
+header .menu-lista { 
+    margin-top: 70px;
+    float: left;
+}
+header .menu-lista li { 
+    float: left;
+}
+header .menu-lista li a, 
+header .menu-lista li span {
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-family: Regular;
+    padding: 0 8px;
+}
+header .menu-lista li a:hover {
+    text-decoration: underline;
+}
+header .menu-lista {
+    list-style: none;
+    
+}
+
 .menu-mobile {
     width: 250px;
     height: 100vh;
@@ -196,7 +142,6 @@ h1 {
     padding: 10px;
     color: #000;
 }
-
 
 .menu-mobile nav{
     width: 100%;
@@ -226,48 +171,70 @@ h1 {
   margin: 3px 0;
   border-radius: 2px;
 }
-/* /menu mobile */
 
-header, section, footer, main {
-   width: 100%;
-   display: block;
-   float: left;
-   clear: both;
-}
-.home-page section{
-    
-    display: block;
-    width: 100%;
-}  
 
-.home-page section .block {
+header .social { 
     float: left;
-    width: 50%;
+    text-align: right;
+    width: 130px;
 }
-.home-page section .text{
-    padding: 5%;
+header .social .menu-social {  
+    list-style: none;
+    float: right;
+    margin-top: 35px
 }
-
-.foto-sorriso .text {
-    background-color: #f89f77;
-    color: white;
-}
-.segunda-sessao {}
-
-.terceira-sessao .text {
-    background-color: #d2795b;
-}
-.terceira-sessao h1 {
-    font-size: 2.0em;
-    color: white;
-}
-.terceira-sessao h2 {
-    font-family: Light;
-    font-size: 20px;
+header .social .menu-social li {
+    float: left;
 }
 
-/* Edição do Rodape*/
+header .social .menu-social a{    
+    letter-spacing: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-right: 10px;
+}
+header .social .menu-social .facebook {    
+    background-image: url('../img/face-icon.png');
+}
+header .social .menu-social .instagram {    
+    background-image: url('../img/insta-icon.png');
+}
+header .social .menu-social img{
+    width: 40px;
+    height: 40px;
+}
 
+header .social .icons {
+    float: left;
+    width: 100%;
+}
+header .social .icons a {
+    color: #f89f77;
+    margin-right: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+header .social .icons .cart {
+    background-image: url('../img/cart-icon.png');
+}
+header .social .icons .search {
+    background-image: url('../img/lupa-icon.png');
+}
+header .social .icons .user {
+    background-image: url('../img/user-icon.png');
+}
+/* *** /header *** */
+
+
+/* *** footer *** */
 .rodape{
     float: left;    
     margin-top: 0;    
@@ -277,14 +244,13 @@ header, section, footer, main {
     padding-left: 80px;*/
     display: block;
     width:100%;
-
 }
-.rodape h1{
+.rodape h2{
     font-family: Regular;
     font-size: 2.0em;
     color: white;
 }
-.rodape h2{
+.rodape h3{
     font-family: Regular;
     font-size: 20px;
     color: black;
@@ -293,7 +259,6 @@ header, section, footer, main {
     font-family: Light;
     font-size: 15px;
 }
-
 .rodape .container {
     position: relative;
     padding: 3%;
@@ -310,7 +275,58 @@ header, section, footer, main {
     background-size: 56%;
     opacity: 0.5;
 }
-/*edição página sis*/
+/* *** /footer *** */
+
+header, section, footer, main {
+    width: 100%;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+
+/* *** home *** */
+.home-page section{    
+    display: block;
+    width: 100%;
+}
+.home-page section .block {
+    float: left;
+    width: 50%;
+}
+.home-page section .text{
+    padding: 5%;
+}
+.home-page section .image img {
+    display: block;
+ }
+.foto-sorriso .text {
+    background-color: #f89f77;
+    color: white;
+}
+.segunda-sessao {}
+
+.terceira-sessao .text {
+    background-color: #d2795b;
+    position: relative;
+}
+.terceira-sessao .text .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 5%;
+}
+
+.terceira-sessao h2 {
+    font-size: 2.0em;
+    color: white;
+}
+.terceira-sessao h3 {
+    font-family: Light;
+    font-size: 20px;
+}
+/* *** /home *** */
 
 main{
     font-size: 22px;
@@ -503,6 +519,7 @@ color: white;
     background: url('../img/ge.png') no-repeat 100% 100%;
     background-size: 40%;
     opacity: 0.5;
+    z-index: 2;
 }
     
 
