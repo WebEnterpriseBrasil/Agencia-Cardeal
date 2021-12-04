@@ -2,13 +2,27 @@
     /* .menu { width:100%; } */
     .home-page section .block {
         width: 100%;
-        }
+        }  
     }
 
 @media only screen and (max-width: 990px) {
         /* .menu { width:100%; } */
         .home-page section .block {
             width: 100%;
+            }
+            .loja-page .servicos{
+                display: flex;
+                width: 100%;
+                
+            }    
+            .loja-page .servicos .produto{
+                width: 100%;
+                display: block;
+                
+            }    
+            .loja-page .servicos .produto img{
+                width: 100%;
+                padding: 5%;
             }
         }
 
@@ -17,6 +31,16 @@
     .home-page section .block {
         width: 100%;
         }
+    .loja-page .servicos{
+        display: block;
+        width: 100%;
+        padding: 5%;
+    }    
+    .loja-page .servicos .produto{
+        width: 100%;
+        padding: 20%;
+        display: block;
+    }
     
 }
 
@@ -32,5 +56,21 @@
     }
     .g-letter {
         display: none;
+    }
+    .g-letter-pequeno{ 
+        display: none;
+    }
+    .loja-page .servicos{
+        display: block;
+        width: 100%;
+        padding: 5%;
+    }    
+    .loja-page .servicos .produto{
+        width: 100%;
+        padding: 10%;
+        display: block;
+    }
+    .contact-page .field{
+        width: 70%;
     }
 }
