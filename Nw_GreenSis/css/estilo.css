@@ -377,70 +377,84 @@ main{
     float: right;
     width: 200px;
 }
-.One{
-    width: 230px;
+.one-conteudo img{
+    width: 250px;
     height: 230px;
-    border-radius: 30px 0px 0px 0px;
-}
-#One a{
-    font-size: 14px;
-    font-family: SemiBold;
-    background-color: #ffb967;
-    color: white;
-    width: 220px;
-    padding: 14px;
-    border-radius: 15px 0px 15px 0px;
-    margin-top: auto;
-    margin-left: 100px;
-    text-decoration: none;
-}
-#One h2{
-    margin-top: 50px;
-    margin-left: 300px;
-    font-size: 1.5em;
-    font-family: SemiBold;
-    color: rgb(210, 121, 91);
+    border-radius: 20px 0px;
+    margin-top: 5%;
     
 }
-
-#One p{
-    margin-top: 10px;
-    font-family: Light;
-    font-size: 21px;
-    width: 75%;
-    float: right;
+.one-conteudo{
+    width: 100%;
+    display: flex;
+    padding: 1%;
 }
-#Two h2{
-    font-size: 1.5em;
-    font-family: SemiBold;
-    color: rgb(210, 121, 91);
-}
-#Two p{
+.one-conteudo p{
     font-size: 20px;
     font-family: Light;
-    width: 70%;
-    margin-bottom: 50px;
+    padding: 3%;
 }
-#Two a{
+.one-conteudo strong{
+    font-size: 2.0em;
+    margin-left: 20px;
+    font-family: Light;
+    color: #d2795b;
+    margin-left: auto;
+}
+.one-conteudo a{
+    width: 50px;
     font-size: 14px;
     font-family: SemiBold;
     background-color: #ffb967;
     color: white;
-    width: 120px;
-    padding: 15px;
+    padding: 1%;
+    width: 25%;
+    height: 5%;
     border-radius: 15px 0px 15px 0px;
-    float: right;
+    text-decoration: none;
+    margin-top: 250px;
+    margin-left: -90px;
+}
+  
+.two-conteudo{
+    width: 100%;
+    display: flex;
+    padding: 3%;
+}
+.two-conteudo p{
+    font-size: 20px;
+    font-family: Light;
+    padding: 2%;
+    margin-left: -5%;
+}
+.two-conteudo img{
+    width: 200px;
+    height: 230px;
+    border-radius: 20px 0px;
+    margin-top: 8%;
+    margin-right: 200px;
+    
+}
+.two-conteudo strong{
+    font-size: 2.0em;
+    margin-left: 20px;
+    font-family: Light;
+    color: #d2795b;
+    margin-left: auto;
+}
+.two-conteudo a{
+    font-size: 14px;
+    font-family: SemiBold;
+    background-color: #ffb967;
+    color: white;
+    width: 60%;
+    padding: 1%;
+    border-radius: 15px 0px 15px 0px;
     margin-top: 300px;
-    margin-right: -100px;
+    margin-left: -38%;
     text-decoration: none;
 }
-.Two{
-    float: right;
-    width: 300px;
-    height: 300px;
-    border-radius: 30px 0px 30px 0px;
-    margin-top: 20px;
-}
+
 /* Edição Loja */
 .servicos{
     padding: 5%;
