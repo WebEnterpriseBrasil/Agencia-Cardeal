@@ -79,6 +79,7 @@ h2 {
 /* *** header *** */
 header {
     background: #fff;
+    min-height: 230px;
 }
 
 header .content {
@@ -547,6 +548,4 @@ color: white;
     opacity: 0.5;
     z-index: 2;
 }
-    
-
 
