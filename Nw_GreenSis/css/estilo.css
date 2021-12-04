@@ -278,7 +278,7 @@ header .social .icons .user {
 .rodape .g-letter-pequeno {
     position: absolute;
     width: 40%;
-    min-height: 380px;
+    min-height: 400px;
     bottom: 0;
     right: 0;
     background: url('../img/ge.png') no-repeat 100% 100%;
@@ -503,23 +503,22 @@ color: white;
     margin-bottom: 5px;
     border: 1px solid #ffb967;  
     width: 30%;
-    margin-left: 7%;
+    margin-left: 10%;
 }
 .mensagem{
     padding: 50px;
     margin-bottom: 5px;
     border: 1px solid #292624;  
-    margin-left:7%;
-    min-width: 30%
+    margin-left:10%;
+    
 }
 .botao{
     color: white;
     background-color:#ff9f48;
     border-radius: 10px 0px 10px 0px;
     padding: 10px;
-    margin-left: 80px;
-    border: #ff9f48 solid 1px;  
-    margin-bottom: 5%;  
+    margin-left: 10%;
+    border: #ff9f48 solid 1px;   
 }
 .contacto .g-letter {
     position: absolute;
