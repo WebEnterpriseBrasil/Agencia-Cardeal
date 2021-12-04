@@ -1,15 +1,7 @@
 @media only screen and (max-width: 1200px) {
-    /* .menu { width:100%; } */
-    .home-page section .block {
-        width: 100%;
-        }  
     }
 
 @media only screen and (max-width: 990px) {
-        /* .menu { width:100%; } */
-        .home-page section .block {
-            width: 100%;
-            }
             .loja-page .servicos{
                 display: flex;
                 width: 100%;
@@ -27,10 +19,6 @@
         }
 
 @media only screen and (max-width: 770px) {
-    /* .menu { width:100%; } */
-    .home-page section .block {
-        width: 100%;
-        }
     .loja-page .servicos{
         display: block;
         width: 100%;
@@ -51,8 +39,20 @@
     .hidden-mobile {
         display: none;
     }
-    .menu-action {
+    header {
+        min-height: auto;
+    }
+    header .content-desktop {
+        display: none;
+    }
+    header .content-mobile {
+        display: block;
+    }
+    header .menu-action {
         display: flex;
+    }
+    .home-page section .block {
+        width: 100%;
     }
     .g-letter {
         display: none;
