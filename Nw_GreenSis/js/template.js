@@ -1,24 +1,45 @@
 const openMenuMobile = () => {
-    jQuery(".menu-mobile").animate({
+    jQuery(".boxes_ .box.left").animate({
         marginLeft: 0
     })
     jQuery('.overlay').show();
 }
-
+const openMenuMobileCart = () => {
+    console.log('openMenuMobileCart')
+    jQuery(".boxes_ .box.right").animate({
+        marginRight: 0
+    })
+    jQuery('.overlay').show();
+}
 const closeMenuMobile = () => {
-    jQuery(".menu-mobile").animate({
+    jQuery(".boxes_ .box.left").animate({
         marginLeft: '-300px'
+    })
+    jQuery('.overlay').hide();
+}
+const closeMenuMobileCart = () => {
+    jQuery(".boxes_ .box.right").animate({
+        marginRight: '-300px'
     })
     jQuery('.overlay').hide();
 }
 
 
-
-jQuery('.menu-action').on('click', function() {
+// abrir menu mobile
+jQuery('.content-mobile .menu-action i').on('click', function() {
     openMenuMobile()
 })
-jQuery('.overlay').on('click', function() {
-    closeMenuMobile()
+
+// abrir menu mobile cart
+jQuery('header .content-mobile .cols .icons a').on('click', function() {
+    openMenuMobileCart()
+})
+
+// fechar menu mobile e cart
+jQuery('.overlay, .content-mobile .action-bar .close i').on('click', function() {
+    console.log('fechar')
+    closeMenuMobile();
+    closeMenuMobileCart();
 })
 
 window.addEventListener('resize', function(event) {

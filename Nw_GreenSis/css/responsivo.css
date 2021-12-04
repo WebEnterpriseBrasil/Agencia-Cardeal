@@ -1,8 +1,5 @@
 @media only screen and (max-width: 1200px) {
-    .home-page section .block {
-        width: 100%;
-    }  
-}
+    }
 
 @media only screen and (max-width: 990px) {
             .loja-page .servicos{
@@ -53,6 +50,9 @@
     }
     header .menu-action {
         display: flex;
+    }
+    .home-page section .block {
+        width: 100%;
     }
     .g-letter {
         display: none;
