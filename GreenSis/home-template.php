@@ -7,6 +7,7 @@ Template Name: Home
 ?>
 
 <?php get_header(); ?>
+
 <section class="foto-sorriso">
         <div class="container">
             <div class="block text">
