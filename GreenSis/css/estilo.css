@@ -118,6 +118,8 @@ h2 {
 header {
     background: #fff;
     height: 230px;
+    position: relative;
+    z-index: 4;
 }
 
 header .content-desktop {
@@ -720,9 +722,9 @@ color: white;
     display: none;
 }
 
-.page-template-sis-template .footer-loja, .page-template-loja-template .footer-loja, .page-template-contato-template .footer-contacto{
+.page-template-sis-template .footer-loja, .page-template-loja-template .footer-loja, .page-template-contato .footer-contacto{
     display: block;
 }
-.page-template-sis-template .footer-padrao, .page-template-loja-template .footer-padrao, .page-template-contato-template .footer-padrao{
+.page-template-sis-template .footer-padrao, .page-template-loja-template .footer-padrao, .page-template-contato .footer-padrao{
     display: none;
 }
