@@ -74,4 +74,8 @@
     .contact-page .field{
         width: 70%;
     }
+    header .logo a {
+        margin-left: 0;
+    }
+
 }
