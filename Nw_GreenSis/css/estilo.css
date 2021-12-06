@@ -123,15 +123,17 @@ header .content-desktop {
     display: flex;
     justify-content: space-between;
 }
-
-header .logo > a{
+header .logo a{
     width: 100px;
     height: 100px;
+    margin-left: -103px;
 }
-header #menu {}
+header #menu {
+    float: left;
+}
 
 header .menu-lista { 
-    margin-top: 100px;
+    margin-top: 110px;
     float: left;
     padding-left: 0;
 }
@@ -162,7 +164,7 @@ header .social {
 }
 header .content-desktop .nav-social {  
     float: right;
-    margin-top: 55px;
+    margin-top: 65px;
     margin-bottom: 20px;
 }
 
