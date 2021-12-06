@@ -117,7 +117,7 @@ h2 {
 /* ****** header desktop  *** */
 header {
     background: #fff;
-    min-height: 230px;
+    height: 230px;
 }
 
 header .content-desktop {
@@ -342,10 +342,14 @@ header .content-mobile {
     font-family: Light;
     font-size: 15px;
 }
+.rodape .bg{
+    background-color:#ffb967;
+    max-width: 1524px;
+    margin: 0 auto;
+}
 .rodape .container {
     position: relative;
-    padding: 3%;
-    background-color:#ffb967;
+    padding: 3% 0;
 }
 
 .rodape .g-letter {
@@ -389,16 +393,56 @@ header, section, footer, main {
     width: 50%;
 }
 .home-page section .text{
-    padding: 5%;
+    position: relative;
 }
+
+.home-page section .text .inner {
+    width: 100%;
+    max-width: 762px;
+    padding: 5% 0;
+}
+.home-page section .text.right .inner {
+    float: left;
+}
+.home-page section .text.left .inner{
+    float: right;
+}
+.home-page section .text .inner article{
+    width: 100%;
+    max-width: 640px;
+    margin-top: 118px;
+}
+.home-page section .text.left .inner article{
+    float: right;
+}
+.home-page section .text.right .inner article{
+    float: left;
+    padding-left: 92px;
+}
+.home-page section .text .inner article h2{
+    margin-top: 0;
+}
+.home-page section .image {
+
+ }
+ .home-page section .image .inner{
+    width: 100%;
+    max-width: 762px;
+ }
+ .home-page section .image.left .inner{
+    float: right;
+ }
 .home-page section .image img {
     display: block;
+    width: 762px;
  }
-.foto-sorriso .text {
-    background-color: #f89f77;
+.foto-sorriso .text h2 {
     color: white;
     font-size: 2.0em;
     font-family: Regular;
+}
+.foto-sorriso .text .inner{
+    background-color: #f89f77;
 }
 .segunda-sessao .text{
     font-size: 1.5em;
@@ -415,6 +459,9 @@ header, section, footer, main {
     border-radius: 10px 0px 10px 0px;
 }
 .terceira-sessao .text {
+    position: relative;
+}
+.terceira-sessao .text .inner {
     background-color: #d2795b;
     position: relative;
 }

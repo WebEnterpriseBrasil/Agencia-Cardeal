@@ -3,7 +3,7 @@
 
 @media only screen and (max-width: 990px) {
     header {
-        min-height: 150px;
+        height: 150px;
     }
     header .logo a {
         margin-left: -67px;
@@ -103,6 +103,20 @@
     }
     header .logo a {
         margin-left: 0;
+    }
+
+    .home-page section .text .inner article {
+        margin-top: 25px;
+        padding: 0 20px;
+    }
+    .home-page section .text .inner article h2 {
+        font-size: 1.5rem;
+    }
+    .home-page section .text.right .inner article{
+        padding-left: 20px;
+    }
+    .rodape .container {
+        padding: 3% 20px;
     }
 
 }
