@@ -118,5 +118,12 @@
     .rodape .container {
         padding: 3% 20px;
     }
+    .segunda-sessao .text p{
+        font-size: 1rem;
+    }
+    .btn-gs {
+        font-size: 15px;
+        border-radius: 8px 0px 8px 0px;
+    }
 
 }
