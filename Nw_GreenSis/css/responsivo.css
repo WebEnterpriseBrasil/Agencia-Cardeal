@@ -28,21 +28,7 @@
     }
     header .icons a {
         margin-right: 3px;
-    }
-    .loja-page .servicos{
-        display: flex;
-        width: 100%;
-        
-    }    
-    .loja-page .servicos .produto{
-        width: 100%;
-        display: block;
-        
-    }    
-    .loja-page .servicos .produto img{
-        width: 100%;
-        padding: 5%;
-    }
+    }  
 }
 
 @media only screen and (max-width: 770px) {
@@ -55,6 +41,9 @@
         width: 100%;
         padding: 20%;
         display: block;
+    }
+    .loja-page .divider {
+        display: none;
     }
     
 }
@@ -94,10 +83,11 @@
     }    
     .loja-page .servicos .produto{
         width: 100%;
-        padding: 10%;
+        padding: 10% 0;
         display: block;
         
     }
+    
     .contact-page .field{
         width: 70%;
     }
