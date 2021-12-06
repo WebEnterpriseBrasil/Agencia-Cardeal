@@ -43,6 +43,7 @@ p, html, body  {
     font-size: 1rem;
     font-family: Light;
     line-height: 1.5;
+    font-weight: normal;
 }
 /* /typography */
 
@@ -368,6 +369,9 @@ header .content-mobile {
     position: relative;
     padding: 3% 0;
 }
+.rodape.rodape-gs .container {
+    background-color:#ffb967;
+}
 
 .rodape .g-letter {
     position: absolute;
@@ -496,99 +500,68 @@ main{
 }
 
 /*Edição Sessão Sis*/
+.sis-page main .boxes {}
+.sis-page main  .box {
+    float: left;
+}
+.sis-page main  .box.left {
+    width: 80%;
+}
+.sis-page main  .box.right {
+    width: 20%;
+}
+.sis-page main  .boxes.reverse .box.left {
+    width: 20%;
+}
+.sis-page main  .boxes.reverse  .box.right {
+    width: 80%;
+    padding-left: 2.5rem;
+}
+.sis-page main  .box.right h2 {
+    color: #d2795b;
+    font-weight: normal;
+    font-size: 24px;
+    display: block;
+    width: 220px;
+}
+.sis-page .One {
+    margin-top: 3rem;
+}
+.sis-page main  .boxes .box figure {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.sis-page main  .boxes .box img {
+    border-radius: 20px 0px;
+    margin-top: 5%;
+}
+.sis-page main  .boxes .box  .btn-gs {
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    right: auto;
+}
+.sis-page main .boxes.reverse .box  .btn-gs {
+    bottom: -10px;
+    right: -20px;
+    left: auto;
+}
 .Sis h1{
     font-family: Regular;
     font-size: 2.0em;
     color: rgb(210, 121, 91);
 }
-.Sis p{
-    /* font-family: Light;
-    font-size: 20px; */
-    width: 70%;
-    
-}
+
 .Sis h2{
     font-family: Lightitalic;
     font-size: 22px;
     float: right;
-    width: 200px;
 }
-.one-conteudo img{
-    width: 250px;
-    height: 230px;
-    border-radius: 20px 0px;
-    margin-top: 5%;
-    
-}
-.one-conteudo{
-    width: 100%;
-    display: flex;
-    padding: 1%;
-}
-.one-conteudo p{
-    font-size: 20px;
-    font-family: Light;
-    padding: 3%;
-}
-.one-conteudo strong{
-    font-size: 2.0em;
-    margin-left: 20px;
-    font-family: Light;
-    color: #d2795b;
-    margin-left: auto;
-}
-.one-conteudo a{
-    width: 50px;
-    font-size: 14px;
-    font-family: SemiBold;
-    background-color: #ffb967;
-    color: white;
-    padding: 1%;
-    width: 25%;
-    height: 5%;
-    border-radius: 15px 0px 15px 0px;
-    text-decoration: none;
-    margin-top: 250px;
-    margin-left: -90px;
-}
-  
-.two-conteudo{
-    width: 100%;
-    display: flex;
-    padding: 3%;
-}
-.two-conteudo p{
-    font-size: 20px;
-    font-family: Light;
-    padding: 2%;
-    margin-left: -5%;
-}
-.two-conteudo img{
-    width: 200px;
-    height: 230px;
-    border-radius: 20px 0px;
-    margin-top: 8%;
-    margin-right: 200px;
-    
-}
-.two-conteudo strong{
-    font-size: 2.0em;
-    margin-left: 20px;
-    font-family: Light;
-    color: #d2795b;
-    margin-left: auto;
-}
-.two-conteudo a{
-    font-size: 14px;
-    font-family: SemiBold;
-    background-color: #ffb967;
-    color: white;
-    width: 60%;
-    padding: 1%;
-    border-radius: 15px 0px 15px 0px;
-    margin-top: 300px;
-    margin-left: -38%;
-    text-decoration: none;
+.sis-page .Two {
+    margin-top: 3rem;
 }
 
 /* Edição Loja */
