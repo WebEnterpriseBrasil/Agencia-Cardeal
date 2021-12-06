@@ -618,6 +618,16 @@ main{
     font-family: Light;
     font-size: 18px;
 }
+.btn-comprar{
+    color: white;
+    font-family: Semibold;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #f89f77;
+    padding: 2%;
+    border-radius: 10px 0px 10px 0px;
+}
+
 
 /* Edição Contacto */
 .contacto{
