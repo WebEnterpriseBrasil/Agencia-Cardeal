@@ -3,7 +3,7 @@
 var _this = void 0;
 
 var resizeBoxWidth = function resizeBoxWidth() {
-  jQuery('.home-page section').each(function () {
+  jQuery('.page-template-home-template section').each(function () {
     // const imageWidth = jQuery(this).find('.image img').width()
     var imageWidth = jQuery(this).find('.image').width();
     var additional = imageWidth * 18.86 / 100;
@@ -14,12 +14,12 @@ var resizeBoxWidth = function resizeBoxWidth() {
 
 var resizeBoxHeight = function resizeBoxHeight() {
   if (jQuery(window).width() > 570) {
-    jQuery('.home-page section').each(function () {
+    jQuery('.page-template-home-template section').each(function () {
       var imageHeight = jQuery(this).find('.image img').height();
       jQuery(this).find('.text .inner').css('min-height', imageHeight);
     });
-    var box3H = jQuery('.home-page .terceira-sessao .text .inner').css('min-height').replace('px', '');
-    jQuery('.home-page .g-letter').height(box3H * 2);
+    var box3H = jQuery('.page-template-home-template .terceira-sessao .text .inner').css('min-height').replace('px', '');
+    jQuery('.page-template-home-template .g-letter').height(box3H * 2);
   } else {
     jQuery(_this).find('.text .inner').css('min-height', 'auto');
   }

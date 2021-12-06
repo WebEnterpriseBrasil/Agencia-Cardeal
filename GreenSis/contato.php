@@ -7,7 +7,7 @@ Template Name: Contato
 ?>
 
 <?php get_header(); ?>
-
+<div class="bg">  
 <div class="container">  
         <main class="contacto">
             <div class="g-letter"></div>
@@ -28,5 +28,5 @@ Template Name: Contato
 
         </main>
 </div>
-
+</div>
 <?php get_footer(); ?>

@@ -32,17 +32,17 @@
 }
 
 @media only screen and (max-width: 770px) {
-    .loja-page .servicos{
+    .page-template-loja-template  .servicos{
         display: block;
         width: 100%;
         padding: 5%;
     }    
-    .loja-page .servicos .produto{
+    .page-template-loja-template  .servicos .produto{
         width: 100%;
         padding: 20%;
         display: block;
     }
-    .loja-page .divider {
+    .page-template-loja-template  .divider {
         display: none;
     }
     
@@ -67,7 +67,7 @@
     header .menu-action {
         display: flex;
     }
-    .home-page section .block {
+    .page-template-home-template section .block {
         width: 100%;
     }
     .g-letter {
@@ -76,33 +76,33 @@
     .g-letter-pequeno{ 
         display: none;
     }
-    .loja-page .servicos{
+    .page-template-loja-template  .servicos{
         display: block;
         width: 100%;
         padding: 5%;
     }    
-    .loja-page .servicos .produto{
+    .page-template-loja-template  .servicos .produto{
         width: 100%;
         padding: 10% 0;
         display: block;
         
     }
     
-    .contact-page .field{
+    .page-template-contato .field{
         width: 70%;
     }
     header .logo a {
         margin-left: 0;
     }
 
-    .home-page section .text .inner article {
+    .page-template-home-template section .text .inner article {
         margin-top: 25px;
         padding: 0 20px;
     }
-    .home-page section .text .inner article h2 {
+    .page-template-home-template section .text .inner article h2 {
         font-size: 1.5rem;
     }
-    .home-page section .text.right .inner article{
+    .page-template-home-template section .text.right .inner article{
         padding-left: 20px;
     }
     .rodape .container {

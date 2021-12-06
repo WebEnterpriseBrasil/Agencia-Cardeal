@@ -1,7 +1,11 @@
 @charset "utf-8";
 
+/* resets */
 *{ 
     box-sizing: border-box;
+}
+li {
+    list-style: none;
 }
 
 /* *** fonts *** */
@@ -272,6 +276,9 @@ header .content-mobile {
     background: #fff;
     margin-right: -300px;
 }
+.logged-in  .content-mobile .boxes {
+    top: 30px;
+}
 .content-mobile .boxes .action-bar {
     justify-content: flex-start;
 }
@@ -405,55 +412,55 @@ header, section, footer, main {
 
 
 /* *** home *** */
-.home-page section{    
+.page-template-home-template section{    
     display: block;
     width: 100%;
 }
-.home-page section .block {
+.page-template-home-template section .block {
     float: left;
     width: 50%;
 }
-.home-page section .text{
+.page-template-home-template section .text{
     position: relative;
 }
 
-.home-page section .text .inner {
+.page-template-home-template section .text .inner {
     width: 100%;
     max-width: 762px;
     padding: 5% 0;
 }
-.home-page section .text.right .inner {
+.page-template-home-template section .text.right .inner {
     float: left;
 }
-.home-page section .text.left .inner{
+.page-template-home-template section .text.left .inner{
     float: right;
 }
-.home-page section .text .inner article{
+.page-template-home-template section .text .inner article{
     width: 100%;
     max-width: 640px;
     margin-top: 118px;
 }
-.home-page section .text.left .inner article{
+.page-template-home-template section .text.left .inner article{
     float: right;
 }
-.home-page section .text.right .inner article{
+.page-template-home-template section .text.right .inner article{
     float: left;
     padding-left: 92px;
 }
-.home-page section .text .inner article h2{
+.page-template-home-template section .text .inner article h2{
     margin-top: 0;
 }
-.home-page section .image {
+.page-template-home-template section .image {
 
  }
- .home-page section .image .inner{
+ .page-template-home-template section .image .inner{
     width: 100%;
     max-width: 762px;
  }
- .home-page section .image.left .inner{
+ .page-template-home-template section .image.left .inner{
     float: right;
  }
-.home-page section .image img {
+.page-template-home-template section .image img {
     display: block;
     width: 762px;
  }
@@ -565,20 +572,20 @@ main{
 }
 
 /* Edição Loja */
-.loja-page {}
-.loja-page .servicos{
+.page-template-loja-template  {}
+.page-template-loja-template  .servicos{
     padding: 5% 0;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.loja-page .divider {
+.page-template-loja-template  .divider {
     height: 600px;
     position: relative;
     text-align: center;
     padding: 0 30px;
 }
-.loja-page .divider::before {
+.page-template-loja-template  .divider::before {
     content: '';
     height: 600px;
     width: 1px;
@@ -604,7 +611,7 @@ main{
 }
 
 
-.loja-page .loja-texto{
+.page-template-loja-template  .loja-texto{
     width: 100%;
     padding: 5% 0;
     padding-bottom: 0;
@@ -687,11 +694,11 @@ color: white;
     z-index: 2;
 }
 
-.contact-page .g-letter-pequeno {
+.page-template-contato .g-letter-pequeno {
     display:  none;
 }
 
-.contact-page .bg {
+.page-template-contato .bg {
     background-color: #ffb967;
     max-width: 1524px;
     margin: 0 auto;
