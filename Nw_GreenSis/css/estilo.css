@@ -623,7 +623,7 @@ main{
 .contacto{
     width: 100%;
     background-color: #ffb967;
-    padding: 5%;
+    padding: 5% 0;
 }
 .contacto h1{
 font-family: Regular;
@@ -676,4 +676,15 @@ color: white;
     opacity: 0.5;
     z-index: 2;
 }
+
+.contact-page .g-letter-pequeno {
+    display:  none;
+}
+
+.contact-page .bg {
+    background-color: #ffb967;
+    max-width: 1524px;
+    margin: 0 auto;
+}
+
 
