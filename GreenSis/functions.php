@@ -16,7 +16,7 @@ function greensis_config(){
 	register_nav_menus(
 		array(
 			'my_main_menu' => __( 'Main Menu', 'greensis' ),
-			'footer_menu' => __( 'Footer Menu', 'greensis' )
+			'my_mobile_menu' => __( 'Mobile Menu', 'greensis' )
 		)
 	);
 

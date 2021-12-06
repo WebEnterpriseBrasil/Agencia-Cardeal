@@ -38,8 +38,9 @@
 }
 .container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1290px;
     margin: 0 auto;
+    padding: 0 5px;
 }
 .container::after {
     content: "";
@@ -91,7 +92,7 @@
     margin-top: 5px;
     margin-left: 4px;
 }
-.field {
+.field, .contacto .wpcf7-text{
     display: inline-block;
     height: 28px;
     width: 100%;
@@ -116,44 +117,61 @@ h2 {
 /* ****** header desktop  *** */
 header {
     background: #fff;
-    min-height: 230px;
+    height: 230px;
 }
 
 header .content-desktop {
     display: flex;
     justify-content: space-between;
 }
-
-header .logo > a{
-    width: 100px;
-    height: 100px;
+header .logo a{
+    margin-left: -103px;
 }
-header #menu {}
+header #menu {
+    float: left;
+}
 
 header .menu-lista { 
-    margin-top: 100px;
+    margin-top: 110px;
     float: left;
     padding-left: 0;
 }
-header .menu-lista li { 
+header .menu-lista .menu-menu-topo-container{
     float: left;
 }
-header .menu-lista li a, 
-header .menu-lista li span {
+header .menu-lista .menu-menu-topo-container #menu-menu-topo{
+    float: left;
+    padding: 0;
+}
+header .menu-lista .menu-menu-topo-container li { 
+    float: left;
+    list-style: none;
+    position: relative;
+}
+header .menu-lista .menu-menu-topo-container li a{
     font-size: 22px;
     color: black;
     text-decoration: none;
     letter-spacing: 4px;
     font-family: Regular;
     padding: 0 8px;
+    margin-left: 10px;
+}
+header .menu-lista .menu-menu-topo-container li::after{
+    content: "";
+    width: 1px;
+    height: 22px;
+    background-color: black;
+    position: absolute;
+    top: 4px;
+}
+header .menu-lista li:last-child:after{
+    opacity: 0;
 }
 header .menu-lista li a:hover {
     text-decoration: underline;
 }
-header .menu-lista {
-    list-style: none;
-    
-}
+
 
 header .social { 
     float: left;
@@ -162,7 +180,7 @@ header .social {
 }
 header .content-desktop .nav-social {  
     float: right;
-    margin-top: 55px;
+    margin-top: 65px;
     margin-bottom: 20px;
 }
 
@@ -341,10 +359,14 @@ header .content-mobile {
     font-family: Light;
     font-size: 15px;
 }
+.rodape .bg{
+    background-color:#ffb967;
+    max-width: 1524px;
+    margin: 0 auto;
+}
 .rodape .container {
     position: relative;
-    padding: 3%;
-    background-color:#ffb967;
+    padding: 3% 0;
 }
 
 .rodape .g-letter {
@@ -379,25 +401,65 @@ header, section, footer, main {
 
 
 /* *** home *** */
-.home-page section{    
+.page-template-home-template section{    
     display: block;
     width: 100%;
 }
-.home-page section .block {
+.page-template-home-template section .block {
     float: left;
     width: 50%;
 }
-.home-page section .text{
-    padding: 5%;
+.page-template-home-template section .text{
+    position: relative;
 }
-.home-page section .image img {
-    display: block;
+
+.page-template-home-template section .text .inner {
+    width: 100%;
+    max-width: 762px;
+    padding: 5% 0;
+}
+.page-template-home-template section .text.right .inner {
+    float: left;
+}
+.page-template-home-template section .text.left .inner{
+    float: right;
+}
+.page-template-home-template section .text .inner article{
+    width: 100%;
+    max-width: 640px;
+    margin-top: 118px;
+}
+.page-template-home-template section .text.left .inner article{
+    float: right;
+}
+.page-template-home-template section .text.right .inner article{
+    float: left;
+    padding-left: 92px;
+}
+.page-template-home-template section .text .inner article h2{
+    margin-top: 0;
+}
+.page-template-home-template section .image {
+
  }
-.foto-sorriso .text {
-    background-color: #f89f77;
+ .page-template-home-template section .image .inner{
+    width: 100%;
+    max-width: 762px;
+ }
+ .page-template-home-template section .image.left .inner{
+    float: right;
+ }
+.page-template-home-template section .image img {
+    display: block;
+    width: 762px;
+ }
+.foto-sorriso .text h2 {
     color: white;
     font-size: 2.0em;
     font-family: Regular;
+}
+.foto-sorriso .text .inner{
+    background-color: #f89f77;
 }
 .segunda-sessao .text{
     font-size: 1.5em;
@@ -414,6 +476,9 @@ header, section, footer, main {
     border-radius: 10px 0px 10px 0px;
 }
 .terceira-sessao .text {
+    position: relative;
+}
+.terceira-sessao .text .inner {
     background-color: #d2795b;
     position: relative;
 }
@@ -544,7 +609,8 @@ main{
 }
 .produto{
     display: block;
-    width: 100%;
+    width: 33%;
+    float: left;
 }
 .produto h1{
     font-family: Regular;
@@ -606,19 +672,19 @@ color: white;
     font-family: Light;
     font-size: 15px;
 }
-.contacto p{
+.contacto p, .contacto p label{
     font-size: 15px;
     font-family: Light;
 }  
-.contacto .field{
+.contacto .field, .contacto .wpcf7-text {
     padding: 10px;
     margin-bottom: 5px;
     border: 1px solid #ffb967;  
     width: 30%;
     margin-left: 10%;
 }
-.mensagem{
-    padding: 50px;
+.mensagem, .contacto .wpcf7-textarea{
+    padding: 15px;
     margin-bottom: 5px;
     border: 1px solid #292624;  
     margin-left:10%;
@@ -631,6 +697,8 @@ color: white;
     padding: 10px;
     margin-left: 10%;
     border: #ff9f48 solid 1px;   
+    font-weight: bold;
+    font-size: 25px;
 }
 .contacto .g-letter {
     position: absolute;
@@ -644,3 +712,17 @@ color: white;
     z-index: 2;
 }
 
+.footer-loja{
+    display: none;
+}
+
+.footer-contacto{
+    display: none;
+}
+
+.page-template-sis-template .footer-loja, .page-template-loja-template .footer-loja, .page-template-contato-template .footer-contacto{
+    display: block;
+}
+.page-template-sis-template .footer-padrao, .page-template-loja-template .footer-padrao, .page-template-contato-template .footer-padrao{
+    display: none;
+}

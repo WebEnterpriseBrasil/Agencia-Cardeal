@@ -9,40 +9,55 @@ Template Name: Home
 <?php get_header(); ?>
 
 <section class="foto-sorriso">
-        <div class="container">
-            <div class="block text">
-                <h2>Permita-se <br> experimentar <br> um novo universo <br> de beleza.</h2>
+
+            <div class="block text left">
+                <div class="inner">
+                    <article>
+                        <h2>Permita-se <br> experimentar <br> um novo universo <br> de beleza.</h2>
+                    </article>
+                </div>
             </div>
-            <div class="block image"> 
-                <img src="<?php echo get_template_directory_uri(); ?>/img/home-section-1-img-1.jpeg"  class="img-responsive" alt="Sorriso">
+            <div class="block image right"> 
+                <div class="inner">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/box-home-1.jpg"  class="img-responsive" alt="Sorriso">
+                </div>
             </div>
-        </div>
+
     </section>
 
     <section class="segunda-sessao">
-        <div class="container">
-            <div class="block text">
+            <div class="block text left">
+                <div class="inner">
+                    <article>
                 <p> Oferecemos os melhores cosméticos <br> alinhados com o nosso propósito: trazer para <br> si um novo olhar para o mercadode beleza. <br> Produtos voltados para o clean beauty <br> (beleza limpa) e cruety free. </p>
                 <a href="Loja.html"> conheça a loja </a>
-            </div>    
-            <div class="block image">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/home-section-2-img-1.jpg" class="img-responsive" alt="Herbes">
+                </article>  
+                </div>
             </div>
-        </div>
+            <div class="block image right">
+                <div class="inner">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/box-home-2.jpg" class="img-responsive" alt="Herbes">
+                </div>
+            </div>
     </section>
 
     <section class="terceira-sessao">
-        <div class="container">
-            <div class="block image">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/home-section-3-img-1.jpeg" class="img-responsive" alt="Beiramar">
+            
+            <div class="block image left">
+                <div class="inner">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/box-home-3.jpg" class="img-responsive" alt="Beiramar">
+                </div>
             </div>    
-            <div class="block text">
-                <div class="content">
-                    <h2>Sis</h2>
-                    <h3>Duas irmãs e um sonho: <br> trabalhar com propósito</h3>
+            <div class="block text right">
+                <div class="inner">
+                    <article>
+                        <h2>Sis</h2>
+                        <h3>Duas irmãs e um sonho: <br> trabalhar com propósito</h3>
+                    </article>
                 </div>
             </div>
-        </div>
+            
+
     </section>
 
 <?php get_footer(); ?>

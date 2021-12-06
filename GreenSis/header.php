@@ -20,39 +20,44 @@
 </head>
 
 <!-- Início do body -->
-<body class="home-page">
+<body <?php body_class(); ?>>
 <header>
         <div class="container">
 
             <div class="content-desktop">
+
                 <div class="logo">
-                    <a class="logo" href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"/></a>
+                    <a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"/></a>
                 </div>
-                
-                <div id="menu">              
+
+                <div class="right">
+                    <div id="menu">              
                        
-                    <ul class="menu-lista" class="hidden-mobile">
-                        <li><a href="Sis.html">sis</a></li>
-                        <li><span>|</span></li>
-                        <li><a href="Loja.html">loja</a></li>
-                        <li><span>|</span></li>
-                        <li><a href="Contacto.html">contacto</a></li>
-                    </ul>      
-                    
-                </div>
-                <div class="social">
-                    <nav class="nav-social">
-                        <a href="#"></a><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"></a><i class="fab fa-instagram"></i></a>
-                    </nav>
+                        <ul class="menu-lista" class="hidden-mobile">
 
-                    <nav class="icons">                            
-                        <a href="#" class="search"></i></a>
-                        <a href="#" class="user"></a>
-                        <a href="#" class="cart"></a>
-                    </nav>
+                        <?php 
+                            wp_nav_menu( 
+                                array( 
+                                    'theme_location' => 'my_main_menu' 
+                                    ) 
+                                ); 
+                        ?>
+                        </ul>      
+                        
+                    </div>
+                    <div class="social">
+                        <nav class="nav-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </nav>
+    
+                        <nav class="icons">                            
+                            <a href="#" class="search"></i></a>
+                            <a href="#" class="user"></a>
+                            <a href="#" class="cart"></a>
+                        </nav>
+                    </div>
                 </div>
-
             </div>
 
             <div class="content-mobile"> 
@@ -61,7 +66,7 @@
                         <i class="fas fa-bars"></i>  
                     </div>
                     <div class="logo">
-                        <a class="logo" href="index.html"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-mobile.png"/></a>
+                        <a class="logo" href="index.html"><img class="img-responsive" src="img/logo-mobile.png"/></a>
                     </div>
                     <nav class="menu-action-cart icons">                            
                         <a href="javascript:void(0)" class="cart"></a>
@@ -83,10 +88,13 @@
                             </div>
                         </div>
                         <ul>
-                            <li><a href="Sis.html">sis</a></li>
-                            <li><a href="Loja.html">loja</a></li>
-                            <li><a href="Contacto.html">contacto</a></li>
-                            <li><a href="#">a minha conta</a></li>
+                        <?php 
+                            wp_nav_menu( 
+                                array( 
+                                    'theme_location' => 'my_mobile_menu' 
+                                    ) 
+                                ); 
+                        ?>
                         </ul>
                     </div>
                     <div class="box right">
