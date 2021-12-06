@@ -11,7 +11,7 @@ Template Name: Home
 <section class="foto-sorriso">
 
             <div class="block text left">
-                <div class="inner" style="height: 450px;">
+                <div class="inner">
                     <article>
                         <h2>Permita-se <br> experimentar <br> um novo universo <br> de beleza.</h2>
                     </article>
@@ -27,10 +27,10 @@ Template Name: Home
 
     <section class="segunda-sessao">
             <div class="block text left">
-                <div class="inner"  style="height: 609px;">
+                <div class="inner">
                     <article>
                 <p> Oferecemos os melhores cosméticos <br> alinhados com o nosso propósito: trazer para <br> si um novo olhar para o mercadode beleza. <br> Produtos voltados para o clean beauty <br> (beleza limpa) e cruety free. </p>
-                <a href="Loja.html"> conheça a loja </a>
+                <a href="Loja.html"  class="btn-gs"> conheça a loja </a>
                 </article>  
                 </div>
             </div>
@@ -49,7 +49,7 @@ Template Name: Home
                 </div>
             </div>    
             <div class="block text right">
-                <div class="inner"style="height: 450px;">
+                <div class="inner">
                     <article>
                         <h2>Sis</h2>
                         <h3>Duas irmãs e um sonho: <br> trabalhar com propósito</h3>
