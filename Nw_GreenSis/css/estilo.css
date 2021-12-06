@@ -117,7 +117,7 @@ h2 {
 /* ****** header desktop  *** */
 header {
     background: #fff;
-    min-height: 230px;
+    height: 230px;
 }
 
 header .content-desktop {
@@ -389,16 +389,45 @@ header, section, footer, main {
     width: 50%;
 }
 .home-page section .text{
-    padding: 5%;
+    position: relative;
 }
+
+.home-page section .text .inner {
+    width: 100%;
+    max-width: 762px;
+    padding: 5% 0;
+    float: right;
+
+}
+.home-page section .text .inner article{
+    background: cyan;
+    width: 100%;
+    max-width: 640px;
+    float: right;
+    margin-top: 118px;
+}
+.home-page section .text .inner article h2{
+    margin-top: 0;
+}
+.home-page section .image {
+
+ }
+ .home-page section .image .inner{
+
+    width: 100%;
+    max-width: 762px;
+ }
 .home-page section .image img {
     display: block;
+    width: 762px;
  }
 .foto-sorriso .text {
-    background-color: #f89f77;
     color: white;
     font-size: 2.0em;
     font-family: Regular;
+}
+.foto-sorriso .text .inner{
+    background-color: #f89f77;
 }
 .segunda-sessao .text{
     font-size: 1.5em;

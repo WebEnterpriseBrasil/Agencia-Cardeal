@@ -45,4 +45,5 @@ jQuery('.overlay, .content-mobile .action-bar .close i').on('click', function ()
 });
 window.addEventListener('resize', function (event) {
   closeMenuMobile();
+  closeMenuMobileCart();
 });
