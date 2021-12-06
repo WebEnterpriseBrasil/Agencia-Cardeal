@@ -118,5 +118,20 @@
     .rodape .container {
         padding: 3% 20px;
     }
+    .segunda-sessao .text p{
+        font-size: 1rem;
+    }
+    .btn-gs {
+        font-size: 15px;
+        border-radius: 8px 0px 8px 0px;
+    }
+    .sis-page .boxes .box,
+    .sis-page .boxes.reverse .box {
+        width: 100% !important;
+    }
+
+    .sis-page main .boxes.reverse .box.right {
+        padding-left: 0;
+    }
 
 }
