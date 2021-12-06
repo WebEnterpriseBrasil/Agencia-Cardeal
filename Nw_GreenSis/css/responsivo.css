@@ -2,21 +2,48 @@
     }
 
 @media only screen and (max-width: 990px) {
-            .loja-page .servicos{
-                display: flex;
-                width: 100%;
-                
-            }    
-            .loja-page .servicos .produto{
-                width: 100%;
-                display: block;
-                
-            }    
-            .loja-page .servicos .produto img{
-                width: 100%;
-                padding: 5%;
-            }
-        }
+    header {
+        min-height: 150px;
+    }
+    header .logo a {
+        margin-left: -67px;
+    }
+    header .logo a img{
+        max-width: 300px;
+    }
+    header .menu-lista {
+        margin-top: 67px;
+    }
+    header .menu-lista li a, header .menu-lista li a,
+    header .menu-lista li a, header .menu-lista li span {
+        padding: 0 3px;
+        font-size: 19px;
+    }
+    header .content-desktop .nav-social {
+        margin-top: 20px;
+    }
+
+    header .social {
+        width: 77px;
+    }
+    header .icons a {
+        margin-right: 3px;
+    }
+    .loja-page .servicos{
+        display: flex;
+        width: 100%;
+        
+    }    
+    .loja-page .servicos .produto{
+        width: 100%;
+        display: block;
+        
+    }    
+    .loja-page .servicos .produto img{
+        width: 100%;
+        padding: 5%;
+    }
+}
 
 @media only screen and (max-width: 770px) {
     .loja-page .servicos{

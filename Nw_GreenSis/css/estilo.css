@@ -125,8 +125,6 @@ header .content-desktop {
     justify-content: space-between;
 }
 header .logo a{
-    width: 100px;
-    height: 100px;
     margin-left: -103px;
 }
 header #menu {
