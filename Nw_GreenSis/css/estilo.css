@@ -383,7 +383,7 @@ header .content-mobile {
     background-size: 56%;
     opacity: 0.5;
 }
-.rodape .g-letter-pequeno {
+.rodape.rodape-gs .g-letter-pequeno {
     position: absolute;
     width: 40%;
     min-height: 400px;
@@ -565,10 +565,25 @@ main{
 }
 
 /* Edição Loja */
-.servicos{
-    padding: 5%;
+.loja-page {}
+.loja-page .servicos{
+    padding: 5% 0;
     width: 100%;
     display: flex;
+    justify-content: center;
+}
+.loja-page .divider {
+    height: 600px;
+    position: relative;
+    text-align: center;
+    padding: 0 30px;
+}
+.loja-page .divider::before {
+    content: '';
+    height: 600px;
+    width: 1px;
+    border-right: 1px solid #ddd;
+    display: inline-block;
 }
 .produto{
     display: block;
@@ -587,21 +602,11 @@ main{
     font-size: 18px;
     padding-bottom: 3%;
 }
-.produto a{
-    font-size: 20px;
-    text-decoration: none;
-    background-color: #f89f77;
-    padding: 3%;
-    color: white;
-    border-radius: 10px 0px 10px 0px;
-}
-.produto img{
-    width: 300px;
-    height: 300px;
-}
-.loja-texto{
+
+
+.loja-page .loja-texto{
     width: 100%;
-    padding: 5%;
+    padding: 5% 0;
     padding-bottom: 0;
 }
 .loja-texto h1{
