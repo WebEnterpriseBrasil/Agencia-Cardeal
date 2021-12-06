@@ -38,8 +38,9 @@
 }
 .container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1290px;
     margin: 0 auto;
+    padding: 0 5px;
 }
 .container::after {
     content: "";
@@ -123,15 +124,15 @@ header .content-desktop {
     display: flex;
     justify-content: space-between;
 }
-
-header .logo > a{
-    width: 100px;
-    height: 100px;
+header .logo a{
+    margin-left: -103px;
 }
-header #menu {}
+header #menu {
+    float: left;
+}
 
 header .menu-lista { 
-    margin-top: 100px;
+    margin-top: 110px;
     float: left;
     padding-left: 0;
 }
@@ -162,7 +163,7 @@ header .social {
 }
 header .content-desktop .nav-social {  
     float: right;
-    margin-top: 55px;
+    margin-top: 65px;
     margin-bottom: 20px;
 }
 
