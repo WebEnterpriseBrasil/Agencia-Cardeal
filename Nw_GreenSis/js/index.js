@@ -10,14 +10,18 @@ const resizeBoxWidth = () => {
 }
 
 
-const resizeBoxHeight = () => {    
-
-    jQuery('.home-page section').each(function() {
-        const imageHeight = jQuery(this).find('.image img').height()
-        jQuery(this).find('.text .inner').css('min-height', imageHeight);
-    });
-    const box3H = jQuery('.home-page .terceira-sessao .text').css('min-height').replace('px', '')
-    jQuery('.home-page .g-letter').height(box3H * 2)
+const resizeBoxHeight = () => {
+    if (jQuery(window).width() > 570) {
+        jQuery('.home-page section').each(function() {
+            const imageHeight = jQuery(this).find('.image img').height()
+            jQuery(this).find('.text .inner').css('min-height', imageHeight);
+        });
+        const box3H = jQuery('.home-page .terceira-sessao .text .inner').css('min-height').replace('px', '')
+        jQuery('.home-page .g-letter').height(box3H * 2);
+    }
+    else {
+        jQuery(this).find('.text .inner').css('min-height', 'auto');
+    }
 
 }
 

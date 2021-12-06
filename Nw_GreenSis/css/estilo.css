@@ -342,10 +342,14 @@ header .content-mobile {
     font-family: Light;
     font-size: 15px;
 }
+.rodape .bg{
+    background-color:#ffb967;
+    max-width: 1524px;
+    margin: 0 auto;
+}
 .rodape .container {
     position: relative;
-    padding: 3%;
-    background-color:#ffb967;
+    padding: 3% 0;
 }
 
 .rodape .g-letter {
@@ -396,15 +400,24 @@ header, section, footer, main {
     width: 100%;
     max-width: 762px;
     padding: 5% 0;
+}
+.home-page section .text.right .inner {
+    float: left;
+}
+.home-page section .text.left .inner{
     float: right;
-
 }
 .home-page section .text .inner article{
-    background: cyan;
     width: 100%;
     max-width: 640px;
-    float: right;
     margin-top: 118px;
+}
+.home-page section .text.left .inner article{
+    float: right;
+}
+.home-page section .text.right .inner article{
+    float: left;
+    padding-left: 92px;
 }
 .home-page section .text .inner article h2{
     margin-top: 0;
@@ -413,15 +426,17 @@ header, section, footer, main {
 
  }
  .home-page section .image .inner{
-
     width: 100%;
     max-width: 762px;
+ }
+ .home-page section .image.left .inner{
+    float: right;
  }
 .home-page section .image img {
     display: block;
     width: 762px;
  }
-.foto-sorriso .text {
+.foto-sorriso .text h2 {
     color: white;
     font-size: 2.0em;
     font-family: Regular;
@@ -444,6 +459,9 @@ header, section, footer, main {
     border-radius: 10px 0px 10px 0px;
 }
 .terceira-sessao .text {
+    position: relative;
+}
+.terceira-sessao .text .inner {
     background-color: #d2795b;
     position: relative;
 }

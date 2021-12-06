@@ -1,5 +1,7 @@
 "use strict";
 
+var _this = void 0;
+
 var resizeBoxWidth = function resizeBoxWidth() {
   jQuery('.home-page section').each(function () {
     // const imageWidth = jQuery(this).find('.image img').width()
@@ -11,12 +13,16 @@ var resizeBoxWidth = function resizeBoxWidth() {
 };
 
 var resizeBoxHeight = function resizeBoxHeight() {
-  jQuery('.home-page section').each(function () {
-    var imageHeight = jQuery(this).find('.image img').height();
-    jQuery(this).find('.text .inner').css('min-height', imageHeight);
-  });
-  var box3H = jQuery('.home-page .terceira-sessao .text').css('min-height').replace('px', '');
-  jQuery('.home-page .g-letter').height(box3H * 2);
+  if (jQuery(window).width() > 570) {
+    jQuery('.home-page section').each(function () {
+      var imageHeight = jQuery(this).find('.image img').height();
+      jQuery(this).find('.text .inner').css('min-height', imageHeight);
+    });
+    var box3H = jQuery('.home-page .terceira-sessao .text .inner').css('min-height').replace('px', '');
+    jQuery('.home-page .g-letter').height(box3H * 2);
+  } else {
+    jQuery(_this).find('.text .inner').css('min-height', 'auto');
+  }
 };
 
 window.addEventListener('load', function (event) {
