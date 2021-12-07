@@ -51,5 +51,9 @@ task('javascript', function() {
     return src(['img/*.{gif,jpg,png,svg}'])
         .pipe(gulp.dest('../dist/img'));
   });
+  task('build-fonts-dev', function() {
+    return src(['fontes/*.ttf'])
+        .pipe(gulp.dest('../dist/fontes'));
+  });
 
-  task('default', series('minify-css', 'javascript', 'minify-js', 'build-images-dev'));
+  task('default', series('minify-css', 'javascript', 'minify-js', 'build-images-dev', 'build-fonts-dev'));

@@ -9,15 +9,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/imagens_paginas_1_a_8/logo.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/normalize.min.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/fontawesome-free-5.15.4-web/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="shortcut icon" href="<?php echo content_url(); ?>/assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="<?php echo content_url(); ?>/themes/GreenSis/dist/css/normalize.min.css" />
+    <link rel="stylesheet" href="<?php echo content_url(); ?>/themes/GreenSis/dist/css/fontawesome-free-5.15.4-web/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="<?php content_url(); ?>/themes/GreenSis/dist/css/fontawesome-free-5.15.4-web/css/all.min.css" />
     <?php wp_head(); ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" integrity="sha512-QAV866KcCo2YSgj8D7BW+Zn3Fe5wVKTWwzKtWy8mkW+tePcJL7JYilvdfrBFQcdz4ODD48GpIPnhTp9UDI37uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- O título do blog -->
 	<title><?php wp_title(''); ?></title>
-
 </head>
 
 <!-- Início do body -->
@@ -28,7 +27,7 @@
             <div class="content-desktop">
 
                 <div class="logo">
-                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"/></a>
+                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png"/></a>
                 </div>
 
                 <div class="right">
@@ -67,7 +66,7 @@
                         <i class="fas fa-bars"></i>  
                     </div>
                     <div class="logo">
-                        <a class="logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-mobile.png"/></a>
+                        <a class="logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo-mobile.png"/></a>
                     </div>
                     <nav class="menu-action-cart icons">                            
                         <a href="javascript:void(0)" class="cart"></a>
