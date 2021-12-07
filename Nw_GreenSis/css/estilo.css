@@ -350,6 +350,7 @@ header .content-mobile {
     height: 350px;
     display: flex;
     padding-left: 80px;*/
+    background-color:#ffb967;
     display: block;
     width:100%;
 }
@@ -366,11 +367,6 @@ header .content-mobile {
 .rodape p{
     font-family: Light;
     font-size: 15px;
-}
-.rodape .bg{
-    background-color:#ffb967;
-    max-width: 1524px;
-    margin: 0 auto;
 }
 .rodape .container {
     position: relative;
@@ -637,9 +633,11 @@ main{
 
 
 /* Edição Contacto */
+.page-template-contato {
+    background-color: #ffb967;
+}
 .contacto{
     width: 100%;
-    background-color: #ffb967;
     padding: 5% 0;
 }
 .contacto h1{
@@ -682,19 +680,23 @@ color: white;
     margin-left: 10%;
     border: #ff9f48 solid 1px;   
 }
-.contacto .g-letter {
+.contacto {
+    position: relative;
+}
+.contacto .g-letter-top {
     position: absolute;
     width: 50%;
-    min-height: 400px;
-    bottom: 110px;
+    min-height: 480px;
+    top: 0;
     right: 0;
-    background: url('../img/ge.png') no-repeat 100% 100%;
-    background-size: 40%;
+    background: url('../img/ge.png') no-repeat 100% 0;
+    background-size: 50%;
     opacity: 0.5;
     z-index: 2;
 }
 
-.page-template-contato .g-letter-pequeno {
+.page-template-contato footer .g-letter-pequeno,
+.page-template-contato footer .g-letter {
     display:  none;
 }
 
