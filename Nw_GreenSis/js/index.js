@@ -1,5 +1,5 @@
 const resizeBoxHeight = () => {
-    if (jQuery(window).width() > 570) {
+    if (jQuery(window).width() > 1099) {
         jQuery('.page-template-home-template section').each(function() {
             const imageHeight = jQuery(this).find('.image img').height()
             jQuery(this).find('.text .inner').css('min-height', imageHeight);

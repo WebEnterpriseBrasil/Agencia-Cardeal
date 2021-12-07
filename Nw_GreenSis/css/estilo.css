@@ -40,14 +40,40 @@ li {
 /* *** /fonts *** */
 
 /* typography */
-h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: Regular;
+    font-weight: normal;
 }
 p, html, body  {
-    font-size: 1rem;
+    font-size: 16px;
     font-family: Light;
-    line-height: 1.5;
+    line-height: 1.6;
     font-weight: normal;
+}
+.heading-2 {
+    font-size: 3rem;
+}
+.heading-3 {
+    font-size: 2rem;
+}
+.heading-4 {
+    font-size: 1.7rem;
+}
+.heading-5 {
+    font-size: 1.5rem;
+}
+.heading-6 {
+    font-size: 1.3rem;
+}
+.heading-7 {
+    font-size: 1rem;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 /* /typography */
 
@@ -98,11 +124,11 @@ p, html, body  {
 .btn-gs {
     color: white;
     font-family: Semibold;
-    font-size: 20px;
+    font-size: 1.3rem;
     text-decoration: none;
     background-color: #ffb967;
-    padding: 2%;
-    border-radius: 10px 0px 10px 0px;
+    padding: 3%;
+    border-radius: 16px 0px 16px 0px;
 }
 /* *** /generics *** */
 
@@ -356,17 +382,22 @@ header .content-mobile {
 }
 .rodape h2{
     font-family: Regular;
-    font-size: 2.0em;
     color: white;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 .rodape h3{
     font-family: Regular;
-    font-size: 20px;
     color: black;
+    margin-top: 10px;
+    margin-bottom: 0;
+    
 }
 .rodape p{
     font-family: Light;
-    font-size: 15px;
+}
+.rodape nav a{
+    font-family: Light;
 }
 .rodape .container {
     position: relative;
@@ -383,7 +414,7 @@ header .content-mobile {
     bottom: 0;
     right: 0;
     background: url('../img/ge.png') no-repeat 100% 100%;
-    background-size: 56%;
+    background-size: 66%;
     opacity: 0.5;
 }
 .rodape.rodape-gs .g-letter-pequeno {
@@ -424,17 +455,19 @@ header, section, footer, main {
     width: 100%;
     max-width: 762px;
     padding: 5% 0;
+    display: flex;
+    align-items: center;
 }
 .page-template-home-template section .text.right .inner {
     float: left;
 }
 .page-template-home-template section .text.left .inner{
     float: right;
+    justify-content: flex-end;
 }
 .page-template-home-template section .text .inner article{
     width: 100%;
     max-width: 640px;
-    margin-top: 118px;
 }
 .page-template-home-template section .text.left .inner article{
     float: right;
@@ -445,10 +478,11 @@ header, section, footer, main {
 }
 .page-template-home-template section .text .inner article h2{
     margin-top: 0;
+    margin-bottom: 0;
 }
-.page-template-home-template section .image {
-
- }
+.page-template-home-template section .text .inner article h3{
+    margin-top: 0.5rem;
+}
  .page-template-home-template section .image .inner{
     width: 100%;
     max-width: 762px;
@@ -458,28 +492,29 @@ header, section, footer, main {
  }
 .page-template-home-template section .image img {
     display: block;
-    width: 762px;
+    /* width: 762px; */
  }
-.foto-sorriso .text h2 {
-    color: white;
-    font-size: 2.0em;
-    font-family: Regular;
-}
-.foto-sorriso .text .inner{
+.foto-sorriso {
     background-color: #f89f77;
 }
+.foto-sorriso .text h2 {
+    color: white;
+}
 .segunda-sessao .text p{
-    font-size: 1.5rem;
     font-family: Light;
+}
+.segunda-sessao .btn-gs{
+    margin-top: 5px;
+    float: left;
+}
+.terceira-sessao {
+    background-color: #d2795b;
 }
 .terceira-sessao .text {
     position: relative;
 }
 .terceira-sessao .text .inner {
-    background-color: #d2795b;
     position: relative;
-}
-.terceira-sessao .text .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -488,12 +523,10 @@ header, section, footer, main {
 }
 
 .terceira-sessao h2 {
-    font-size: 2.0em;
     color: white;
 }
 .terceira-sessao h3 {
     font-family: Light;
-    font-size: 20px;
 }
 /* *** /home *** */
 
