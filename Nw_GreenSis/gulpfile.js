@@ -29,7 +29,7 @@ task('minify-css', function(done) {
       }))
       .pipe(cssnano())
       .pipe(rename({ suffix: '.min' }))
-      .pipe(dest('dist/css'));
+      .pipe(dest('../dist/css'));
       done();
   });
 
@@ -44,7 +44,16 @@ task('javascript', function() {
   task('minify-js', function () {
     return src('js/*.js', { allowEmpty: true })
     .pipe(minify({noSource: true}))
-      .pipe(dest('dist/js'));
+      .pipe(dest('../dist/js'));
   });
 
-  task('default', series('minify-css', 'javascript', 'minify-js'));
+  task('build-images-dev', function() {
+    return src(['img/*.{gif,jpg,png,svg}'])
+        .pipe(gulp.dest('../dist/img'));
+  });
+  task('build-fonts-dev', function() {
+    return src(['fontes/*.ttf'])
+        .pipe(gulp.dest('../dist/fontes'));
+  });
+
+  task('default', series('minify-css', 'javascript', 'minify-js', 'build-images-dev', 'build-fonts-dev'));
