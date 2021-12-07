@@ -350,6 +350,7 @@ header .content-mobile {
     height: 350px;
     display: flex;
     padding-left: 80px;*/
+    background-color:#ffb967;
     display: block;
     width:100%;
 }
@@ -366,11 +367,6 @@ header .content-mobile {
 .rodape p{
     font-family: Light;
     font-size: 15px;
-}
-.rodape .bg{
-    background-color:#ffb967;
-    max-width: 1524px;
-    margin: 0 auto;
 }
 .rodape .container {
     position: relative;
