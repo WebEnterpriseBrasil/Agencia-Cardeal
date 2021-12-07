@@ -4,6 +4,9 @@
 }
 
 @media only screen and (max-width: 990px) {
+    html, body  {
+        font-size: 0.9rem;
+    }
     header {
         height: 150px;
     }
@@ -34,6 +37,9 @@
 }
 
 @media only screen and (max-width: 770px) {
+    html, body  {
+        font-size: 0.8rem;
+    }
     .page-template-loja-template  .servicos{
         display: block;
         width: 100%;
@@ -46,6 +52,10 @@
     }
     .page-template-loja-template  .divider {
         display: none;
+    }
+    .container,
+    .page-template-home-template section .text .inner {
+        padding: 0 10px;
     }
     
 }
@@ -99,7 +109,6 @@
 
     .page-template-home-template section .text .inner article {
         margin-top: 25px;
-        padding: 0 20px;
     }
     .page-template-home-template section .text .inner article h2 {
         font-size: 1.5rem;
