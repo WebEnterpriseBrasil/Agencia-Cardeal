@@ -108,8 +108,8 @@
         <main class="contacto">
             <div class="g-letter-top"></div>
                
-            <H1>Contacto</H1>
-            <h2>Tens dúvida? Adoramos conversar com as nossas clientes :)</h2>
+            <H1 class="heading-2">Contacto</H1>
+            <h2 class="heading-4">Tens dúvida? Adoramos conversar com as nossas clientes :)</h2>
             <div>
                 <p>Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
                 <h2>Comentários ou sugestões:</h2>
@@ -117,11 +117,32 @@
                 <section class="content">
                     <div class="contato">
                         <form class="form" method="POST" action="email.php">
-                            <p>Nome</p><input class="field" name="Nome"></p>
-                            <p> Email</p><input class="field" name="Email"></p>
-                           <p>Mensagem</p>
-                               <textarea class="mensagem" name="Mensagem"></textarea> <br>
-                            <input class="botao" type="submit" value="Enviar">
+
+                            <div class="form-field">
+                                <label>Nome</label>
+                                <div class="input">
+                                    <span class="wpcf7-form-control-wrap your-name">
+                                        <input type="text" name="your-name" value="" size="40" >
+                                    </span>
+                                </div>   
+                            </div>
+                            <div class="form-field">
+                                <label>E-mail</label>
+                                <div class="input">
+                                    <span>
+                                        <input type="email" name="your-email" value="" size="40">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label>Mensagem</label>
+                                <div class="input">
+                                    <span>
+                                        <textarea name="your-message" cols="40" rows="10"></textarea>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-field"><input type="submit" value="Enviar" class="wpcf7-submit botão"></div>
                         </form>
                     </div>
                 </section>
@@ -133,7 +154,7 @@
 <footer class="rodape rodape-gs">
 
     <div class="container">
-
+        <div>
             <nav class="heading-6">
                 <a href="#" title="">Envios e devolução</a>
                 <span>|</span>
@@ -150,7 +171,7 @@
     </div>
 </footer>
     <div class="overlay d-none"></div>
-    <script src="../dist/js/template-min.js"></script>
+    <script src="dist/js/template-min.js"></script>
 </body>
 </html>
 
