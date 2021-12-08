@@ -147,7 +147,7 @@ a:hover {
     margin-top: 5px;
     margin-left: 4px;
 }
-.field {
+.search .field {
     display: inline-block;
     height: 28px;
     width: 100%;
@@ -155,7 +155,7 @@ a:hover {
     outline: 0 none;
     border: 0;    
 }
-.field.focus {
+.search .field.focus {
     background: #f89f77;  
 }
 /* *** /forms *** */
@@ -674,8 +674,6 @@ main{
     padding: 5% 0;
 }
 .contacto h1{
-font-family: Regular;
-font-size: 2.0em;
 color: white;
 }
 .contacto h2{
@@ -691,6 +689,59 @@ color: white;
     font-size: 15px;
     font-family: Light;
 }  
+
+.contacto {
+    position: relative;
+}
+.contacto form {
+    background: green;
+    max-width: 40%;
+}
+.contacto form .form-field {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+.contacto form .form-field label {
+    float: left;
+    display: inline-block;
+    width: 20%;
+    font-size: 1rem;
+    font-family: Light;
+    padding-top: 10px;
+}
+.contacto form .form-field .input {
+    float: left;
+    display: inline-block;
+    width: 80%;
+}
+.contacto form .form-field input[type="text"],
+.contacto form .form-field input[type="email"],
+.contacto form .form-field textarea {
+    width: 100%;
+    border: 0;
+    height: 35px;
+    padding: 5px;
+    color: #333;
+    font-size: 1rem;
+    outline: 0 none;
+}
+.contacto form .form-field textarea {
+    height: 150px;
+}
+.contacto form .botão,
+.contacto form .wpcf7-submit{
+    color: white !important;
+    background-color:#ff9f48;
+    border-radius: 30% 0px 30% 0px;
+    padding: 15px 18px;
+    border: #ff9f48 solid 1px;
+    width: auto !important;
+    margin-left: 20%;
+    font-size: 1.2rem;
+    height: auto !important;
+    border: 0 !important;
+}
 .contacto .field{
     padding: 10px;
     margin-bottom: 5px;
@@ -705,17 +756,7 @@ color: white;
     margin-left:10%;
     
 }
-.botao{
-    color: white;
-    background-color:#ff9f48;
-    border-radius: 10px 0px 10px 0px;
-    padding: 10px;
-    margin-left: 10%;
-    border: #ff9f48 solid 1px;   
-}
-.contacto {
-    position: relative;
-}
+
 .contacto .g-letter-top {
     position: absolute;
     width: 50%;
