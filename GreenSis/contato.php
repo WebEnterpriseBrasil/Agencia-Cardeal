@@ -20,7 +20,7 @@ Template Name: Contato
                 <section class="content">
                     <div class="contato">
                         <form class="form" method="POST" action="email.php">
-                            <?php echo do_shortcode('[contact-form-7 id="28" title="Formulário de contacto 1"]'); ?>
+                            <?php echo do_shortcode('[contact-form-7 id="28" title="Formulário de contacto"]'); ?>
                         </form>
                     </div>
                 </section>

@@ -27,7 +27,7 @@ Template Name: Loja
     <section class="servicos">
 
         <div class="produto">
-            <img src="<?php echo get_template_directory_uri(); ?>/imagens_paginas_1_a_8/P3_One_Hebes.jpg" alt="Hebes Folles">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/P3_One_Hebes.jpg" alt="Hebes Folles">
             <div>
                 <h1>Diáfano</h1>
                 <h2>€33,50 EUR</h2>
@@ -38,7 +38,7 @@ Template Name: Loja
             </div>
         </div>
         <div class="produto">
-            <img src="<?php echo get_template_directory_uri(); ?>/imagens_paginas_1_a_8/P3_two_Upcircle.jpg" alt="Upcircle">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/P3_two_Upcircle.jpg" alt="Upcircle">
             <div>
                 <h1>Bálsamo limpeza facial</h1>
                 <h2>€21,99 EUR</h2>
@@ -49,7 +49,7 @@ Template Name: Loja
             </div>
         </div>
         <div class="produto">
-            <img src="<?php echo get_template_directory_uri(); ?>/imagens_paginas_1_a_8/P3_Three_Upcircle.jpg" alt="Upcircle">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/P3_Three_Upcircle.jpg" alt="Upcircle">
             <div>
                 <h1>Creme Hidratante - Rosto</h1>
                 <h2>€21,99 EUR</h2>

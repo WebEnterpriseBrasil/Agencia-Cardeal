@@ -1,9 +1,14 @@
 <?php
 
     function load_scripts(){
-        wp_enqueue_style( 'estilo', get_template_directory_uri() . '../dist/css/estilo.min.css', array(), '1.0', 'all' );
-        wp_enqueue_style( 'responsivo', get_template_directory_uri() . '../dist/css/responsivo.min.css', array(), '1.0', 'all' );
-    }
+        wp_enqueue_style( 'estilo', get_template_directory_uri() . '/css/estilo.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'responsivo', get_template_directory_uri() . '/css/responsivo.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'estilo-min', get_template_directory_uri() . '/dist/css/estilo.min.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'responsivo-min', get_template_directory_uri() . '/dist/css/responsivo.min.css', array(), '1.0', 'all' );
+		wp_enqueue_style( 'normalize-min', get_template_directory_uri() . '/dist/css/normalize.min.css', array(), '1.0', 'all' );
+    
+	}
 
     add_action( 'wp_enqueue_scripts', 'load_scripts' );
 

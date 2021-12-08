@@ -23,7 +23,7 @@ Template Name: Sis
 
         <section class="One">
         <div class="one-conteudo">
-            <img src="<?php echo get_template_directory_uri(); ?>/imagens_paginas_1_a_8/P2_One_Bia.jpg" class="One" alt="Bia Senger" >
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/P2_One_Bia.jpg" class="One" alt="Bia Senger" >
             <a href="Contacto.html"> Fale com a Bia </a>  
             
                 
@@ -41,7 +41,7 @@ Template Name: Sis
                 Fiquei desconectada das minhas crenças por muito tempo, vivendo no ritmo de São Paulo, que impõe a busca para ter mais e fazer mais o tempo todo. Em 2017 me mudei para o Porto e percebi que tudo que havia conquistado - bens materiais - seria deixado e iniciaria uma nova vida com 2 malas de 32 kg, meu marido e meu cão (meus maiores bens). Nesse mesmo período comecei a ler mais sobre o minimalismo, slow life e clean beauty. Com a greenSis realizo um grande sonho de empreender no ramo de beleza limpa junto com a minha irmã, o meu propósito é ter uma vida mais leve, sem muita cobrança, achar o caminho do meio sem extremos :)
                 </p>
                  
-                <img src="<?php echo get_template_directory_uri(); ?>/imagens_paginas_1_a_8/P2_Two.jpeg"  class="Two" alt="Carol Senger">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/P2_Two.jpeg"  class="Two" alt="Carol Senger">
                   
                 <a href="Contacto.html">Fale com a Carol</a>
             </div>       

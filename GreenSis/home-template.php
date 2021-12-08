@@ -19,7 +19,7 @@ Template Name: Home
             </div>
             <div class="block image right"> 
                 <div class="inner">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/box-home-1.jpg" class="img-responsive" alt="Sorriso">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/box-home-1.jpg" class="img-responsive" alt="Sorriso">
                 </div>
             </div>
 
@@ -36,7 +36,7 @@ Template Name: Home
             </div>
             <div class="block image right">
                 <div class="inner">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/box-home-2.jpg" class="img-responsive" alt="Herbes">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/box-home-2.jpg" class="img-responsive" alt="Herbes">
                 </div>
             </div>
     </section>
@@ -45,7 +45,7 @@ Template Name: Home
             
             <div class="block image left">
                 <div class="inner" >
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/box-home-3.jpg" class="img-responsive" alt="Beiramar">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/box-home-3.jpg" class="img-responsive" alt="Beiramar">
                 </div>
             </div>    
             <div class="block text right">

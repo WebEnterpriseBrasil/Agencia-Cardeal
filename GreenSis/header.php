@@ -2,21 +2,12 @@
 <html class="no-js" <?php language_attributes(); ?>>
 
 <head>
-	<!-- O charset padrão -->
-	<meta charset="<?php bloginfo('charset'); ?>">
-	
-	<!-- Necessário para layout responsivo -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="<?php echo content_url(); ?>/assets/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="<?php echo content_url(); ?>/themes/GreenSis/dist/css/normalize.min.css" />
-    <link rel="stylesheet" href="<?php echo content_url(); ?>/themes/GreenSis/dist/css/fontawesome-free-5.15.4-web/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="<?php content_url(); ?>/themes/GreenSis/dist/css/fontawesome-free-5.15.4-web/css/all.min.css" />
-    <?php wp_head(); ?>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width">
+	<?php wp_head(); ?>
+    <link rel="shortcut icon" href="<?php echo content_url(); ?>/assets/favicon.png" type="image/x-icon" /><?php wp_head(); ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" integrity="sha512-QAV866KcCo2YSgj8D7BW+Zn3Fe5wVKTWwzKtWy8mkW+tePcJL7JYilvdfrBFQcdz4ODD48GpIPnhTp9UDI37uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<!-- O título do blog -->
-	<title><?php wp_title(''); ?></title>
+
 </head>
 
 <!-- Início do body -->
