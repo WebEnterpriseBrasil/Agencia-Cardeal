@@ -563,8 +563,14 @@ main{
     display: block;
     width: 220px;
 }
+.sis-page .Sis p{
+    line-height: 1.8;
+}
 .sis-page .One {
     margin-top: 3rem;
+}
+.sis-page .One p{
+    line-height: 1.8;
 }
 .sis-page main  .boxes .box figure {
     width: 100%;
@@ -607,6 +613,11 @@ main{
 }
 .sis-page .Two {
     margin-top: 3rem;
+}
+.sis-page .Two p{
+    margin-right: 5%;
+    line-height: 1.8;
+    
 }
 
 /* Edição Loja */
