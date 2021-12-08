@@ -138,5 +138,13 @@
     .contacto .g-letter-top {
         display: none;
     }
+    .contacto form,
+    .contacto form .form-field label,
+    .contacto form .form-field .input {
+        width: 100%;
+    }
+    .contacto form .botão, .contacto form .wpcf7-submit {
+        margin-left: 0;
+    }
 
 }

@@ -692,10 +692,11 @@ color: white;
 
 .contacto {
     position: relative;
+    
 }
 .contacto form {
-    background: green;
-    max-width: 40%;
+    width: 40%;
+    float: left;
 }
 .contacto form .form-field {
     width: 100%;
