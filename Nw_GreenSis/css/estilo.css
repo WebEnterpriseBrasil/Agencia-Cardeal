@@ -749,3 +749,38 @@ color: white;
 
 }
 
+/* pagina minha conta */
+
+.page-template-my-account .woocommerce{
+    min-height: 500px;
+    padding-top: 130px;
+    float: left;
+}
+.page-template-my-account .woocommerce .woocommerce-MyAccount-navigation{
+    width: 30%;
+    float: left;
+
+}
+.page-template-my-account .woocommerce .woocommerce-MyAccount-content{
+    width: 70%;
+    float: left;
+}
+
+.page-template-docs-template .heading{
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+.page-template-docs-template .heading h2{
+    font-size: 3rem;
+}
+.page-template-docs-template .block{
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+}
+.page-template-docs-template .block h3{
+    font-size: 2rem;
+}
+
+.page-template-docs-template .highlight{
+    background-color: #f4f4f4;
+}
