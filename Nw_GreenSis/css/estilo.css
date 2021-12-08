@@ -543,6 +543,9 @@ main{
 .sis-page main  .box.left {
     width: 80%;
 }
+.sis-page main .box.left em{
+    font-weight: bolder;
+}
 .sis-page main  .box.right {
     width: 20%;
 }
