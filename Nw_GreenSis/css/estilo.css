@@ -739,4 +739,13 @@ color: white;
     margin: 0 auto;
 }
 
+/* woocomerce */
+.woocommerce a {
+    color: #000;
+}
+/* pagina carrinho */
+
+.woocommerce-cart .woocommerce #content table.cart td.actions .coupon {
+
+}
 

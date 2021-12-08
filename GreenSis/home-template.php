@@ -13,13 +13,13 @@ Template Name: Home
             <div class="block text left">
                 <div class="inner">
                     <article>
-                        <h2>Permita-se <br> experimentar <br> um novo universo <br> de beleza.</h2>
+                        <h2 class="heading-2">Permita-se <br> experimentar <br> um novo universo <br> de beleza.</h2>
                     </article>
                 </div>
             </div>
             <div class="block image right"> 
                 <div class="inner">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/box-home-1.jpg"  class="img-responsive" alt="Sorriso">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/box-home-1.jpg" class="img-responsive" alt="Sorriso">
                 </div>
             </div>
 
@@ -29,8 +29,8 @@ Template Name: Home
             <div class="block text left">
                 <div class="inner">
                     <article>
-                <p> Oferecemos os melhores cosméticos <br> alinhados com o nosso propósito: trazer para <br> si um novo olhar para o mercadode beleza. <br> Produtos voltados para o clean beauty <br> (beleza limpa) e cruety free. </p>
-                <a href="Loja.html"  class="btn-gs"> conheça a loja </a>
+                <p class="heading-4"> Oferecemos os melhores cosméticos <br> alinhados com o nosso propósito: trazer para <br> si um novo olhar para o mercadode beleza. <br> Produtos voltados para o clean beauty <br> (beleza limpa) e cruety free. </p>
+                <a href="/loja"  class="btn-gs"> conheça a loja </a>
                 </article>  
                 </div>
             </div>
@@ -51,8 +51,8 @@ Template Name: Home
             <div class="block text right">
                 <div class="inner">
                     <article>
-                        <h2>Sis</h2>
-                        <h3>Duas irmãs e um sonho: <br> trabalhar com propósito</h3>
+                        <h2 class="heading-2">Sis</h2>
+                        <h3 class="heading-3">Duas irmãs e um sonho: <br> trabalhar com propósito</h3>
                     </article>
                 </div>
             </div>
