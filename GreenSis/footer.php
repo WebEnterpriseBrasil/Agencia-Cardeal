@@ -2,40 +2,53 @@
 
 
         if ( is_front_page() ) : ?>
-            <footer class="rodape footer-padrao">
-                <div class="bg">
-                    <div class="container">
-                        <h2>Contacto</h2>
-                        <h3>Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
-                        <div>
-                            <p>Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
-            
-                            <p>Envios e devolução | Termos &amp; condições | Politica de Privacidade | Livro de reclamações</p>
-                            <h4>Copyright 2021 © greensis</h4>
-                        </div>
-                        <div class="g-letter" style="height: 900px;"></div>
+            <footer class="rodape">
+                <div class="container">
+                    <h2 class="heading-2">Contacto</h2>
+                    <h3 class="heading-4">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
+                    <div>
+                        <p class="heading-6">Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
+                        <nav class="heading-6">
+                            <a href="#" title="">Envios e devolução</a>
+                            <span>|</span>
+                            <a href="#" title="">Termos & condições</a>
+                            <span>|</span>
+                            <a href="#" title="">Politica de Privacidade</a>
+                            <span>|</span>
+                            <a href="#" title="">Livro de reclamações</a>
+                        </nav>
+                        <p class="heading-7">Copyright 2021 © greensis</p>
                     </div>
+                    <div class="g-letter"></div>
                 </div>
             </footer>
 
             <?php
         else : ?>
             
-<footer class="rodape rodape-gs">
-    <div class="bg">
-    <div class="container">
-        <h2>Contacto</h2>
-        <h3>Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
-        <div>
-            <p>Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
+            <footer class="rodape rodape-gs">
 
-            <p>Envios e devolução | Termos & condições | Politica de Privacidade | Livro de reclamações</p>
-            <h4>Copyright 2021 © greensis</h4>
-        </div>
-        <div class="g-letter-pequeno"></div>
-    </div>
-    </div>
-</footer>
+                <div class="container">
+                    <h2 class="heading-2">Contacto</h2>
+                    <h3 class="heading-4">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
+                    <div>
+                        <p class="heading-6">Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
+
+                        <nav class="heading-6">
+                            <a href="#" title="">Envios e devolução</a>
+                            <span>|</span>
+                            <a href="#" title="">Termos & condições</a>
+                            <span>|</span>
+                            <a href="#" title="">Politica de Privacidade</a>
+                            <span>|</span>
+                            <a href="#" title="">Livro de reclamações</a>
+                        </nav>
+                        <p class="heading-7">Copyright 2021 © greensis</p>
+                    </div>
+                    <div class="g-letter-pequeno"></div>
+
+                </div>
+            </footer>
 
             <?php
         endif;
