@@ -138,6 +138,7 @@
     .sis-page .boxes.reverse .box,
     .page-template-sis-template .boxes.reverse .box {
         width: 100% !important;
+        margin-bottom: 20px;
     }
 
     .sis-page main .boxes.reverse .box.right,
@@ -183,7 +184,17 @@
         width: 220px;
         float: left;
     }
-    
+    .sis-page .One,
+    .page-template-sis-template .One {
+        margin-top: 0;
+    }
+
+    .sis-page .Two,
+    .page-template-sis-template .Two {
+        margin-top: 0;
+    }
+ 
+
     .woocommerce-shop .woocommerce .products .product{
         width: 100% !important;
     }

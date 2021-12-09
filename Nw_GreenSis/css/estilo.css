@@ -581,11 +581,13 @@ main{
 .sis-page main  .boxes.reverse .box.left,
 .page-template-sis-template main  .boxes.reverse .box.left {
     width: 20%;
+    float: left;
 }
 .sis-page main  .boxes.reverse  .box.right,
 .page-template-sis-template main  .boxes.reverse  .box.right {
     width: 80%;
     padding-left: 2.5rem;
+    float: right;
 }
 .sis-page main  .box.right h2,
 .page-template-sis-template main  .box.right h2 {
