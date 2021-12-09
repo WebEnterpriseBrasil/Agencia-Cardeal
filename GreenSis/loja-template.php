@@ -1,3 +1,10 @@
+<?php 
+
+/*
+Template Name: Loja
+*/
+
+?>
 <?php get_header(); ?>
 
 <div class="container">
