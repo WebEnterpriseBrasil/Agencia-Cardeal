@@ -382,6 +382,11 @@ header .content-mobile {
 }
 .rodape #menu-footer-menu{
     display: inline-flex;
+    padding-left: 0;
+}
+
+.rodape #menu-footer-menu li a {
+    font-size: 0.9rem;
 }
 
 .rodape #menu-footer-menu .menu-item{
