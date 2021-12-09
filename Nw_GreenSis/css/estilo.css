@@ -899,3 +899,38 @@ color: white;
 .page-template-docs-template .highlight{
     background-color: #f4f4f4;
 }
+
+
+/* *** PDP página do produto *** */
+.product-template-default > header {
+    float: none !important;
+}
+
+/* carrossel vertical */
+@media only screen and (min-width: 570px) {
+    .single-product div.product .woocommerce-product-gallery .flex-viewport {
+        width: 75%;
+        float: right;
+    }
+     
+    .single-product div.product .woocommerce-product-gallery .flex-control-thumbs {
+        width: 25%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+    } 
+    .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    } 
+    
+    .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li img {
+        width: 90%;
+    }
+}
+
+/* produtos relacionados */
+.woocommerce-tabs.wc-tabs-wrapper,
+.related.products {
+    display: none !important;
+}

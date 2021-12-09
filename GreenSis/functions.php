@@ -37,22 +37,31 @@ function greensis_config(){
 
 }
 add_action( 'after_setup_theme', 'greensis_config', 0 );
-?>
 
 
-<?php
+
 function remove_menus(){
 	remove_menu_page( 'edit.php' );                   //Posts  
 	remove_menu_page( 'edit-comments.php' );          //Comments
 }  
 add_action( 'admin_menu', 'remove_menus' );  
-?>
 
-<?php
+
 
 //Crop
 add_image_size( 'featured-works', 315, 375, true );
 
 wp_get_attachment_image_src($thumbnail_id,'featured-works');
+
+
+// pdp carousel
+add_filter ( 'woocommerce_product_thumbnails_columns', 'bbloomer_change_gallery_columns' );
+ 
+function bbloomer_change_gallery_columns() {
+     return 1; 
+}
+
+
+
 
 ?>
