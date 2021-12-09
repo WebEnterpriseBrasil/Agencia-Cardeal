@@ -560,56 +560,70 @@ main{
 }
 
 /*Edição Sessão Sis*/
+
 .sis-page main .boxes {}
-.sis-page main  .box {
+.sis-page main  .box,
+.page-template-sis-template main  .box {
     float: left;
 }
-.sis-page main  .box.left {
+.sis-page main  .box.left,
+.page-template-sis-template main  .box.left {
     width: 80%;
 }
-.sis-page main .box.left em{
+.sis-page main .box.left em,
+.page-template-sis-template main .box.left em{
     font-weight: bolder;
 }
-.sis-page main  .box.right {
+.sis-page main  .box.right,
+.page-template-sis-template main  .box.right {
     width: 20%;
 }
-.sis-page main  .boxes.reverse .box.left {
+.sis-page main  .boxes.reverse .box.left,
+.page-template-sis-template main  .boxes.reverse .box.left {
     width: 20%;
 }
-.sis-page main  .boxes.reverse  .box.right {
+.sis-page main  .boxes.reverse  .box.right,
+.page-template-sis-template main  .boxes.reverse  .box.right {
     width: 80%;
     padding-left: 2.5rem;
 }
-.sis-page main  .box.right h2 {
+.sis-page main  .box.right h2,
+.page-template-sis-template main  .box.right h2 {
     color: #d2795b;
     font-weight: normal;
     font-size: 24px;
     display: block;
     width: 220px;
 }
-.sis-page .Sis p{
+.sis-page .Sis p,
+.page-template-sis-template .Sis p{
     line-height: 1.8;
 }
-.sis-page .One {
+.sis-page .One,
+.page-template-sis-template .One {
     margin-top: 3rem;
 }
-.sis-page .One p{
+.sis-page .One p,
+.page-template-sis-template .One p{
     line-height: 1.8;
 }
-.sis-page main  .boxes .box figure {
+.sis-page main  .boxes .box figure,
+.page-template-sis-template main  .boxes .box figure {
     width: 100%;
     display: inline-block;
     position: relative;
     margin: 0;
     padding: 0;
 }
-.sis-page main  .boxes .box img {
+.sis-page main  .boxes .box img,
+.page-template-sis-template main  .boxes .box img {
     border-radius: 20px 0px;
     margin-top: 5%;
     width: 240px;
     height: 250px;
 }
-.sis-page main  .boxes .box  .btn-gs {
+.sis-page main  .boxes .box  .btn-gs,
+.page-template-sis-template main  .boxes .box  .btn-gs {
     position: absolute;
     bottom: -10px;
     left: -25px;
@@ -617,7 +631,8 @@ main{
     width: 71%;
     text-align: center;
 }
-.sis-page main .boxes.reverse .box  .btn-gs {
+.sis-page main .boxes.reverse .box  .btn-gs,
+.page-template-sis-template main .boxes.reverse .box  .btn-gs {
     bottom: -10px;
     right: 0px;
     left: auto;
@@ -635,11 +650,13 @@ main{
     font-size: 22px;
     float: right;
 }
-.sis-page .Two {
+.sis-page .Two,
+.page-template-sis-template .Two {
     margin-top: 3rem;
     padding-bottom: 2%;
 }
-.sis-page .Two p{
+.sis-page .Two p,
+.page-template-sis-template .Two p{
     margin-right: 5%;
     line-height: 1.8;
     
@@ -898,4 +915,39 @@ color: white;
 
 .page-template-docs-template .highlight{
     background-color: #f4f4f4;
+}
+
+
+/* *** PDP página do produto *** */
+.product-template-default > header {
+    float: none !important;
+}
+
+/* carrossel vertical */
+@media only screen and (min-width: 570px) {
+    .single-product div.product .woocommerce-product-gallery .flex-viewport {
+        width: 75%;
+        float: right;
+    }
+     
+    .single-product div.product .woocommerce-product-gallery .flex-control-thumbs {
+        width: 25%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+    } 
+    .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    } 
+    
+    .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li img {
+        width: 90%;
+    }
+}
+
+/* produtos relacionados */
+.woocommerce-tabs.wc-tabs-wrapper,
+.related.products {
+    display: none !important;
 }

@@ -38,14 +38,14 @@
                     </div>
                     <div class="social">
                         <nav class="nav-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/greensis.naturalbeauty"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/greensis.naturalbeauty/"><i class="fab fa-instagram"></i></a>
                         </nav>
     
                         <nav class="icons">                            
                             <a href="#" class="search"></i></a>
-                            <a href="#" class="user"></a>
-                            <a href="#" class="cart"></a>
+                            <a href="/minha-conta/" class="user"></a>
+                            <a href="/meu-carrinho" class="cart"></a>
                         </nav>
                     </div>
                 </div>
