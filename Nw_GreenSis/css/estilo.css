@@ -560,56 +560,70 @@ main{
 }
 
 /*Edição Sessão Sis*/
+
 .sis-page main .boxes {}
-.sis-page main  .box {
+.sis-page main  .box,
+.spage-template-sis-template main  .box {
     float: left;
 }
-.sis-page main  .box.left {
+.sis-page main  .box.left,
+.spage-template-sis-template main  .box.left {
     width: 80%;
 }
-.sis-page main .box.left em{
+.sis-page main .box.left em,
+.spage-template-sis-template main .box.left em{
     font-weight: bolder;
 }
-.sis-page main  .box.right {
+.sis-page main  .box.right,
+.spage-template-sis-template main  .box.right {
     width: 20%;
 }
-.sis-page main  .boxes.reverse .box.left {
+.sis-page main  .boxes.reverse .box.left,
+.spage-template-sis-template main  .boxes.reverse .box.left {
     width: 20%;
 }
-.sis-page main  .boxes.reverse  .box.right {
+.sis-page main  .boxes.reverse  .box.right,
+.spage-template-sis-template main  .boxes.reverse  .box.right {
     width: 80%;
     padding-left: 2.5rem;
 }
-.sis-page main  .box.right h2 {
+.sis-page main  .box.right h2,
+.spage-template-sis-template main  .box.right h2 {
     color: #d2795b;
     font-weight: normal;
     font-size: 24px;
     display: block;
     width: 220px;
 }
-.sis-page .Sis p{
+.sis-page .Sis p,
+.spage-template-sis-template .Sis p{
     line-height: 1.8;
 }
-.sis-page .One {
+.sis-page .One,
+.spage-template-sis-template .One {
     margin-top: 3rem;
 }
-.sis-page .One p{
+.sis-page .One p,
+.spage-template-sis-template .One p{
     line-height: 1.8;
 }
-.sis-page main  .boxes .box figure {
+.sis-page main  .boxes .box figure,
+.spage-template-sis-template main  .boxes .box figure {
     width: 100%;
     display: inline-block;
     position: relative;
     margin: 0;
     padding: 0;
 }
-.sis-page main  .boxes .box img {
+.sis-page main  .boxes .box img,
+.spage-template-sis-template main  .boxes .box img {
     border-radius: 20px 0px;
     margin-top: 5%;
     width: 240px;
     height: 250px;
 }
-.sis-page main  .boxes .box  .btn-gs {
+.sis-page main  .boxes .box  .btn-gs,
+.spage-template-sis-template main  .boxes .box  .btn-gs {
     position: absolute;
     bottom: -10px;
     left: -25px;
@@ -617,7 +631,8 @@ main{
     width: 71%;
     text-align: center;
 }
-.sis-page main .boxes.reverse .box  .btn-gs {
+.sis-page main .boxes.reverse .box  .btn-gs,
+.spage-template-sis-template main .boxes.reverse .box  .btn-gs {
     bottom: -10px;
     right: 0px;
     left: auto;
@@ -635,11 +650,13 @@ main{
     font-size: 22px;
     float: right;
 }
-.sis-page .Two {
+.sis-page .Two,
+.spage-template-sis-template .Two {
     margin-top: 3rem;
     padding-bottom: 2%;
 }
-.sis-page .Two p{
+.sis-page .Two p,
+.spage-template-sis-template .Two p{
     margin-right: 5%;
     line-height: 1.8;
     
