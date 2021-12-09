@@ -37,3 +37,12 @@ function greensis_config(){
 }
 add_action( 'after_setup_theme', 'greensis_config', 0 );
 ?>
+
+
+<?php
+function remove_menus(){
+	remove_menu_page( 'edit.php' );                   //Posts  
+	remove_menu_page( 'edit-comments.php' );          //Comments
+}  
+add_action( 'admin_menu', 'remove_menus' );  
+?>
