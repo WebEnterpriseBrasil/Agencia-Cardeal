@@ -117,6 +117,12 @@
     .page-template-home-template section .text.right .inner article{
         padding-left: 20px;
     }
+    .rodape #menu-footer-menu{
+        display: block;
+    }
+    .rodape #menu-footer-menu .menu-item::after{
+        display: none;
+    }
     .rodape .container {
         padding: 3% 20px;
     }

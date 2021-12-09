@@ -641,6 +641,10 @@ main{
 }
 
 /* Edição Loja */
+
+.woocommerce-shop .woocommerce .orderby, .woocommerce-shop .woocommerce .woocommerce-result-count{
+    display: none;
+}
 .woocommerce-shop  .servicos{
     padding: 5% 0;
     width: 100%;
