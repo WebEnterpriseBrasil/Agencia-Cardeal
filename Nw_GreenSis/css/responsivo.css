@@ -58,6 +58,7 @@
         padding: 0 10px;
     }
     
+    
 }
 
 @media only screen and (max-width: 570px) {
@@ -147,4 +148,27 @@
         margin-left: 0;
     }
 
+    /* Sis */
+
+    .sis-page main  .boxes .box  .btn-gs {
+        position: absolute;
+        bottom: -10px;
+        left: 10%;
+        width: 40%;
+        text-align: center;
+    }
+    .sis-page main .boxes.reverse .box  .btn-gs {
+        bottom: -10px;
+        right: 0px;
+        left: 10%;
+        width: 40%;
+        text-align: center;
+    }
+    .sis-page main  .box.right h2 {
+        color: #d2795b;
+        font-weight: normal;
+        font-size: 24px;
+        width: 220px;
+        float: left;
+    }
 }
