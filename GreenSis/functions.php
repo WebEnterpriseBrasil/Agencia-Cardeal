@@ -19,7 +19,8 @@ function greensis_config(){
 	register_nav_menus(
 		array(
 			'my_main_menu' => __( 'Main Menu', 'greensis' ),
-			'my_mobile_menu' => __( 'Mobile Menu', 'greensis' )
+			'my_mobile_menu' => __( 'Mobile Menu', 'greensis' ),
+			'my_footer_menu' => __( 'Footer Menu', 'greensis' )
 		)
 	);
 
@@ -45,17 +46,4 @@ function remove_menus(){
 	remove_menu_page( 'edit-comments.php' );          //Comments
 }  
 add_action( 'admin_menu', 'remove_menus' );  
-?>
-
-<?php
-add_action( 'template_redirect', 'custom_template_redirect' );
-
-function custom_template_redirect() {
-
-    if( is_shop() ) :
-
-        get_template_part( 'content', 'shop' );
-
-    endif;    
-}
 ?>

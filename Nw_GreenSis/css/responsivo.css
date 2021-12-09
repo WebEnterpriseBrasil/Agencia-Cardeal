@@ -40,17 +40,17 @@
     html, body  {
         font-size: 0.8rem;
     }
-    .page-template-loja-template  .servicos{
+    .woocommerce-shop  .servicos{
         display: block;
         width: 100%;
         padding: 5%;
     }    
-    .page-template-loja-template  .servicos .produto{
+    .woocommerce-shop  .servicos .produto{
         width: 100%;
         padding: 20%;
         display: block;
     }
-    .page-template-loja-template  .divider {
+    .woocommerce-shop  .divider {
         display: none;
     }
     .container,
@@ -89,12 +89,12 @@
     .g-letter-pequeno{ 
         display: none;
     }
-    .page-template-loja-template  .servicos{
+    .woocommerce-shop  .servicos{
         display: block;
         width: 100%;
         padding: 5%;
     }    
-    .page-template-loja-template  .servicos .produto{
+    .woocommerce-shop  .servicos .produto{
         width: 100%;
         padding: 10% 0;
         display: block;
@@ -170,5 +170,8 @@
         font-size: 24px;
         width: 220px;
         float: left;
+    }
+    .woocommerce-shop .woocommerce .products .product{
+        width: 100% !important;
     }
 }

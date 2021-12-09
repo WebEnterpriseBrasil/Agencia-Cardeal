@@ -8,14 +8,16 @@
                     <h3 class="heading-4">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
                     <div>
                         <p class="heading-6">Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
+                        
+                        
                         <nav class="heading-6">
-                            <a href="#" title="">Envios e devolução</a>
-                            <span>|</span>
-                            <a href="#" title="">Termos & condições</a>
-                            <span>|</span>
-                            <a href="#" title="">Politica de Privacidade</a>
-                            <span>|</span>
-                            <a href="#" title="">Livro de reclamações</a>
+                        <?php 
+                            wp_nav_menu( 
+                                array( 
+                                    'theme_location' => 'my_footer_menu' 
+                                    ) 
+                                ); 
+                        ?>
                         </nav>
                         <p class="heading-7">Copyright 2021 © greensis</p>
                     </div>
@@ -33,15 +35,14 @@
                     <h3 class="heading-4">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
                     <div>
                         <p class="heading-6">Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
-
                         <nav class="heading-6">
-                            <a href="#" title="">Envios e devolução</a>
-                            <span>|</span>
-                            <a href="#" title="">Termos & condições</a>
-                            <span>|</span>
-                            <a href="#" title="">Politica de Privacidade</a>
-                            <span>|</span>
-                            <a href="#" title="">Livro de reclamações</a>
+                            <?php 
+                                wp_nav_menu( 
+                                    array( 
+                                        'theme_location' => 'my_footer_menu' 
+                                        ) 
+                                    ); 
+                            ?>
                         </nav>
                         <p class="heading-7">Copyright 2021 © greensis</p>
                     </div>

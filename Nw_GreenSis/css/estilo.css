@@ -380,6 +380,25 @@ header .content-mobile {
     display: block;
     width:100%;
 }
+.rodape #menu-footer-menu{
+    display: inline-flex;
+}
+
+.rodape #menu-footer-menu .menu-item{
+    margin-right: 30px;
+    position: relative;
+}
+.rodape #menu-footer-menu .menu-item::after{
+    content: '|';
+    width: 1px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+.rodape #menu-footer-menu .menu-item:last-child::after{
+    opacity: 0;
+}
+
 .rodape h2{
     font-family: Regular;
     color: white;
@@ -622,46 +641,49 @@ main{
 }
 
 /* Edição Loja */
-.page-template-loja-template  {}
-.page-template-loja-template  .servicos{
+.woocommerce-shop  .servicos{
     padding: 5% 0;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.page-template-loja-template  .divider {
+.woocommerce-shop {
     height: 600px;
     position: relative;
     text-align: center;
     padding: 0 30px;
 }
-.page-template-loja-template  .divider::before {
+.woocommerce-shop  .product{
+    position: relative;
+}
+.woocommerce-shop  .product::after {
     content: '';
     height: 600px;
     width: 1px;
     border-right: 1px solid #ddd;
-    display: inline-block;
+    position: absolute;
+    top: 0;
 }
-.produto{
+.woocommerce-shop  .product{
     display: block;
     width: 100%;
 }
-.produto h1{
+.woocommerce-shop  .product h1{
     font-family: Regular;
     font-size: 1.5em;
 }
-.produto h2{
+.woocommerce-shop  .product h2{
     font-family: Regular;
     font-size: 1.0em;
 }
-.produto p{
+.woocommerce-shop  .product p{
     font-family: Light;
     font-size: 18px;
     padding-bottom: 3%;
 }
 
 
-.page-template-loja-template  .loja-texto{
+.woocommerce-shop  .loja-texto{
     width: 100%;
     padding: 5% 0;
     padding-bottom: 0;
