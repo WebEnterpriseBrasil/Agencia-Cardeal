@@ -58,9 +58,20 @@
 
 
 <div class="overlay d-none"></div>
+
+<script src="<?php echo get_template_directory_uri(); ?>/dist/js/template-min.js"></script>
+
+    <?php 
+        if ( is_front_page() ) : ?>  
+
+        <script src="<?php echo get_template_directory_uri(); ?>/dist/js/index-min.js"></script>
+
+    <?php
+        endif;
+
+    ?>
+   
     
-    <script src="<?php echo get_template_directory_uri(); ?>/dist/js/template-min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/dist/js/index-min.js"></script>
 
 </body>
 </html>

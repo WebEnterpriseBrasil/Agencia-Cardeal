@@ -195,7 +195,11 @@
     }
  
 
-    .woocommerce-shop .woocommerce .products .product{
+    .woocommerce-shop .woocommerce .products .product,
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation {
         width: 100% !important;
+    }
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation ul li a {
+        font-size: 1rem;
     }
 }

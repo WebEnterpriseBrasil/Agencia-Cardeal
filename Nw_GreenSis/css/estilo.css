@@ -11,23 +11,23 @@ li {
 /* *** fonts *** */
 @font-face{
     font-family: bold;
-    src: url('../fontes/OpenSans-Bold.ttf') format('truetype');
+    src: url('fontes/OpenSans-Bold.ttf') format('truetype');
 }
 @font-face{
     font-family: boldItalic;
-    src: url('../fontes/OpenSans-BoldItalic.ttf') format('truetype')
+    src: url('fontes/OpenSans-BoldItalic.ttf') format('truetype')
 }
 @font-face{
     font-family: Regular;
-    src: url('../fontes/OpenSans-Regular.ttf') format('truetype');
+    src: url('fontes/OpenSans-Regular.ttf') format('truetype');
 }
 @font-face{
     font-family: Light;
-    src: url('../fontes/OpenSans-Light.ttf') format('truetype');
+    src: url('fontes/OpenSans-Light.ttf') format('truetype');
 }
 @font-face{
     font-family: SemiBold;
-    src: url('../fontes/OpenSans-SemiBold.ttf') format('truetype');
+    src: url('fontes/OpenSans-SemiBold.ttf') format('truetype');
 }
 @font-face {
     font-family: Lightitalic;
@@ -230,13 +230,13 @@ header  .icons a {
     background-position: 0 0;
 }
 header  .icons .cart {
-    background-image: url('../img/cart-icon.png');
+    background-image: url('img/cart-icon.png');
 }
 header  .icons .search {
-    background-image: url('../img/lupa-icon.png');
+    background-image: url('img/lupa-icon.png');
 }
 header  .icons .user {
-    background-image: url('../img/user-icon.png');
+    background-image: url('img/user-icon.png');
 }
 /* ****** /header desktop  *** */
 /* ****** header mobile  *** */
@@ -437,7 +437,7 @@ header .content-mobile {
     min-height: 400px;
     bottom: 0;
     right: 0;
-    background: url('../img/ge.png') no-repeat 100% 100%;
+    background: url('img/ge.png') no-repeat 100% 100%;
     background-size: 66%;
     opacity: 0.5;
 }
@@ -447,7 +447,7 @@ header .content-mobile {
     min-height: 400px;
     bottom: 0;
     right: 0;
-    background: url('../img/ge.png') no-repeat 100% 100%;
+    background: url('img/ge.png') no-repeat 100% 100%;
     background-size: 56%;
     opacity: 0.5;
 }
@@ -856,7 +856,7 @@ color: white;
     min-height: 480px;
     top: 0;
     right: 0;
-    background: url('../img/ge.png') no-repeat 100% 0;
+    background: url('img/ge.png') no-repeat 100% 0;
     background-size: 50%;
     opacity: 0.5;
     z-index: 2;
@@ -952,4 +952,22 @@ color: white;
 .woocommerce-tabs.wc-tabs-wrapper,
 .related.products {
     display: none !important;
+}
+
+/* minh conta */
+.page-template-my-account .woocommerce .woocommerce-MyAccount-navigation {
+    width: 27%;
+    float: left;
+    background: #f5f5f5;
+    padding: 10px;
+    margin-right: 3%;
+}
+.page-template-my-account .woocommerce .woocommerce-MyAccount-navigation ul {
+    padding-left: 0;
+}
+.page-template-my-account .woocommerce .woocommerce-MyAccount-navigation ul li {
+    margin-bottom: 20px;
+}
+.page-template-my-account .woocommerce .woocommerce-MyAccount-navigation ul li a {
+    text-decoration: underline;
 }
