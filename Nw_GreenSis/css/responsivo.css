@@ -134,11 +134,14 @@
         border-radius: 8px 0px 8px 0px;
     }
     .sis-page .boxes .box,
-    .sis-page .boxes.reverse .box {
+    .spage-template-sis-template .boxes .box,
+    .sis-page .boxes.reverse .box,
+    .spage-template-sis-template .boxes.reverse .box {
         width: 100% !important;
     }
 
-    .sis-page main .boxes.reverse .box.right {
+    .sis-page main .boxes.reverse .box.right,
+    .spage-template-sis-template .boxes.reverse .box.right {
         padding-left: 0;
     }
 
@@ -156,21 +159,24 @@
 
     /* Sis */
 
-    .sis-page main  .boxes .box  .btn-gs {
+    .sis-page main  .boxes .box  .btn-gs,
+    .spage-template-sis-template main  .boxes .box  .btn-gs {
         position: absolute;
         bottom: -10px;
         left: 10%;
         width: 40%;
         text-align: center;
     }
-    .sis-page main .boxes.reverse .box  .btn-gs {
+    .sis-page main .boxes.reverse .box  .btn-gs,
+    .spage-template-sis-template main .boxes.reverse .box  .btn-gs {
         bottom: -10px;
         right: 0px;
         left: 10%;
         width: 40%;
         text-align: center;
     }
-    .sis-page main  .box.right h2 {
+    .sis-page main  .box.right h2,
+    .spage-template-sis-template main  .box.right h2 {
         color: #d2795b;
         font-weight: normal;
         font-size: 24px;
