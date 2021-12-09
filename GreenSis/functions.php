@@ -46,3 +46,16 @@ function remove_menus(){
 }  
 add_action( 'admin_menu', 'remove_menus' );  
 ?>
+
+<?php
+add_action( 'template_redirect', 'custom_template_redirect' );
+
+function custom_template_redirect() {
+
+    if( is_shop() ) :
+
+        get_template_part( 'content', 'shop' );
+
+    endif;    
+}
+?>
