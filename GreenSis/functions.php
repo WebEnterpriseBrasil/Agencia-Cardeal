@@ -47,3 +47,12 @@ function remove_menus(){
 }  
 add_action( 'admin_menu', 'remove_menus' );  
 ?>
+
+<?php
+
+//Crop
+add_image_size( 'featured-works', 315, 375, true );
+
+wp_get_attachment_image_src($thumbnail_id,'featured-works');
+
+?>
