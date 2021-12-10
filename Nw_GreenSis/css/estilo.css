@@ -708,10 +708,8 @@ main{
     justify-content: center;
 }
 .woocommerce-shop {
-    height: 600px;
     position: relative;
     text-align: center;
-    padding: 0 30px;
 }
 .woocommerce-shop  .products .product{
     position: relative;
@@ -742,14 +740,14 @@ main{
 }
 .woocommerce ul.products li.product .woocommerce-loop-product__title{
     font-family: Regular;
-    font-size: 1.5em;
+    font-size: 1.4rem;
     min-height: 110px;
     margin-bottom: 0;
 }
 .woocommerce ul.products li.product .price{
     color: black;
     font-family: Regular;
-    font-size: 1.0em;
+    font-size: 1rem;
     position: relative;
     display: inline-block;
     width: 100%;
@@ -785,7 +783,7 @@ main{
 }
 .loja-texto p{
     font-family: Light;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 .woocommerce ul.products li.product .add_to_cart_button,
 .btn-comprar{

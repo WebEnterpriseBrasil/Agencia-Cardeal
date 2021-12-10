@@ -27,13 +27,16 @@ var closeMenuMobileCart = function closeMenuMobileCart() {
     marginRight: '-300px'
   });
   jQuery('.overlay').hide();
-}; // shop 
+}; // shop
 
 
-jQuery('.woocommerce-shop .woocommerce').each(function () {
-  jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
-  jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
-}); // abrir menu mobile
+var shop = function shop() {
+  jQuery('.woocommerce-shop .woocommerce').each(function () {
+    jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
+    jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
+  });
+}; // abrir menu mobile
+
 
 jQuery('.content-mobile .menu-action i').on('click', function () {
   openMenuMobile();
@@ -51,4 +54,7 @@ jQuery('.overlay, .content-mobile .action-bar .close i').on('click', function ()
 window.addEventListener('resize', function (event) {
   closeMenuMobile();
   closeMenuMobileCart();
+});
+window.addEventListener('load', function (event) {
+  shop();
 });
