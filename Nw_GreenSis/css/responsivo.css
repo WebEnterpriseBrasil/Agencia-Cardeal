@@ -95,6 +95,15 @@
     header .menu-action {
         display: flex;
     }
+    header .boxes_ .box.left ul li a {
+        font-size: 1.4rem;
+    }
+    header .content-mobile .cols .menu-action {
+        justify-content: start;
+    }
+    header .content-mobile .cols .icons {
+        justify-content: end;
+    }
     .page-template-home-template section .block {
         width: 100%;
     }

@@ -151,8 +151,9 @@ a:hover {
     height: 30px;
 }
 .search-field .prepend-icon i{
-    margin-top: 5px;
+    margin-top: 7px;
     margin-left: 4px;
+    font-size: 1.2rem;
 }
 .search .field {
     display: inline-block;
@@ -278,6 +279,7 @@ header .content-mobile {
     background:#f5f5f5;
     display: flex;
     justify-content: flex-end;
+    padding-bottom: 10px;
 }
 .content-mobile .action-bar .nav-social {
     margin-top: 6px;
@@ -292,10 +294,13 @@ header .content-mobile {
 .content-mobile .action-bar .nav-social .fa-instagram {
     font-size: 22px;
 }
-.content-mobile .action-bar .close i {
-    margin: 10px;
+.content-mobile .action-bar .close {
+    position: relative;
 }
-
+.content-mobile .action-bar .close i {
+    font-size: 1.5rem;
+    color: #fff;
+}
 .content-mobile .boxes {
     width: 250px;
     height: 100vh;
@@ -315,11 +320,10 @@ header .content-mobile {
 .content-mobile .boxes .action-bar {
     justify-content: flex-start;
 }
-
-.boxes_ {
+header .boxes_ {
     display: flex;
 }
-.boxes_  .box{
+header .boxes_  .box{
     width: 250px;
     height: 100vh;
     position: fixed;
@@ -330,7 +334,7 @@ header .content-mobile {
     border-right: 1px solid #f5f5f5;
     background: #fff;
 }
-.boxes_  .box.left{
+header .boxes_  .box.left{
     -webkit-box-shadow: 5px 0 4px 3px rgba(0,0,0,0.2);
     box-shadow: 5px 0 4px 3px rgba(0,0,0,0.2);
     left: 0;
@@ -339,36 +343,51 @@ header .content-mobile {
 .boxes_  .box.left nav{
     width: 100%;
     display: block;
-    margin-top: 7px;
+    margin-top: 11px;
     margin-left: 10px;
 }
-.boxes_  .box.leftnav a { 
+.boxes_  .box.left .close{
+    position: relative;
+}
+.boxes_  .box.left .close i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+header .boxes_  .box.leftnav a { 
     float: left;
 }
-.boxes_  .box.left nav a img { 
+header .boxes_  .box.left nav a img { 
     max-width: 40px;
 }
-.boxes_  .box.left ul {
+header .boxes_  .box.left ul {
     width: 100%;
     padding: 0;
     list-style: none;
 }
 
-.boxes_  .box.left ul li a{
-    color: blue;
+header .boxes_  .box.left ul li a{
     text-decoration: none;
     display: inline-block;
     width: 100%;
     padding: 10px;
     color: #000;
 }
-.boxes_  .box.right{
+header .boxes_  .box.right{
     -webkit-box-shadow: -5px 0 4px 3px rgba(0,0,0,0.2);
     box-shadow: -5px 0 4px 3px rgba(0,0,0,0.2);
     right: 0;
     margin-right: -300px;
 }
-.boxes_  .box.right .title, .boxes_  .box.right .content{
+header .boxes_  .box.right .action-bar {
+    justify-content: start;;
+}
+header .boxes_  .box.right .close i {
+    top: 10px;
+    left: -25px;
+    position: absolute;
+}
+header .boxes_  .box.right .title, .boxes_  .box.right .content{
     text-align: center;
 }
 /* ****** /header mobile  *** */
