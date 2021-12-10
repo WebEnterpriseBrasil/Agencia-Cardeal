@@ -31,7 +31,7 @@ li {
 }
 @font-face {
     font-family: Lightitalic;
-    src: url(../fontes/OpenSans-LightItalic.ttf) format('truetype');
+    src: url('fontes/OpenSans-LightItalic.ttf') format('truetype');
 }
 /* sizes 
 16px = 1rem 
@@ -43,30 +43,34 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-family: Regular;
     font-weight: normal;
+    line-height: 1.5;
 }
 p, html, body  {
-    font-size: 16px;
+    font-size: 18px;
     font-family: Light;
     line-height: 1.6;
     font-weight: normal;
 }
+p {
+    line-height: 1.8;
+}
 .heading-2 {
-    font-size: 3rem;
+    font-size: 2.3rem; /* ok */
 }
 .heading-3 {
-    font-size: 2rem;
+    font-size: 1.5rem;  /* ok */
 }
 .heading-4 {
-    font-size: 1.7rem;
+    font-size: 1.4rem; /* ok */
 }
 .heading-5 {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* ok */
 }
 .heading-6 {
-    font-size: 1.3rem;
+    font-size: 1.1rem; /* ok */
 }
 .heading-7 {
-    font-size: 1rem;
+    font-size: 1rem; /* ok */
 }
 a {
     color: #000;
@@ -394,8 +398,7 @@ header .content-mobile {
 }
 
 .rodape #menu-footer-menu li a {
-    font-size: 0.9rem;
-    
+    font-size: 1rem;
 }
 
 .rodape #menu-footer-menu .menu-item{
@@ -447,7 +450,7 @@ header .content-mobile {
     bottom: 0;
     right: 0;
     background: url('img/ge.png') no-repeat 100% 100%;
-    background-size: 66%;
+    background-size: 70%;
     opacity: 0.5;
 }
 .rodape.rodape-gs .g-letter-pequeno {
@@ -577,7 +580,8 @@ main{
 }
 .sis-page main  .box.left,
 .page-template-sis-template main  .box.left {
-    width: 80%;
+    width: 73%;
+    background: yellow
 }
 .sis-page main .box.left em,
 .page-template-sis-template main .box.left em{
@@ -585,26 +589,25 @@ main{
 }
 .sis-page main  .box.right,
 .page-template-sis-template main  .box.right {
-    width: 20%;
+    width: 27%;
 }
 .sis-page main  .boxes.reverse .box.left,
 .page-template-sis-template main  .boxes.reverse .box.left {
-    width: 20%;
+    width: 27%;
     float: left;
 }
 .sis-page main  .boxes.reverse  .box.right,
 .page-template-sis-template main  .boxes.reverse  .box.right {
-    width: 80%;
+    width: 73%;
     padding-left: 2.5rem;
     float: right;
 }
 .sis-page main  .box.right h2,
 .page-template-sis-template main  .box.right h2 {
     color: #d2795b;
-    font-weight: normal;
+    font-family: Lightitalic;
     font-size: 24px;
     display: block;
-    width: 220px;
 }
 .sis-page .Sis p,
 .page-template-sis-template .Sis p{
@@ -617,7 +620,14 @@ main{
 .sis-page .One p,
 .page-template-sis-template .One p{
     line-height: 1.8;
+    margin-top: 0;
 }
+.sis-page .One p strong,
+.page-template-sis-template .One p strong{
+    color: #d2795b;
+    font-family: Regular;
+}
+
 .sis-page main  .boxes .box figure,
 .page-template-sis-template main  .boxes .box figure {
     width: 100%;
@@ -650,13 +660,13 @@ main{
     width: 70%;
     text-align: center;
 }
-.Sis h1{
-    font-family: Regular;
-    font-size: 2.0em;
+.Sis h2{
     color: rgb(210, 121, 91);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.Sis h2{
+.Sis h3{
     font-family: Lightitalic;
     font-size: 22px;
     float: right;
