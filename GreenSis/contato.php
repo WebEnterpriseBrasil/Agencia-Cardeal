@@ -19,9 +19,7 @@ Template Name: Contato
                 <h2>Comentários ou sugestões:</h2>
                 <section class="content">
                     <div class="contato">
-                        <form class="form" method="POST" action="email.php">
-                            <?php echo do_shortcode('[contact-form-7 id="28" title="Formulário de contacto"]'); ?>
-                        </form>
+                        <?php echo do_shortcode('[contact-form-7 id="28" title="Formulário de contacto"]'); ?>
                     </div>
                 </section>
             </div>
