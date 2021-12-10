@@ -3,8 +3,25 @@
 
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<?php wp_head(); ?>
+	<meta name="viewport" content="width=device-width">    
+    <link rel="apple-touch-icon" sizes="57x57" href="css/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="css/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="css/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="css/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="css/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="css/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="css/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="css/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="css/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="css/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/img/favicon-16x16.png">
+    <link rel="manifest" href="css/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="css/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#f4b34c">
+    <?php wp_head(); ?>
     <link rel="shortcut icon" href="<?php echo content_url(); ?>/assets/favicon.png" type="image/x-icon" /><?php wp_head(); ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" integrity="sha512-QAV866KcCo2YSgj8D7BW+Zn3Fe5wVKTWwzKtWy8mkW+tePcJL7JYilvdfrBFQcdz4ODD48GpIPnhTp9UDI37uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -57,7 +74,7 @@
                         <i class="fas fa-bars"></i>  
                     </div>
                     <div class="logo">
-                        <a class="logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo-mobile.png"/></a>
+                        <a class="logo" href="<?php get_home_url() ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo-mobile.png"/></a>
                     </div>
                     <nav class="menu-action-cart icons">                            
                         <a href="javascript:void(0)" class="cart"></a>
