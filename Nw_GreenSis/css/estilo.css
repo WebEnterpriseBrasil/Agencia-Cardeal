@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* resets */
+/* reset */
 *{ 
     box-sizing: border-box;
 }
@@ -545,6 +545,12 @@ header, section, footer, main {
 }
 .terceira-sessao {
     background-color: #d2795b;
+}
+.terceira-sessao .right {
+    float: right !important;
+}
+.terceira-sessao .left {
+    float: left;
 }
 .terceira-sessao .text {
     position: relative;

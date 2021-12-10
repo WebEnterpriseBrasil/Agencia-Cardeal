@@ -8,7 +8,7 @@
         font-size: 0.9rem;
     }
     header {
-        height: 150px;
+        height: 120px;
     }
     header .logo a {
         margin-left: -67px;
@@ -56,6 +56,10 @@
     .container,
     .page-template-home-template section .text .inner {
         padding: 0 10px;
+    }
+
+    .terceira-sessao .text .inner {
+        position: relative;
     }
     
     
@@ -109,7 +113,7 @@
     }
 
     .page-template-home-template section .text .inner article {
-        margin-top: 25px;
+        padding: 2rem 0;
     }
     .page-template-home-template section .text .inner article h2 {
         font-size: 1.5rem;
@@ -128,6 +132,7 @@
     }
     .segunda-sessao .text p{
         font-size: 1rem;
+        margin-top: 0;
     }
     .btn-gs {
         font-size: 15px;
