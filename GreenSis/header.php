@@ -74,7 +74,7 @@
                         <i class="fas fa-bars"></i>  
                     </div>
                     <div class="logo">
-                        <a class="logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo-mobile.png"/></a>
+                        <a class="logo" href="<?php get_home_url() ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo-mobile.png"/></a>
                     </div>
                     <nav class="menu-action-cart icons">                            
                         <a href="javascript:void(0)" class="cart"></a>
