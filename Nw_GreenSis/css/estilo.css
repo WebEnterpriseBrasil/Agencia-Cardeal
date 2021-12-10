@@ -380,13 +380,22 @@ header .content-mobile {
     display: block;
     width:100%;
 }
+.rodape .menu-footer-menu-container {
+    position: relative;
+    min-height: 20px;
+}
 .rodape #menu-footer-menu{
     display: inline-flex;
     padding-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
 }
 
 .rodape #menu-footer-menu li a {
     font-size: 0.9rem;
+    
 }
 
 .rodape #menu-footer-menu .menu-item{

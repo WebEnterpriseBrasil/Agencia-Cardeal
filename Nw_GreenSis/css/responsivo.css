@@ -202,4 +202,9 @@
     .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation ul li a {
         font-size: 1rem;
     }
+
+    /* footer */
+    .rodape .menu-footer-menu-container {
+        min-height: 120px;
+    }
 }
