@@ -43,12 +43,8 @@ Template Name: Home
 
     <section class="terceira-sessao">
             
-            <div class="block image right">
-                <div class="inner" >
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/box-home-3.jpg" class="img-responsive" alt="Beiramar">
-                </div>
-            </div>    
-            <div class="block text left">
+            
+            <div class="block text right">
                 <div class="inner">
                     <article>
                         <h2 class="heading-2">Sis</h2>
@@ -56,6 +52,12 @@ Template Name: Home
                     </article>
                 </div>
             </div>
+
+            <div class="block image left">
+                <div class="inner" >
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/box-home-3.jpg" class="img-responsive" alt="Beiramar">
+                </div>
+            </div>    
             
 
     </section>
