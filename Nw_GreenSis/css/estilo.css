@@ -719,35 +719,40 @@ main{
     display: block;
     width: 100%;
 }
-.woocommerce-shop .product::after {
+.woocommerce-shop  .products li.line {
+    min-height: 200px;
+    padding: 0 30px;
+    padding-top: 80px;
+}
+.woocommerce-shop  .products li.line::after {
     content: '';
-    height: 550px;
+    height: 620px;
     width: 1px;
-    border-right: 1px solid #ddd;
-    position: absolute;
-    top: 0;
-    right: 10px
+    border-right: 1px solid #a5a5a5;
+    display: inline-block;
 }
-.woocommerce-shop .product:last-child::after{
-    display: none;
-}
+
 .woocommerce-shop  .products .product .woocommerce-LoopProduct-link{
-    width: 315px;
-    height: 375px;
+    width: 100%;
     display: inline-block;
 }
 .woocommerce ul.products li.product .woocommerce-LoopProduct-link img{
     width: 100%;
+    height: auto;
 }
 .woocommerce ul.products li.product .woocommerce-loop-product__title{
     font-family: Regular;
     font-size: 1.5em;
+    min-height: 110px;
+    margin-bottom: 0;
 }
 .woocommerce ul.products li.product .price{
     color: black;
     font-family: Regular;
     font-size: 1.0em;
     position: relative;
+    display: inline-block;
+    width: 100%;
 }
 .woocommerce ul.products li.product .price::after{
     content: 'EUR';
@@ -768,6 +773,10 @@ main{
     width: 100%;
     padding: 5% 0;
     padding-bottom: 0;
+    text-align: left;
+}
+.woocommerce-shop  .rodape{
+    text-align: left;
 }
 .loja-texto h1{
     font-family: Regular;
@@ -778,16 +787,35 @@ main{
     font-family: Light;
     font-size: 18px;
 }
-.woocommerce ul.products li.product .add_to_cart_button, .btn-comprar{
+.woocommerce ul.products li.product .add_to_cart_button,
+.btn-comprar{
     color: white;
     font-family: Semibold;
-    font-size: 18px;
+    font-size: 1.2rem;
     text-decoration: none;
-    background-color: #f89f77;
-    padding: 15px;
-    border-radius: 10px 0px 10px 0px;
+    background-color: #d2795b;
+    padding: 8px 22px;
+    border-radius: 16px 0px 16px 0px;
+    width: auto;
+    margin-top: 20px;
 }
-
+.woocommerce-shop  .woocommerce {
+    margin-bottom: 100px;
+}
+.woocommerce-shop  .woocommerce .products{
+    padding-left: 0;
+    display: flex;
+}
+.woocommerce-shop  .woocommerce .products .product{
+}
+.woocommerce-shop  .woocommerce .products .product a {
+    width: 100%;
+    display: inline-block;
+}
+.woocommerce-shop  .woocommerce .products .product img{
+  width: auto;
+  max-width: 100%;
+}
 
 /* Edição Contacto */
 .page-template-contato {

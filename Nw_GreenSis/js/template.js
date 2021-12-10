@@ -25,6 +25,12 @@ const closeMenuMobileCart = () => {
 }
 
 
+// shop 
+jQuery('.woocommerce-shop .woocommerce').each(function() {
+    jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
+    jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
+});
+
 // abrir menu mobile
 jQuery('.content-mobile .menu-action i').on('click', function() {
     openMenuMobile()
