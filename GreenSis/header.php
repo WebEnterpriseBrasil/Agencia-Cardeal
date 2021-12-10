@@ -18,7 +18,7 @@
             <div class="content-desktop">
 
                 <div class="logo">
-                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png"/></a>
+                    <a href="<?php get_home_url() ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png"/></a>
                 </div>
 
                 <div class="right">

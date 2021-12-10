@@ -29,7 +29,7 @@ Template Name: Home
             <div class="block text left">
                 <div class="inner">
                     <article>
-                <p class="heading-4"> Oferecemos os melhores cosméticos <br> alinhados com o nosso propósito: trazer para <br> si um novo olhar para o mercadode beleza. <br> Produtos voltados para o clean beauty <br> (beleza limpa) e cruety free. </p>
+                <p class="heading-3"> Oferecemos os melhores cosméticos <br> alinhados com o nosso propósito: trazer para <br> si um novo olhar para o mercadode beleza. <br> Produtos voltados para o clean beauty <br> (beleza limpa) e cruety free. </p>
                 <a href="/loja"  class="btn-gs"> conheça a loja </a>
                 </article>  
                 </div>
@@ -43,12 +43,12 @@ Template Name: Home
 
     <section class="terceira-sessao">
             
-            <div class="block image left">
+            <div class="block image right">
                 <div class="inner" >
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/box-home-3.jpg" class="img-responsive" alt="Beiramar">
                 </div>
             </div>    
-            <div class="block text right">
+            <div class="block text left">
                 <div class="inner">
                     <article>
                         <h2 class="heading-2">Sis</h2>

@@ -63,7 +63,4 @@ function bbloomer_change_gallery_columns() {
      return 1; 
 }
 
-
-
-
 ?>
