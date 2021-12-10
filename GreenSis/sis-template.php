@@ -10,10 +10,10 @@ Template Name: Sis
 <main>
     <div class="container">    
         <section class="Sis">
-                <h1>Sis</h1>
-                <div class="boxes">
-                <div class="box left">                
-                <p> Idealizado pelas irmãs Bia e Carol Senger, resultado da busca de um trabalho com propósito e<br />
+        <h2 class="heading-2">Sis</h2>
+        <div class="boxes">
+            <div class="box left">                
+            <p> Idealizado pelas irmãs Bia e Carol Senger, resultado da busca de um trabalho com propósito e<br />
                         sentido para contribuição de um mundo melhor e mais ético: <em>Queremos ser um importante canal<br />
                             para o despertar da consciência para um mundo mais limpo. Que as pessoas se sintam confortáveis e<br />
                             seguras com os nossos produtos.</em><br><br>
@@ -22,15 +22,15 @@ Template Name: Sis
                     planeta. Aos poucos nossos hábitos mudaram e trouxeram uma imensa sensação de bem-estar.<br />
                     Decidimos então que poderíamos contribuir para que outras mulheres assim como nós, também<br />
                     pudessem conhecer uma outra forma de cuidado pessoal.</p>
-                </div>
-                <div class="box right">
-                    <h2>Beleza sustentável<br />
+            </div>
+            <div class="box right">
+                <h2>Beleza sustentável<br />
                         acessível através<br />
                         do caminho:<br>
                         conheço + entendo +<br />
                         consumo consciente.</h2>
-                </div>
             </div>
+        </div>
         </section>
 
         <section class="One">
@@ -49,7 +49,7 @@ Template Name: Sis
                 <div class="box left">                
                    <figure>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/P2_One_Bia.jpg" class="One img-responsive"  alt="Bia Senger" >
-                    <a href="/contatcto" class="btn-gs"> Fale com a Bia </a> 
+                    <a href="/contatcto" class="btn-gs">Fale com a Bia </a> 
                    </figure>
                      
                 </div>
