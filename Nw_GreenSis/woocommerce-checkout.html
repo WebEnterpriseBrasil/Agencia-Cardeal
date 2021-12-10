@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <link rel="stylesheet" href="https://greensis.pt/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=5.9.0">
+
+    <link rel="stylesheet" href="https://greensis.pt/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=5.9.0">
+
+    <link rel="stylesheet" href="https://greensis.pt/wp-content/plugins/express-checkout-paypal-payment-gateway-for-woocommerce/assets/css/eh-express-style.css?ver=5.8.2">
+
+    <link rel="stylesheet" href="https://greensis.pt/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=5.9.0
+">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" integrity="sha512-QAV866KcCo2YSgj8D7BW+Zn3Fe5wVKTWwzKtWy8mkW+tePcJL7JYilvdfrBFQcdz4ODD48GpIPnhTp9UDI37uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>GreenSis</title>
+</head>
+
+<body class="loja-page page-template-loja-template woocommerce-shop page-template page-template-checkout-template page-template-checkout-template-php page page-id-7 logged-in admin-bar wp-custom-logo theme-GreenSis woocommerce-checkout woocommerce-page woocommerce-js customize-support">
+    <header>
+        <div class="container">
+
+            <div class="content-desktop">
+
+                <div class="logo">
+                    <a href="index.html"><img src="css/img/logo.png"/></a>
+                </div>
+
+                <div class="right">
+                    <div id="menu">              
+                       
+                        <ul class="menu-lista" class="hidden-mobile">
+                            <li><a href="Sis.html">sis</a></li>
+                            <li><span>|</span></li>
+                            <li><a href="Loja.html">loja</a></li>
+                            <li><span>|</span></li>
+                            <li><a href="Contacto.html">contacto</a></li>
+                        </ul>      
+                        
+                    </div>
+                    <div class="social">
+                        <nav class="nav-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </nav>
+    
+                        <nav class="icons">                            
+                            <a href="#" class="search"></i></a>
+                            <a href="#" class="user"></a>
+                            <a href="#" class="cart"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-mobile"> 
+                <div class="cols">
+                    <div class="menu-action">
+                        <i class="fas fa-bars"></i>  
+                    </div>
+                    <div class="logo">
+                        <a class="logo" href="index.html"><img class="img-responsive" src="css/img/logo-mobile.png"/></a>
+                    </div>
+                    <nav class="menu-action-cart icons">                            
+                        <a href="javascript:void(0)" class="cart"></a>
+                    </nav>
+                </div>
+                <div class="boxes_">
+                    <div class="box left">
+                        <div class="action-bar">
+                            <nav class="nav-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"></a><i class="fab fa-instagram"></i></a>
+                            </nav>
+                            <div class="close"><i class="far fa-times-circle"></i></div>         
+                        </div>
+                        <div class="search">
+                            <div class="search-field">
+                                <div class="prepend-icon"><i class="fas fa-search"></i></div>
+                                <input class="field" type="text" placeholder="Pesquisar" />
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="Sis.html">sis</a></li>
+                            <li><a href="Loja.html">loja</a></li>
+                            <li><a href="Contacto.html">contacto</a></li>
+                            <li><a href="#">a minha conta</a></li>
+                        </ul>
+                    </div>
+                    <div class="box right">
+                        <div class="action-bar">
+                            <div class="close"><i class="far fa-times-circle"></i></div>         
+                        </div>
+                        <div class="title">
+                            <h4>Carrinho</h4>
+                        </div>
+                        <div class="content">
+                            <p>Nenhum produto no carrinho.</p>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </header>
+   
+    <main>
+        <div class="container">
+            <div class="woocommerce"><div class="woocommerce-notices-wrapper"></div><div class="woocommerce-form-coupon-toggle">
+            
+            <div class="woocommerce-info">
+                Tem um cupão de desconto? <a href="#" class="showcoupon">Clique aqui e indique o código do seu cupão de desconto</a>	</div>
+        </div>
+        
+        <form class="checkout_coupon woocommerce-form-coupon" method="post" style="display:none">
+        
+            <p>Se tem um cupão de desconto, por favor insira-o abaixo.</p>
+        
+            <p class="form-row form-row-first">
+                <input type="text" name="coupon_code" class="input-text" placeholder="Código do cupão" id="coupon_code" value="">
+            </p>
+        
+            <p class="form-row form-row-last">
+                <button type="submit" class="button" name="apply_coupon" value="Aplicar cupão">Aplicar cupão</button>
+            </p>
+        
+            <div class="clear"></div>
+        </form>
+        <div class="woocommerce-notices-wrapper"></div><center></center>
+        <form name="checkout" method="post" class="checkout woocommerce-checkout" action="https://greensis.pt/checkout/" enctype="multipart/form-data" novalidate="novalidate">
+        
+            
+                
+                <div class="col2-set" id="customer_details">
+                    <div class="col-1">
+                        <div class="woocommerce-billing-fields">
+            
+                <h3>Detalhes de facturação</h3>
+        
+            
+            
+            <div class="woocommerce-billing-fields__field-wrapper">
+                    <p class="form-row form-row-first validate-required" id="billing_first_name_field" data-priority="10"><label for="billing_first_name" class="">Nome&nbsp;<abbr class="required" title="obrigatório">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="" autocomplete="given-name"></span></p><p class="form-row form-row-last validate-required" id="billing_last_name_field" data-priority="20"><label for="billing_last_name" class="">Apelido&nbsp;<abbr class="required" title="obrigatório">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" value="" autocomplete="family-name"></span></p><p class="form-row form-row-wide" id="billing_company_field" data-priority="30"><label for="billing_company" class="">Nome da empresa&nbsp;<span class="optional">(opcional)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_company" id="billing_company" placeholder="" value="" autocomplete="organization"></span></p><p class="form-row form-row-wide address-field update_totals_on_change validate-required" id="billing_country_field" data-priority="40"><label for="billing_country" class="">País / Região&nbsp;<abbr class="required" title="obrigatório">*</abbr></label><span class="woocommerce-input-wrapper"><select name="billing_country" id="billing_country" class="country_to_state country_select select2-hidden-accessible" autocomplete="country" data-placeholder="Seleccione um país / região…" data-label="País / Região" tabindex="-1" aria-hidden="true"><option value="">Seleccione um país / região…</option><option value="AF">Afeganistão</option><option value="ZA">África do Sul</option><option value="AX">Åland Islands</option><option value="AL">Albânia</option><option value="DE">Alemanha</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguila</option><option value="AQ">Antárctida</option><option value="AG">Antígua e Barbuda</option><option value="SA">Arábia Saudita</option><option value="DZ">Argélia</option><option value="AR">Argentina</option><option value="AM">Arménia</option><option value="AW">Aruba</option><option value="AU">Austrália</option><option value="AT">Áustria</option><option value="AZ">Azerbaijão</option><option value="BS">Bahamas</option><option value="BH">Bahrein</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="PW">Belau</option><option value="BE">Bélgica</option><option value="BZ">Belize</option><option value="BJ">Benim</option><option value="BM">Bermudas</option><option value="BY">Bielorrússia</option><option value="BO">Bolívia</option><option value="BQ">Bonaire, Saint Eustatius e Saba</option><option value="BA">Bósnia e Herzegovina</option><option value="BW">Botsuana</option><option value="BR">Brasil</option><option value="BN">Brunei</option><option value="BG">Bulgária</option><option value="BF">Burquina Faso</option><option value="BI">Burundi</option><option value="BT">Butão</option><option value="CV">Cabo Verde</option><option value="CM">Camarões</option><option value="KH">Camboja</option><option value="CA">Canadá</option><option value="QA">Catar</option><option value="KZ">Cazaquistão</option><option value="TD">Chade</option><option value="CL">Chile</option><option value="CN">China</option><option value="CY">Chipre</option><option value="CO">Colômbia</option><option value="KM">Comores</option><option value="MP">Comunidade das Ilhas Marianas Setentrionais</option><option value="CG">Congo (Brazzaville)</option><option value="CD">Congo (Kinshasa)</option><option value="KP">Coreia do Norte</option><option value="KR">Coreia do Sul</option><option value="CI">Costa do Marfim</option><option value="CR">Costa Rica</option><option value="HR">Croácia</option><option value="CU">Cuba</option><option value="CW">Curaçao</option><option value="DK">Dinamarca</option><option value="DM">Domínica</option><option value="EG">Egito</option><option value="AE">Emirados Árabes Unidos</option><option value="EC">Equador</option><option value="ER">Eritreia</option><option value="SK">Eslováquia</option><option value="SI">Eslovénia</option><option value="ES">Espanha</option><option value="US">Estados Unidos (US)</option><option value="EE">Estónia</option><option value="ET">Etiópia</option><option value="FO">Faroé</option><option value="FJ">Fiji</option><option value="PH">Filipinas</option><option value="FI">Finlândia</option><option value="FR">França</option><option value="GA">Gabão</option><option value="GM">Gâmbia</option><option value="GH">Gana</option><option value="GE">Geórgia</option><option value="GI">Gibraltar</option><option value="GD">Granada</option><option value="GR">Grécia</option><option value="GL">Gronelândia</option><option value="GP">Guadalupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernesey</option><option value="GY">Guiana</option><option value="GF">Guiana Francesa</option><option value="GN">Guiné</option><option value="GQ">Guiné Equatorial</option><option value="GW">Guiné-Bissau</option><option value="HT">Haiti</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungria</option><option value="YE">Iémen</option><option value="BV">Ilha Bouvet</option><option value="IM">Ilha de Man</option><option value="CX">Ilha do Natal</option><option value="HM">Ilha Heard e Ilhas McDonald</option><option value="NF">Ilha Norfolk</option><option value="KY">Ilhas Caimão</option><option value="CK">Ilhas Cook</option><option value="CC">Ilhas dos Cocos</option><option value="FK">Ilhas Falkland</option><option value="GS">Ilhas Geórgia do Sul e Sandwich do Sul</option><option value="MH">Ilhas Marshall</option><option value="UM">Ilhas Menores Distantes dos Estados Unidos</option><option value="PN">Ilhas Pitcairn</option><option value="SB">Ilhas Salomão</option><option value="TC">Ilhas Turcas e Caicos</option><option value="IN">Índia</option><option value="ID">Indonésia</option><option value="IR">Irão</option><option value="IQ">Iraque</option><option value="IE">Irlanda</option><option value="IS">Islândia</option><option value="IL">Israel</option><option value="IT">Itália</option><option value="JM">Jamaica</option><option value="JP">Japão</option><option value="JE">Jersey</option><option value="DJ">Jibuti</option><option value="JO">Jordânia</option><option value="KW">Koweit</option><option value="LA">Laos</option><option value="LS">Lesoto</option><option value="LV">Letónia</option><option value="LB">Líbano</option><option value="LR">Libéria</option><option value="LY">Líbia</option><option value="LI">Listenstaine</option><option value="LT">Lituânia</option><option value="LU">Luxemburgo</option><option value="MO">Macau</option><option value="MG">Madagáscar</option><option value="YT">Maiote</option><option value="MY">Malásia</option><option value="MW">Maláui</option><option value="MV">Maldivas</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MA">Marrocos</option><option value="MQ">Martinica</option><option value="MU">Maurícia</option><option value="MR">Mauritânia</option><option value="MX">México</option><option value="MM">Mianmar/Birmânia</option><option value="FM">Micronésia</option><option value="MZ">Moçambique</option><option value="MD">Moldávia</option><option value="MC">Mónaco</option><option value="MN">Mongólia</option><option value="MS">Monserrate</option><option value="ME">Montenegro</option><option value="NA">Namíbia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NI">Nicarágua</option><option value="NE">Níger</option><option value="NG">Nigéria</option><option value="NU">Niuê</option><option value="MK">North Macedonia</option><option value="NO">Noruega</option><option value="NC">Nova Caledónia</option><option value="NZ">Nova Zelândia</option><option value="OM">Omã</option><option value="NL">Países Baixos</option><option value="PA">Panamá</option><option value="PG">Papua-Nova Guiné</option><option value="PK">Paquistão</option><option value="PY">Paraguai</option><option value="PE">Peru</option><option value="PF">Polinésia Francesa</option><option value="PL">Polónia</option><option value="PR">Porto Rico</option><option value="PT" selected="selected">Portugal</option><option value="KE">Quénia</option><option value="KG">Quirguistão</option><option value="KI">Quiribáti</option><option value="GB">Reino Unido (UK)</option><option value="CF">República Centro-Africana</option><option value="CZ">República Checa</option><option value="DO">República Dominicana</option><option value="RE">Reunião</option><option value="RO">Roménia</option><option value="RW">Ruanda</option><option value="RU">Rússia</option><option value="ST">São Tomé e Príncipe</option><option value="SV">Salvador</option><option value="WS">Samoa</option><option value="AS">Samoa Americana</option><option value="SH">Santa Helena</option><option value="LC">Santa Lúcia</option><option value="BL">São Bartolomeu</option><option value="KN">São Cristóvão e Neves</option><option value="SM">São Marinho</option><option value="MF">São Martinho</option><option value="SX">São Martinho (Antilhas Holandesas)</option><option value="PM">São Pedro e Miquelão</option><option value="VC">São Vicente e Granadinas</option><option value="EH">Sara Ocidental</option><option value="SC">Seicheles</option><option value="SN">Senegal</option><option value="SL">Serra Leoa</option><option value="RS">Sérvia</option><option value="SG">Singapura</option><option value="SY">Síria</option><option value="SO">Somália</option><option value="LK">Sri Lanca</option><option value="SZ">Suazilândia</option><option value="SD">Sudão</option><option value="SS">Sudão do Sul</option><option value="SE">Suécia</option><option value="CH">Suíça</option><option value="SR">Suriname</option><option value="SJ">Svalbard e Jan Mayen</option><option value="TH">Tailândia</option><option value="TW">Taiwan</option><option value="TJ">Tajiquistão</option><option value="TZ">Tanzânia</option><option value="TF">Terras Austrais e Antárticas Francesas</option><option value="IO">Território Britânico do Oceano Índico</option><option value="PS">Território Palestiniano</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TO">Tonga</option><option value="TK">Toquelau</option><option value="TT">Trindade e Tobago</option><option value="TN">Tunísia</option><option value="TM">Turquemenistão</option><option value="TR">Turquia</option><option value="TV">Tuvalu</option><option value="UA">Ucrânia</option><option value="UG">Uganda</option><option value="UY">Uruguai</option><option value="UZ">Usbequistão</option><option value="VU">Vanuatu</option><option value="VA">Vaticano</option><option value="VE">Venezuela</option><option value="VN">Vietname</option><option value="VG">Virgin Islands (British)</option><option value="VI">Virgin Islands (US)</option><option value="WF">Wallis e Futuna</option><option value="ZM">Zâmbia</option><option value="ZW">Zimbabué</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-label="País / Região" role="combobox"><span class="select2-selection__rendered" id="select2-billing_country-container" role="textbox" aria-readonly="true" title="Portugal">Portugal</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span><noscript><button type="submit" name="woocommerce_checkout_update_totals" value="Actualizar país / região">Actualizar país / região</button></noscript></span></p><p class="form-row address-field validate-required form-row-wide" id="billing_address_1_field" data-priority="50"><label for="billing_address_1" class="">Morada&nbsp;<abbr class="required" title="obrigatório">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="Nome da rua e número da porta" value="" autocomplete="address-line1" data-placeholder="Nome da rua e número da porta"></span></p><p class="form-row address-field form-row-wide" id="billing_address_2_field" data-priority="60"><label for="billing_address_2" class="screen-reader-text">Morada (linha 2)&nbsp;<span class="optional">(opcional)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_2" id="billing_address_2" placeholder="Morada (linha 2, opcional)" value="" autocomplete="address-line2" data-placeholder="Morada (linha 2, opcional)"></span></p><p class="form-row address-field validate-required form-row-wide" id="billing_city_field" data-priority="70" data-o_class="form-row form-row-wide address-field validate-required"><label for="billing_city" class="">Localidade&nbsp;<abbr class="required" title="obrigatório">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_city" id="billing_city" placeholder="" value="" autocomplete="address-level2"></span></p><p class="form-row address-field validate-state form-row-wide" id="billing_state_field" style="display: none" data-o_class="form-row form-row-wide address-field validate-state"><label for="billing_state" class="">Distrito / Município&nbsp;<span class="optional">(opcional)</span></label><span class="woocommerce-input-wrapper"><input type="hidden" id="billing_state" name="billing_state" placeholder="" data-input-classes="" class="hidden"></span></p><p class="form-row address-field validate-required validate-postcode form-row-wide" id="billing_postcode_field" data-priority="90" data-o_class="form-row form-row-wide address-field validate-required validate-postcode"><label for="billing_postcode" class="">Código postal&nbsp;<abbr class="required" title="obrigatório">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_postcode" id="billing_postcode" placeholder="" value="" autocomplete="postal-code"></span></p><p class="form-row form-row-wide validate-required validate-phone" id="billing_phone_field" data-priority="100"><label for="billing_phone" class="">Telefone&nbsp;<abbr class="required" title="obrigatório">*</abbr></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="" value="" autocomplete="tel"></span></p><p class="form-row form-row-wide validate-required validate-email" id="billing_email_field" data-priority="110"><label for="billing_email" class="">Endereço de email&nbsp;<abbr class="required" title="obrigatório">*</abbr></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="" value="atendimento@greensis.pt" autocomplete="email username"></span></p></div>
+        
+            </div>
+        
+                    </div>
+        
+                    <div class="col-2">
+                        <div class="woocommerce-shipping-fields">
+            </div>
+        <div class="woocommerce-additional-fields">
+            
+            
+                
+                    <h3>Informação adicional</h3>
+        
+                
+                <div class="woocommerce-additional-fields__field-wrapper">
+                                    <p class="form-row notes" id="order_comments_field" data-priority=""><label for="order_comments" class="">Notas da encomenda&nbsp;<span class="optional">(opcional)</span></label><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text " id="order_comments" placeholder="Notas sobre a sua encomenda (por exemplo, informações especiais sobre a entrega)." rows="2" cols="5"></textarea></span></p>					</div>
+        
+            
+            </div>
+                    </div>
+                </div>
+        
+                
+                
+                
+            <h3 id="order_review_heading">A sua encomenda</h3>
+            
+            
+            <div id="order_review" class="woocommerce-checkout-review-order">
+                <table class="shop_table woocommerce-checkout-review-order-table">
+            <thead>
+                <tr>
+                    <th class="product-name">Produto</th>
+                    <th class="product-total">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                                <tr class="cart_item">
+                            <td class="product-name">
+                                Creme Hidratante - Rosto&nbsp;						 <strong class="product-quantity">×&nbsp;2</strong>											</td>
+                            <td class="product-total">
+                                <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>43.98</bdi></span>					</td>
+                        </tr>
+                                        <tr class="cart_item">
+                            <td class="product-name">
+                                Bálsamo limpeza facial&nbsp;						 <strong class="product-quantity">×&nbsp;2</strong>											</td>
+                            <td class="product-total">
+                                <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>43.98</bdi></span>					</td>
+                        </tr>
+                            </tbody>
+            <tfoot>
+        
+                <tr class="cart-subtotal">
+                    <th>Subtotal</th>
+                    <td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>87.96</bdi></span></td>
+                </tr>
+        
+                
+                
+                
+                
+                
+                <tr class="order-total">
+                    <th>Total</th>
+                    <td><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>87.96</bdi></span></strong> </td>
+                </tr>
+        
+                
+            </tfoot>
+        </table>
+        
+        <div id="payment" class="woocommerce-checkout-payment">
+                    <ul class="wc_payment_methods payment_methods methods">
+                    <li class="wc_payment_method payment_method_eh_paypal_express">
+            <input id="payment_method_eh_paypal_express" type="radio" class="input-radio" name="payment_method" value="eh_paypal_express" checked="checked" data-order_button_text="Proceed to PayPal" style="display: none;">
+        
+            <label for="payment_method_eh_paypal_express">
+                PayPal <img src="https://greensis.pt/wp-content/plugins/express-checkout-paypal-payment-gateway-for-woocommerce/assets/img/gateway_icon.svg">	</label>
+                    <div class="payment_box payment_method_eh_paypal_express">
+                    <p>Secure payment via PayPal.</p>
+                </div>
+            </li>
+                </ul>
+                <div class="form-row place-order">
+                <noscript>
+                    Dado que o seu navegador não suporta JavaScript ou está desactivado, por favor clique no botão <em>Actualizar totais</em> antes de finalizar a sua encomenda. Se não o fizer, pode pagar mais do que o valor acima indicado.			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="Actualizar">Actualizar</button>
+                </noscript>
+        
+                    <div class="woocommerce-terms-and-conditions-wrapper">
+                <div class="woocommerce-privacy-policy-text"><p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="https://greensis.pt/politica-de-privacidade/" class="woocommerce-privacy-policy-link" target="_blank">política de privacidade</a>.</p>
+        </div>
+                            <p class="form-row validate-required">
+                        <label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
+                        <input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="terms" id="terms">
+                            <span class="woocommerce-terms-and-conditions-checkbox-text">Eu li e aceito os <a href="https://greensis.pt/termos-e-condicoes/" class="woocommerce-terms-and-conditions-link" target="_blank">termos e condições</a> da loja</span>&nbsp;<span class="required">*</span>
+                        </label>
+                        <input type="hidden" name="terms-field" value="1">
+                    </p>
+                    </div>
+            
+                
+                <button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Finalizar encomenda" data-value="Finalizar encomenda">Proceed to PayPal</button>
+                
+                <input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="da64c02a40"><input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review">	</div>
+        </div>
+        
+            </div>
+        
+            
+        </form>
+        
+        </div> 
+        </div>
+    </main>
+
+<footer class="rodape rodape-gs">
+
+    <div class="container" >
+        <h2 class="heading-2">Contacto</h2>
+        <h3 class="heading-3">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
+        <div>
+            <p class="heading-6">Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
+
+            <nav class="heading-6">
+                <a href="#" title="">Envios e devolução</a>
+                <span>|</span>
+                <a href="#" title="">Termos & condições</a>
+                <span>|</span>
+                <a href="#" title="">Politica de Privacidade</a>
+                <span>|</span>
+                <a href="#" title="">Livro de reclamações</a>
+            </nav>
+            <p class="heading-7">Copyright 2021 © greensis</p>
+        </div>
+        <div class="g-letter-pequeno"></div>
+
+    </div>
+</footer>
+    <div class="overlay d-none"></div>
+    
+    <script src="dist/js/template-min.js"></script>
+</body>
+</html>
+
+
+
+
