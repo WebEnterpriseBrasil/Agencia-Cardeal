@@ -363,6 +363,8 @@ header  .icons .cart .cart-contents-count {
     border-radius: 50%;
     padding: 0 2px;
     position: absolute;
+    min-width: 12px;
+    text-align: center;
 }
 
 header  .icons .search {
