@@ -472,6 +472,7 @@ header .boxes_  .box.left{
     display: block;
     margin-top: 11px;
     margin-left: 10px;
+    text-align: right;
 }
 .boxes_  .box.left .close{
     position: relative;
