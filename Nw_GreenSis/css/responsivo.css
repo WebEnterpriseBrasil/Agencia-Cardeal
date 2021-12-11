@@ -104,6 +104,14 @@
     header .content-mobile .cols .icons {
         justify-content: end;
     }
+    header .gsearchfield {
+        margin-top: 0;
+        display: block;
+        height: 44px;
+    }
+    header .gsearchfield .close {
+        display: none;
+    }
     .page-template-home-template section .block {
         width: 100%;
     }

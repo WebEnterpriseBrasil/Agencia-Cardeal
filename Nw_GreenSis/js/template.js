@@ -27,13 +27,13 @@ const closeMenuMobileCart = () => {
 const showSearchBar = () => {
     jQuery('header .social .icons .search').on('click', function () {
         jQuery('header .menu-lista').hide();
-        jQuery('header #gsearchfield').fadeIn();
+        jQuery('header .gsearchfield').fadeIn();
     });
 }
 
 const closeSearchBar = () => {
-    jQuery('header #gsearchfield .close i').on('click', function () {
-        jQuery('header #gsearchfield').hide();
+    jQuery('header .gsearchfield .close i').on('click', function () {
+        jQuery('header .gsearchfield').hide();
         jQuery('header .menu-lista').fadeIn();
     });
 }

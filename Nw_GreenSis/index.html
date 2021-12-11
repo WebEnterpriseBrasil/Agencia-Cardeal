@@ -55,7 +55,7 @@
                             <li><a href="Contacto.html">contacto</a></li>
                         </ul>
 
-                        <div id="gsearchfield">
+                        <div class="gsearchfield">
                             <div class="close"><i class="far fa-times-circle"></i></div>
                             <div class="aws-container">
                                 <form class="aws-search-form aws-show-clear">
@@ -112,7 +112,19 @@
                         <div class="search">
                             <div class="search-field">
                                 <div class="prepend-icon"><i class="fas fa-search"></i></div>
-                                <input class="field" type="text" placeholder="Pesquisar" />
+                                <div class="gsearchfield">
+                                    <div class="close"><i class="far fa-times-circle"></i></div>
+                                    <div class="aws-container">
+                                        <form class="aws-search-form aws-show-clear">
+                                            <div class="aws-wrapper">
+                                                <label class="aws-search-label">Pesquisar produto</label>
+                                                <input type="search" name="s" value="" class="aws-search-field" placeholder="Pesquisar produto" autocomplete="off">
+                                                <input type="hidden" name="post_type" value="product">
+                                                <input type="hidden" name="type_aws" value="true">
+                                        </div>
+                                    </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <ul>

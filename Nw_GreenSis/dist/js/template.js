@@ -32,13 +32,13 @@ var closeMenuMobileCart = function closeMenuMobileCart() {
 var showSearchBar = function showSearchBar() {
   jQuery('header .social .icons .search').on('click', function () {
     jQuery('header .menu-lista').hide();
-    jQuery('header #gsearchfield').fadeIn();
+    jQuery('header .gsearchfield').fadeIn();
   });
 };
 
 var closeSearchBar = function closeSearchBar() {
-  jQuery('header #gsearchfield .close i').on('click', function () {
-    jQuery('header #gsearchfield').hide();
+  jQuery('header .gsearchfield .close i').on('click', function () {
+    jQuery('header .gsearchfield').hide();
     jQuery('header .menu-lista').fadeIn();
   });
 }; // shop
