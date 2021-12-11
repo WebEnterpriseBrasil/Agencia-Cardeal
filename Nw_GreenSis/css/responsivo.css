@@ -43,6 +43,9 @@
     .woocommerce-shop .products li.line::after {
         height: 400px;
     }
+
+    
+        
 }
 
 @media only screen and (max-width: 770px) {
@@ -73,6 +76,8 @@
     .woocommerce-shop .products li.line::after {
         display: none;
     }
+
+    
     
 }
 
@@ -265,5 +270,11 @@
     /* footer */
     .rodape .menu-footer-menu-container {
         min-height: 120px;
+    }
+
+    /* woocommerce-orders*/ 
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-content{
+        width: 100%;
+        float: left;
     }
 }
