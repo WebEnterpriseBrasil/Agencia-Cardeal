@@ -58,8 +58,8 @@
                     </div>
                     <div class="social">
                         <nav class="nav-social">
-                            <a href="https://www.facebook.com/greensis.naturalbeauty"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/greensis.naturalbeauty/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/greensis.naturalbeauty" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/greensis.naturalbeauty/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </nav>
     
                         <nav class="icons">                            
@@ -91,8 +91,8 @@
                     <div class="box left">
                         <div class="action-bar">
                             <nav class="nav-social">
-                                <a href="https://www.facebook.com/greensis.naturalbeauty"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/greensis.naturalbeauty"></a><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/greensis.naturalbeauty" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/greensis.naturalbeauty" target="_blank"></a><i class="fab fa-instagram"></i></a>
                             </nav>
                             <div class="close"><i class="far fa-times-circle"></i></div>         
                         </div>
