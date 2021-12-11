@@ -24,6 +24,21 @@ const closeMenuMobileCart = () => {
     jQuery('.overlay').hide();
 }
 
+const showSearchBar = () => {
+    jQuery('header .social .icons .search').on('click', function () {
+        jQuery('header .menu-lista').hide();
+        jQuery('header #gsearchfield').fadeIn();
+    });
+}
+
+const closeSearchBar = () => {
+    jQuery('header #gsearchfield .close i').on('click', function () {
+        jQuery('header #gsearchfield').hide();
+        jQuery('header .menu-lista').fadeIn();
+    });
+}
+
+
 // shop
 const shop = () => {
     jQuery('.woocommerce-shop .woocommerce').each(function() {
@@ -57,5 +72,7 @@ window.addEventListener('resize', function(event) {
 
 window.addEventListener('load', function(event) {
     shop();
+    showSearchBar();
+    closeSearchBar();
  });
  
