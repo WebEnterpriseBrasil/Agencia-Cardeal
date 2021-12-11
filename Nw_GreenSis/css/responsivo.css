@@ -43,14 +43,13 @@
     .woocommerce-shop .products li.line::after {
         height: 400px;
     }
-
     
         
 }
 
 @media only screen and (max-width: 770px) {
     html, body  {
-        font-size: 0.8rem;
+        font-size: 1.0rem;
     }
     .woocommerce-shop  .servicos{
         display: block;
@@ -271,18 +270,18 @@
     .rodape .menu-footer-menu-container {
         min-height: 120px;
     }
-<<<<<<< HEAD
+ HEAD
 
     /* woocommerce-orders*/ 
     .page-template-my-account .woocommerce .woocommerce-MyAccount-content{
         width: 100%;
         float: left;
-=======
+}
     #wpadminbar {
         top: auto!important;
         bottom: 0!important;
         left: 0!important;
         position: fixed!important;
->>>>>>> 6363e318e04ac91f8a8427a7a28684ea798b8d99
+
     }
 }
