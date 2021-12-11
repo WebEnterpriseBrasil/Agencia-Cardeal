@@ -297,7 +297,7 @@ header .gsearchfield {
     display: none;
 }
 header .gsearchfield .widgettitle, 
-.aws-search-result ul li:last-child{
+.aws_search_more {
     display: none !important;
 }
 .aws-search-result .aws_result_title {
