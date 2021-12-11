@@ -54,19 +54,19 @@ jQuery('.content-mobile .menu-action i').on('click', function() {
 })
 
 // abrir menu mobile cart
-jQuery('header .content-mobile .cols .icons a').on('click', function() {
+/* jQuery('header .content-mobile .cols .icons a').on('click', function() {
     openMenuMobileCart()
-})
+})*/
 
 // fechar menu mobile e cart
 jQuery('.overlay, .content-mobile .action-bar .close i').on('click', function() {
     closeMenuMobile();
-    closeMenuMobileCart();
+    // closeMenuMobileCart();
 })
 
 window.addEventListener('resize', function(event) {
     closeMenuMobile();
-    closeMenuMobileCart();
+    // closeMenuMobileCart();
 });
 
 

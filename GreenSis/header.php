@@ -65,7 +65,9 @@
                         <nav class="icons">                            
                             <a href="javascript:void(0)" class="search"></i></a>
                             <a href="/minha-conta/" class="user"></a>
-                            <a href="/meu-carrinho" class="cart"></a>
+                            <a href="/meu-carrinho" class="cart">
+                                <?php echo do_shortcode("[woo_cart_but]"); ?>
+                            </a>
                         </nav>
                     </div>
                 </div>
@@ -80,7 +82,9 @@
                         <a class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo-mobile.png"/></a>
                     </div>
                     <nav class="menu-action-cart icons">                            
-                        <a href="javascript:void(0)" class="cart"></a>
+                        <a href="/meu-carrinho" class="cart">
+                            <?php echo do_shortcode("[woo_cart_but]"); ?>
+                        </a>
                     </nav>
                 </div>
                 <div class="boxes_">
@@ -110,17 +114,6 @@
                                 ); 
                         ?>
                         </ul>
-                    </div>
-                    <div class="box right">
-                        <div class="action-bar">
-                            <div class="close"><i class="far fa-times-circle"></i></div>         
-                        </div>
-                        <div class="title">
-                            <h4>Carrinho</h4>
-                        </div>
-                        <div class="content">
-                            <p>Nenhum produto no carrinho.</p>
-                        </div>
                     </div>
                 </div>     
             </div>
