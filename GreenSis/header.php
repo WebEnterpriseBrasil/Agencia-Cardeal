@@ -29,10 +29,7 @@
 <!-- Início do body -->
 <body <?php body_class(); ?>>
 <header>
-        <div class="widget-section" style="display: none">
-            <?php dynamic_sidebar( 'sidebar-1' ); ?>
-        </div>
-                <div class="container">
+        <div class="container">
 
             <div class="content-desktop">
 
@@ -52,7 +49,11 @@
                                     ) 
                                 ); 
                         ?>
-                        </ul>      
+                        </ul>
+                        <div class="gsearchfield">
+                            <div class="close"><i class="far fa-times-circle"></i></div>
+                            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+                        </div>  
                         
                     </div>
                     <div class="social">
@@ -62,7 +63,7 @@
                         </nav>
     
                         <nav class="icons">                            
-                            <a href="#" class="search"></i></a>
+                            <a href="javascript:void(0)" class="search"></i></a>
                             <a href="/minha-conta/" class="user"></a>
                             <a href="/meu-carrinho" class="cart"></a>
                         </nav>
@@ -86,15 +87,18 @@
                     <div class="box left">
                         <div class="action-bar">
                             <nav class="nav-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"></a><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/greensis.naturalbeauty"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/greensis.naturalbeauty"></a><i class="fab fa-instagram"></i></a>
                             </nav>
                             <div class="close"><i class="far fa-times-circle"></i></div>         
                         </div>
                         <div class="search">
                             <div class="search-field">
                                 <div class="prepend-icon"><i class="fas fa-search"></i></div>
-                                <input class="field" type="text" placeholder="Pesquisar" />
+                                <div class="gsearchfield">
+                                    <div class="close"><i class="far fa-times-circle"></i></div>
+                                    <?php dynamic_sidebar( 'sidebar-1' ); ?>
+                                </div>  
                             </div>
                         </div>
                         <ul>

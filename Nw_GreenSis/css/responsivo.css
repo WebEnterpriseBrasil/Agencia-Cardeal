@@ -266,4 +266,10 @@
     .rodape .menu-footer-menu-container {
         min-height: 120px;
     }
+    #wpadminbar {
+        top: auto!important;
+        bottom: 0!important;
+        left: 0!important;
+        position: fixed!important;
+    }
 }

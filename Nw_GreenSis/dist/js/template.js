@@ -16,6 +16,7 @@ var openMenuMobileCart = function openMenuMobileCart() {
 };
 
 var closeMenuMobile = function closeMenuMobile() {
+  console.log('closeMenuMobile');
   jQuery(".boxes_ .box.left").animate({
     marginLeft: '-300px'
   });
@@ -61,7 +62,6 @@ jQuery('header .content-mobile .cols .icons a').on('click', function () {
 }); // fechar menu mobile e cart
 
 jQuery('.overlay, .content-mobile .action-bar .close i').on('click', function () {
-  console.log('fechar');
   closeMenuMobile();
   closeMenuMobileCart();
 });
@@ -71,6 +71,14 @@ window.addEventListener('resize', function (event) {
 });
 window.addEventListener('load', function (event) {
   shop();
-  showSearchBar();
-  closeSearchBar();
+  jQuery('.content-mobile .aws-search-field').on('click', function (e) {
+    console.log('foo');
+    e.stopPropagation();
+    e.preventDefault();
+  });
+
+  if (jQuery(window).width() > 570) {
+    showSearchBar();
+    closeSearchBar();
+  }
 });
