@@ -297,7 +297,7 @@ header .gsearchfield {
     display: none;
 }
 header .gsearchfield .widgettitle, 
-.aws-search-result ul li:last-child{
+.aws_search_more {
     display: none !important;
 }
 .aws-search-result .aws_result_title {
@@ -352,7 +352,21 @@ header  .icons a {
 }
 header  .icons .cart {
     background-image: url('img/cart-icon.png');
+    position: relative;
 }
+header  .icons .cart .cart-contents-count {
+    top: -15px;
+    right: -3px;
+    font-size: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0 2px;
+    position: absolute;
+    min-width: 12px;
+    text-align: center;
+}
+
 header  .icons .search {
     background-image: url('img/lupa-icon.png');
 }
@@ -847,6 +861,7 @@ main{
     text-align: left;
     display: block;
     width: 100%;
+    margin-right: 0;
 }
 .woocommerce-shop  .products li.line {
     min-height: 200px;
@@ -936,6 +951,7 @@ main{
     display: flex;
 }
 .woocommerce-shop  .woocommerce .products .product{
+    margin-right: 0;
 }
 .woocommerce-shop  .woocommerce .products .product a {
     width: 100%;
@@ -1051,6 +1067,14 @@ color: white;
     z-index: 2;
 }
 
+.page-template-contato .wpcf7 form .wpcf7-response-output {
+    float: left;
+    font-size: 0.8rem;
+    background: #d2795b;
+    color: #fff;
+    margin-left: 20%;
+}
+
 .page-template-contato footer .g-letter-pequeno,
 .page-template-contato footer .g-letter {
     display:  none;
@@ -1108,12 +1132,6 @@ color: white;
     background-color: #f4f4f4;
 }
 
-
-/* *** PDP página do produto *** */
-.product-template-default > header {
-    float: none !important;
-}
-
 /* carrossel vertical */
 @media only screen and (min-width: 570px) {
     .single-product div.product .woocommerce-product-gallery .flex-viewport {
@@ -1159,4 +1177,19 @@ color: white;
 }
 .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation ul li a {
     text-decoration: underline;
+}
+/* carrinho */
+.woocommerce .checkout-button {
+    background-color: #d2795b!important;
+}
+.woocommerce .checkout-button:hover {
+    background-color: #b76145!important;
+}
+
+
+
+
+/* *** PDP página do produto *** */
+.product-template-default > header {
+    float: none !important;
 }

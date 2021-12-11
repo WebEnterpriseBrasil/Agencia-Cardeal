@@ -268,6 +268,11 @@
         margin-left: 0;
     }
 
+    .page-template-contato .wpcf7 form .wpcf7-response-output {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
     /* Sis */
 
     .sis-page main  .boxes .box  .btn-gs,
