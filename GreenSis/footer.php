@@ -59,7 +59,7 @@
 
 <div class="overlay d-none"></div>
 
-<script src="<?php echo get_template_directory_uri(); ?>/dist/js/template-min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/dist/js/template-min.js?v3"></script>
 
     <?php 
         if ( is_front_page() ) : ?>  
