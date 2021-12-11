@@ -29,7 +29,10 @@
 <!-- Início do body -->
 <body <?php body_class(); ?>>
 <header>
-        <div class="container">
+        <div class="widget-section" style="display: none">
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+        </div>
+                <div class="container">
 
             <div class="content-desktop">
 

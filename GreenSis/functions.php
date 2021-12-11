@@ -41,12 +41,12 @@ function greensis_config(){
 add_action( 'after_setup_theme', 'greensis_config', 0 );
 
 
-
+// remover menus
 function remove_menus(){
 	remove_menu_page( 'edit.php' );                   //Posts  
 	remove_menu_page( 'edit-comments.php' );          //Comments
 }  
-add_action( 'admin_menu', 'remove_menus' );  
+add_action( 'admin_menu', 'remove_menus' );
 
 
 
@@ -62,5 +62,22 @@ add_filter ( 'woocommerce_product_thumbnails_columns', 'bbloomer_change_gallery_
 function bbloomer_change_gallery_columns() {
      return 1; 
 }
+
+// widgets
+function greensis_widgets_init() {
+	register_sidebar(
+		array(
+			'name'          => __( 'Campo de busca', 'greensis' ),
+			'id'            => 'sidebar-1',
+			'description'   => __( 'Area destinada para o campo de busca', 'greensis' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+}
+add_action( 'widgets_init', 'greensis_widgets_init' );
 
 ?>

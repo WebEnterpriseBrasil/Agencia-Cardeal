@@ -151,7 +151,7 @@ a:hover {
     height: 30px;
 }
 .search-field .prepend-icon i{
-    margin-top: 7px;
+    margin-top: 13px;
     margin-left: 4px;
     font-size: 1.2rem;
 }
@@ -185,6 +185,7 @@ header .logo a{
 }
 header #menu {
     float: left;
+    min-width: 200px;
 }
 
 header .menu-lista { 
@@ -210,6 +211,111 @@ header .menu-lista li a:hover {
 header .menu-lista {
     list-style: none;
     
+}
+
+/* estilo apenas para o html */
+.g-html .aws-container .aws-search-form {
+    position: relative;
+    width: 100%;
+    float: none !important;
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    align-items: stretch;
+    height: 44px;
+}
+.g-html .aws-container .aws-search-form *, .aws-search-result {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-hyphens: manual;
+    -webkit-hyphens: manual;
+    hyphens: manual;
+    border-radius: 0 !important;
+}
+.g-html .aws-container .aws-search-form .aws-wrapper {
+    flex-grow: 1;
+    position: relative;
+    vertical-align: top;
+    padding: 0;
+    width: 100%;
+}
+.g-html .aws-container .aws-search-field {
+    width: 100%;
+    max-width: 100%;
+    color: #313131;
+    padding: 6px;
+    line-height: 30px;
+    display: block;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+    -webkit-appearance: none;
+    height: 100%;
+    margin: 0 !important;
+    border: 1px solid #d8d8d8;
+    outline: 0;
+}
+.g-html .aws-container .aws-show-clear .aws-search-field {
+    padding-right: 40px;
+}
+.g-html .aws-container .aws-search-form .aws-search-clear {
+    display: none !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    color: #757575;
+    height: 100%;
+    width: 38px;
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+.g-html .aws-container .aws-search-form.aws-show-clear.aws-form-active .aws-search-clear {
+    display: block !important;
+}
+.g-html .aws-container .aws-search-form .aws-search-clear span {
+    position: relative;
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    top: 50%;
+    margin-top: -12px;
+}
+/* /estilo apenas para o html */
+
+
+header .gsearchfield {
+    float: left;
+    position: relative;
+    margin-top: 100px;
+    height: 50px;
+    width: 100%;
+    display: none;
+}
+header .gsearchfield .close{
+    position: absolute;
+    top: -6px;
+    left: -26px;
+}
+header .gsearchfield .close i{
+    color: #999;
+    cursor: pointer;
+}
+header .gsearchfield .aws-search-form {
+    position: absolute;
+    top: 0 ;
+    right: 0;
+}
+header .gsearchfield .aws-search-form .aws-search-label {
+    display: none;
+}
+
+header .gsearchfield .aws-container .aws-show-clear .aws-search-field {
+    padding-right: 5px;
 }
 
 header .social { 
