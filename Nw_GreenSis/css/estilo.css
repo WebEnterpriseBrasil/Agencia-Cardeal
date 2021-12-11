@@ -296,6 +296,13 @@ header .gsearchfield {
     width: 100%;
     display: none;
 }
+header .gsearchfield .widgettitle, 
+.aws-search-result ul li:last-child{
+    display: none !important;
+}
+.aws-search-result .aws_result_title {
+    color: #d2795b;
+}
 header .gsearchfield .close{
     position: absolute;
     top: -6px;
