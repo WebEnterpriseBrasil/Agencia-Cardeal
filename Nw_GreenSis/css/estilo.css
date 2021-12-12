@@ -1193,3 +1193,31 @@ color: white;
 .product-template-default > header {
     float: none !important;
 }
+
+.woocommerce-product-gallery__wrapper{
+    position: relative;
+    float: left;
+}
+.woocommerce-page div.product div.images{
+    width: 100px;
+    min-height: 500px;
+}
+.woocommerce div.product div.images .woocommerce-product-gallery__image:nth-child(n+2){
+    width: 120px;
+    height: 145px;
+    float: left;
+    margin-bottom: 15px;
+}
+.woocommerce-product-gallery{
+    float: left;
+}
+.woocommerce-product-gallery__image{
+    float: right;
+    left: -15px;
+}
+.woocommerce-product-gallery__wrapper:first-child{
+    width: 450px;
+    height: auto;
+    position: absolute;
+}
+
