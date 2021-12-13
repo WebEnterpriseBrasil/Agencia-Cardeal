@@ -284,6 +284,42 @@
     .woocommerce ul.products li.product .woocommerce-loop-product__title {
         min-height: auto;
     }
+
+    /* PDP */
+    .single-product .product .woocommerce-product-gallery,
+    .product .product-summary {
+        width: 100% !important;
+    }
+    .product .entry-summary {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .woocommerce-Reviews-title {
+        font-size: 1rem;
+    }
+    .commentlist {
+        padding-left: 0;
+    }
+    .woocommerce #reviews #comments ol.commentlist li .comment-text p {
+        font-size: 0.9rem;
+    }
+    .woocommerce div.product .product_title {
+        font-size: 1.4rem;
+    }
+
+    .woocommerce-review-link  span {
+        font-size: 0.8rem;
+    }
+    .woo-single-excerpt .woocommerce-product-details__short-description {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    .woocommerce div.product .product-summary p.price {
+        font-size: 1.5rem;
+    }
+    .woocommerce div.product p {
+        font-size: 0.9rem;
+    }
     
     .page-template-contato .field{
         width: 70%;
