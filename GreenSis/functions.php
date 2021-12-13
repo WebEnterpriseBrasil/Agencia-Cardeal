@@ -131,5 +131,3 @@ function woo_cart_but_count( $fragments ) {
      
     return $fragments;
 }
-
-?>

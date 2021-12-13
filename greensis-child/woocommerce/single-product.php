@@ -22,8 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
-	<a href="/home" class="heading-6">Nossa loja ></a><br>
-
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 
@@ -39,7 +37,6 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
-
 </div>
 <?php
 get_footer( 'shop' );
