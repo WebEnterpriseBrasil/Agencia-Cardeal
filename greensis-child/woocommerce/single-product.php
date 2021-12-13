@@ -1,4 +1,3 @@
-<div class="container">
 <?php
 /**
  * The Template for displaying all single products
@@ -19,7 +18,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
+?>
+<div class="container">
+<?php
 get_header( 'shop' ); ?>
 
 		<?php while ( have_posts() ) : ?>
@@ -36,8 +37,14 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 		 */
 		do_action( 'woocommerce_after_main_content' );
+		
 	?>
 </div>
+<div class="container">
+ <?php echo comments_template();?>
+</div>
+
+
 <?php
 get_footer( 'shop' );
 
