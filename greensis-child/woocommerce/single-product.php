@@ -25,10 +25,10 @@ get_header( 'shop' ); ?>
 
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
-
 			<?php wc_get_template_part( 'content', 'single-product' ); ?>
 
-		<?php endwhile; // end of the loop. ?>
+		<?php endwhile; // end of the loop. 
+		?>
 
 	<?php
 		/**
@@ -36,8 +36,8 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 		 */
-		do_action( 'woocommerce_after_main_content' );
 		
+		do_action( 'woocommerce_after_main_content' );
 	?>
 </div>
 <div class="container">

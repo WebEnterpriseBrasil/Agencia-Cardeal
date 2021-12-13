@@ -901,6 +901,9 @@ main{
 }
 .woocommerce div.product p.price{
     font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
 }
 .woocommerce ul.products li.product .price::after, .woocommerce div.product p.price::after{
     content: 'EUR';
@@ -933,12 +936,15 @@ main{
     font-size: 2.0em;
     color: #d2795b;
 }
+.loja-texto h1, .product-summary .woocommerce-Price-amount{
+    color: black !important;
+}
 .loja-texto p{
     font-family: Light;
     font-size: 1.2rem;
 }
 .woocommerce ul.products li.product .add_to_cart_button,
-.btn-comprar, .woocommerce button.button.alt{
+.btn-comprar, .woocommerce button.button.alt, .woocommerce #review_form #respond input.submit{
     color: white;
     font-family: Semibold;
     font-size: 1.2rem;
@@ -1268,4 +1274,23 @@ color: white;
 }
 .woocommerce div.product form.cart .button:hover{
     background-color: #d2795b;
+}
+
+.woocommerce-Reviews{
+    padding: 1%;
+}
+
+.woocommerce-Reviews .stars a, .woocommerce .star-rating{
+    color: #d2795b;
+}
+.woocommerce-product-rating{
+    margin-bottom: 1rem;
+}
+
+.woocommerce-Reviews label{
+    width: 100% !important;
+    float: left;
+}
+.woocommerce-Reviews textarea{
+    width: 300px  !important;
 }
