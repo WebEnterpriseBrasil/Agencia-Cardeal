@@ -1180,13 +1180,24 @@ color: white;
     text-decoration: underline;
 }
 /* carrinho */
-.woocommerce .checkout-button {
+.woocommerce .checkout-button,
+.woocommerce .single_add_to_cart_button {
     background-color: #d2795b!important;
 }
-.woocommerce .checkout-button:hover {
+.woocommerce .checkout-button:hover,
+.woocommerce .single_add_to_cart_button:hover {
     background-color: #b76145!important;
 }
 
+.woocommerce-Price-amount {
+    color: #d2795b!important;
+}
+.woocommerce-message {
+    border-top-color: #d2795b!important;
+}
+.woocommerce-message::before {
+    color: #d2795b!important;
+}
 
 
 
