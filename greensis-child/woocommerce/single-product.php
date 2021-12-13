@@ -26,7 +26,7 @@ get_header( 'shop' ); ?>
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 			<?php wc_get_template_part( 'content', 'single-product' ); ?>
-
+ 			<?php echo comments_template();?>
 		<?php endwhile; // end of the loop. 
 		?>
 
@@ -40,10 +40,6 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 </div>
-<div class="container">
- <?php echo comments_template();?>
-</div>
-
 
 <?php
 get_footer( 'shop' );

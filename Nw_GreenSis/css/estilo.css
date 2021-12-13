@@ -939,6 +939,9 @@ main{
 .loja-texto h1, .product-summary .woocommerce-Price-amount{
     color: black !important;
 }
+.woocommerce div.product .product-summary p.price{
+    margin-bottom: 1rem !important;
+}
 .loja-texto p{
     font-family: Light;
     font-size: 1.2rem;
@@ -1284,7 +1287,7 @@ color: white;
     color: #d2795b;
 }
 .woocommerce-product-rating{
-    margin-bottom: 1rem;
+    margin-bottom: 0 !important;
 }
 
 .woocommerce-Reviews label{
@@ -1293,4 +1296,13 @@ color: white;
 }
 .woocommerce-Reviews textarea{
     width: 300px  !important;
+}
+.woo-single-excerpt .woocommerce-product-details__short-description{
+    display: block !important;
+}
+.woo-single-excerpt .woocommerce-product-details__short-description p{
+    margin-top: 0;
+}
+.woocommerce-product-details__short-description{
+    display: none;
 }
