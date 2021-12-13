@@ -2,10 +2,72 @@
     .woocommerce-shop .products li.line::after {
         height: 550px;
     }
+    /* Orders endereço*/
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-content{
+        width: 50%;
+        display: block;
+    }
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation {
+        width: 20%;
+        float: left;
+        background: #f5f5f5;
+        padding: 10px;
+        margin-right: 3%;
+    }
+     /* Página Orders */
+     .page-template-my-account .woocommerce{
+        min-height: 500px;
+        padding-top: 130px;
+        float: left;
+        display: flex;
+        
+    }
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation {
+        width: 50%;
+        float: left;
+        background: #f5f5f5;
+        padding: 10px;
+        margin-right: 3%;
+    }
+    .woocommerce table.my_account_orders {
+        font-size: .85em;
+        margin-left: 100%;
+    }
     }
 @media only screen and (max-width: 1100px) {
     .woocommerce-shop .products li.line::after {
         height: 450px;
+    }
+    /* Orders endereço*/
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-content{
+        width: 50%;
+        display: block;
+    }
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation {
+        width: 20%;
+        float: left;
+        background: #f5f5f5;
+        padding: 10px;
+        margin-right: 3%;
+    }
+     /* Página Orders */
+     .page-template-my-account .woocommerce{
+        min-height: 500px;
+        padding-top: 130px;
+        float: left;
+        display: flex;
+        
+    }
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation {
+        width: 50%;
+        float: left;
+        background: #f5f5f5;
+        padding: 10px;
+        margin-right: 3%;
+    }
+    .woocommerce table.my_account_orders {
+        font-size: .85em;
+        margin-left: 100%;
     }
 }
 
@@ -43,6 +105,38 @@
     .woocommerce-shop .products li.line::after {
         height: 400px;
     }
+    /* Orders endereço*/
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-content{
+        width: 50%;
+        display: block;
+    }
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation {
+        width: 20%;
+        float: left;
+        background: #f5f5f5;
+        padding: 10px;
+        margin-right: 3%;
+    }
+
+    /* Página Orders */
+    .page-template-my-account .woocommerce{
+        min-height: 500px;
+        padding-top: 130px;
+        float: left;
+        display: flex;
+        
+    }
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation {
+        width: 50%;
+        float: left;
+        background: #f5f5f5;
+        padding: 10px;
+        margin-right: 3%;
+    }
+    .woocommerce table.my_account_orders {
+        font-size: .85em;
+        margin-left: 100%;
+    }
     
         
 }
@@ -76,8 +170,42 @@
         display: none;
     }
 
+     /* Orders endereço*/
+     .page-template-my-account .woocommerce .woocommerce-MyAccount-content{
+        width: 100%;
+        display: block;
+    }
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation {
+        width: 50%;
+        float: left;
+        background: #f5f5f5;
+        padding: 10px;
+        margin-right: 3%;
+    }
     
-    
+    /* Página Orders */
+    .page-template-my-account .woocommerce{
+        min-height: 500px;
+        padding-top: 130px;
+        float: left;
+        display: block;
+        
+    }
+    .page-template-my-account .woocommerce .woocommerce-MyAccount-navigation {
+        width: 100%;
+        float: left;
+        background: #f5f5f5;
+        padding: 10px;
+        margin-right: 3%;
+    }
+    .woocommerce table.shop_table {
+        border: 1px solid rgba(0,0,0,.1);
+        margin: 0 -1px 24px 0;
+        text-align: left;
+        width: 100%;
+        border-collapse: separate;
+        border-radius: 5px;
+    }
 }
 
 @media only screen and (max-width: 570px) {
@@ -288,5 +416,12 @@
         left: 0!important;
         position: fixed!important;
 
+    }
+    /* Página Orders */
+    .page-template-my-account .woocommerce{
+        min-height: 500px;
+        padding-top: 130px;
+        float: left;
+        display: block;
     }
 }
