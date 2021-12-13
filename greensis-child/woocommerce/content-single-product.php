@@ -59,6 +59,11 @@ if ( post_password_required() ) {
 			 * @hooked WC_Structured_Data::generate_product_data() - 60
 			 */
 			do_action( 'woocommerce_single_product_summary' );
+			?>
+			<div class="description-title">
+				<h2 class="heading-4">Descrição</h2>
+			</div>
+			<?php
 			the_content();
 			?>
 		</div>
