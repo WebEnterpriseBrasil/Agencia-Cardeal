@@ -42,10 +42,10 @@ const closeSearchBar = () => {
 
 // shop
 const shop = () => {
-   //  jQuery('.woocommerce-shop .woocommerce').each(function() {
-        // jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
-       // jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
-    // });
+   jQuery('.woocommerce-shop .woocommerce').each(function() {     
+       jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
+       jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
+    });
 }
 
 // abrir menu mobile
