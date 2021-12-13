@@ -320,6 +320,14 @@
     .woocommerce div.product p {
         font-size: 0.9rem;
     }
+
+    .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:first-child {
+        width: 75%;
+    }
+    .woocommerce div.product div.images .woocommerce-product-gallery__image:nth-child(n+2) {
+        width: 22%;
+        margin-bottom: 3%;
+    }
     
     .page-template-contato .field{
         width: 70%;
