@@ -583,7 +583,7 @@ header .boxes_  .box.right .title, .boxes_  .box.right .content{
     font-family: Light;
 }
 .rodape nav a{
-    font-family: Light;
+    font-family: SemiBold;
 }
 .rodape .container {
     position: relative;
@@ -742,6 +742,7 @@ main{
 .sis-page main .box.left em,
 .page-template-sis-template main .box.left em{
     font-weight: bolder;
+    font-family: Light;
 }
 .sis-page main  .box.right,
 .page-template-sis-template main  .box.right {
