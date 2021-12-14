@@ -1296,6 +1296,9 @@ color: white;
     margin-bottom: 0 !important;
 }
 
+.product .flex-active{
+    display: none !important;
+}
 .woocommerce-Reviews label{
     width: 100% !important;
     float: left;
@@ -1312,3 +1315,9 @@ color: white;
 .woocommerce-product-details__short-description{
     display: none;
 }
+
+
+
+
+
+
