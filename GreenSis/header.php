@@ -65,7 +65,8 @@
                         <nav class="icons">                            
                             <a href="javascript:void(0)" class="search"></i></a>
                             <a href="/minha-conta/" class="user"></a>
-                            <a href="/meu-carrinho" class="cart">
+                            <?php $events_page = get_post(6); ?>
+                            <a href="<?php echo get_permalink($events_page->ID); ?>" class="cart">
                                 <?php echo do_shortcode("[woo_cart_but]"); ?>
                             </a>
                         </nav>
