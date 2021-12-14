@@ -69,7 +69,37 @@ jQuery('.overlay, .content-mobile .action-bar .close i').on('click', function() 
 const pdp = () => {
     let content = jQuery('.product .text-content p');
     let newText = content.text().substring(0,190)
-    jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`)
+
+    jQuery('.product .text-content').append('<br /><a href="javascript:void(0)" class="recolher">Recolher</a>');
+    jQuery('.product .text-content-short').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`)
+
+    jQuery('.product .text-content-short .load-more').on('click', function() {
+        jQuery('.product .text-content-short').hide();
+        jQuery('.product .text-content').show();
+    });
+
+    jQuery('.product .recolher').on('click', function() {
+        jQuery('.product .text-content').hide()
+        jQuery('.product .text-content-short').show();
+    });
+
+    /*
+
+
+    
+    jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`);
+
+    jQuery('.product .text-content').show();
+
+
+    
+
+    jQuery('.product .text-content .recolher').on('click', function() {
+        jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`);
+    });
+    */
+
+
 }
 
 

@@ -64,10 +64,11 @@ if ( post_password_required() ) {
 				<h2 class="heading-4">Descrição</h2>
 			</div>
 			<div class="text-content">
-			<?php
-			the_content();
-			?>
+				<?php
+				the_content();
+				?>
 			</div>
+			<div class="text-content-short"></div>
 			
 		</div>
 	</div>
