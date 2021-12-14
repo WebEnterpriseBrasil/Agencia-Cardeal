@@ -7,7 +7,7 @@
             <h2 class="heading-2">Contacto</h2>
             <h3 class="heading-3">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
             <div>
-                <p class="heading-6">Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
+                <p class="heading-6">Horario de atendimento: segunda a sexta, das 9hs às 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
                 
                 
                 <nav class="heading-6">
@@ -67,7 +67,7 @@
                     <h2 class="heading-2">Contacto</h2>
                     <h3 class="heading-3">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
                     <div>
-                        <p class="heading-6">Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
+                        <p class="heading-6">Horario de atendimento: segunda a sexta, das 9hs às 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
                         <nav class="heading-6">
                             <?php 
                                 wp_nav_menu( 
