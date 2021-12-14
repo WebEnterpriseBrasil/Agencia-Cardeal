@@ -328,7 +328,12 @@
         width: 22%;
         margin-bottom: 3%;
     }
-    
+    .woocommerce div.product div.images .flex-control-thumbs {
+        margin-top: 10px;
+    }
+    .woocommerce div.product div.images .flex-control-thumbs li {
+        margin-left: 10px;
+    }
     .page-template-contato .field{
         width: 70%;
     }
