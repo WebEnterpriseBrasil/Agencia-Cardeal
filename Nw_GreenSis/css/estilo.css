@@ -973,7 +973,7 @@ main{
 .btn-comprar, .woocommerce button.button.alt, .woocommerce #review_form #respond input.submit{
     color: white;
     font-family: Semibold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     background-color: #d2795b;
     padding: 8px 22px;
@@ -1302,6 +1302,16 @@ color: white;
 }
 .woocommerce div.product form.cart div.quantity{
     float: none;
+    position: relative;
+    font-size: 0.9rem;
+    margin-top: 35px;
+}
+.woocommerce div.product form.cart div.quantity::before{
+    position: absolute;
+    content: 'Quantidade';
+    display: inline-block;
+    left: 0;
+    bottom: 33px;
 }
 .woocommerce div.product form.cart div.quantity .qty {
     width: 40px;
@@ -1365,7 +1375,22 @@ input[type=number] {
 .woocommerce-Reviews{
     padding: 1%;
 }
-
+/* reviews */
+.woocommerce  #reviews #comments ol.commentlist {
+    padding-left: 0;
+}
+.woocommerce #reviews #comments h2 {
+    font-size: 1rem;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text p {
+    font-size: 0.9rem;
+}
+.woocommerce #review_form #respond span {
+    font-size: 0.9rem;
+}
+.woocommerce #review_form #respond textarea {
+    border: 1px solid #ddd;
+}
 .woocommerce-Reviews .stars a, .woocommerce .star-rating{
     color: #d2795b;
 }
