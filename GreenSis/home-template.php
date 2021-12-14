@@ -30,7 +30,7 @@ Template Name: Home
                 <div class="inner">
                     <article>
                 <p class="heading-3"> Oferecemos os melhores cosméticos <br> alinhados com o nosso propósito: trazer para <br> si um novo olhar para o mercadode beleza. <br> Produtos voltados para o clean beauty <br> (beleza limpa) e cruety free. </p>
-                <a href="/loja"  class="btn-gs"> conheça a loja </a>
+                <a href="/loja"  class="btn-gs" title="Conheça a loja ">Conheça a loja </a>
                 </article>  
                 </div>
             </div>
