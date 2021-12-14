@@ -895,6 +895,14 @@ main{
 .servicos .products .box-product{
     min-height: 600px;
 }
+
+.servicos .products .woocommerce-LoopProduct-link{
+    min-height: 70px;
+}
+.servicos .products .woocommerce-LoopProduct-link .woocommerce-product-details__short-description p{
+    margin: 0;
+    padding: 0;
+}
 .woocommerce-shop  .products li.line {
     min-height: 200px;
     padding: 0 30px;
@@ -939,6 +947,9 @@ main{
     padding: 0;
     line-height: 1;
 }
+.woocommerce .price .woocommerce-Price-amount{
+    margin-right: 10px;
+}
 .woocommerce ul.products li.product .price::after, .woocommerce div.product p.price::after{
     content: 'EUR';
     position: absolute;
@@ -969,6 +980,9 @@ main{
     font-family: Regular;
     font-size: 2.0em;
     color: #d2795b;
+}
+.summary .text-content-short{
+    padding-right: 22%;
 }
 .loja-texto h1, .product-summary .woocommerce-Price-amount{
     color: black !important;
