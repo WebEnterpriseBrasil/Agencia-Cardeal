@@ -15,7 +15,6 @@
     
     <section class="servicos">
      <?php echo do_shortcode('[products limit="3" columns="3" orderby="id" order="DESC" visibility="visible"]'); ?>
-    
     </section>
 </div>
 
