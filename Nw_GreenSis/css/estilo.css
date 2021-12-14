@@ -1351,6 +1351,13 @@ input[type=number] {
 .woocommerce div.product form.cart div.quantity ~ div .plus {
     left: 62px;
 }
+
+/* read more */
+.woocommerce div.product .text-content {
+    display: none;
+}
+
+
 .woocommerce div.product form.cart .button:hover{
     background-color: #d2795b;
 }
