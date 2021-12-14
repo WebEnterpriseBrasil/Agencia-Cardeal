@@ -1,34 +1,67 @@
 <?php wp_footer(); 
 
+    if (is_page_template('home-template.php')) { ?>
 
-        if ( is_front_page() ) : ?>
-            <footer class="rodape">
-                <div class="container">
-                    <h2 class="heading-2">Contacto</h2>
-                    <h3 class="heading-3">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
-                    <div>
-                        <p class="heading-6">Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
-                        
-                        
-                        <nav class="heading-6">
-                        <?php 
-                            wp_nav_menu( 
-                                array( 
-                                    'theme_location' => 'my_footer_menu' 
-                                    ) 
-                                ); 
-                        ?>
-                        </nav>
-                        <p class="heading-7">Copyright 2021 © greensis</p>
-                    </div>
-                    <div class="g-letter"></div>
-                </div>
-            </footer>
+        <footer class="rodape">
+        <div class="container">
+            <h2 class="heading-2">Contacto</h2>
+            <h3 class="heading-3">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
+            <div>
+                <p class="heading-6">Horario de atendimento de segunda a sexta,das 9hs ás 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
+                
+                
+                <nav class="heading-6">
+                <?php 
+                    wp_nav_menu( 
+                        array( 
+                            'theme_location' => 'my_footer_menu' 
+                            ) 
+                        ); 
+                ?>
+                </nav>
+                <p class="heading-7">Copyright 2021 © greensis</p>
+            </div>
+            <div class="g-letter"></div>
+        </div>
+    </footer>
 
-            <?php
-        else : ?>
-            
-            <footer class="rodape rodape-gs">
+
+
+    <?php
+
+    } else if (is_page_template('contato.php')) { ?>
+
+
+
+
+        <footer class="rodape rodape-gs ">
+
+        <div class="container">
+            <div>
+                <nav class="heading-6">
+                    <?php 
+                        wp_nav_menu( 
+                            array( 
+                                'theme_location' => 'my_footer_menu' 
+                                ) 
+                            ); 
+                    ?>
+                </nav>
+                <p class="heading-7">Copyright 2021 © greensis</p>
+            </div>
+            <div class="g-letter-pequeno"></div>
+
+        </div>
+    </footer>
+
+
+    <?php
+
+    } else {  ?>
+        
+        
+        
+        <footer class="rodape rodape-gs">
 
                 <div class="container">
                     <h2 class="heading-2">Contacto</h2>
@@ -51,11 +84,12 @@
                 </div>
             </footer>
 
-            <?php
-        endif;
+    <?php
+
+
+    }
 
 ?>
-
 
 <div class="overlay d-none"></div>
 
@@ -70,8 +104,6 @@
         endif;
 
     ?>
-   
-    
 
 </body>
 </html>

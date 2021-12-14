@@ -534,6 +534,9 @@ header .boxes_  .box.right .title, .boxes_  .box.right .content{
     display: block;
     width:100%;
 }
+.page-template-contato .rodape{
+    margin-top: 80px;
+}
 .rodape .menu-footer-menu-container {
     position: relative;
     min-height: 20px;
