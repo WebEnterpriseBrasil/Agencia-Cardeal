@@ -1233,6 +1233,9 @@ color: white;
 .woocommerce-Price-amount {
     color: #d2795b!important;
 }
+.woocommerce-Price-amount .woocommerce-Price-currencySymbol{
+    display: none;
+}
 .woocommerce-message {
     border-top-color: #d2795b!important;
 }
