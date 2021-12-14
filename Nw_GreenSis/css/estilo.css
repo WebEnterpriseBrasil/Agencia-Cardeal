@@ -195,13 +195,30 @@ header .menu-lista {
 }
 header .menu-lista li { 
     float: left;
+    position: relative;
+}
+header .menu-lista li::after { 
+    position: absolute;
+    content: '|';
+    display: inline-block;
+
+    font-size: 22px;
+    color: black;
+    font-family: Regular;
+    left: 6px;
+}
+header .menu-lista li:first-child::after { 
+    display: none;
+}
+header .menu-lista li a { 
+    margin-left: 24px;
 }
 header .menu-lista li a, 
 header .menu-lista li span {
     font-size: 22px;
     color: black;
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     font-family: Regular;
     padding: 0 8px;
 }
