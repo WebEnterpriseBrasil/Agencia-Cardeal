@@ -890,11 +890,10 @@ main{
 .woocommerce-shop  .products li.line {
     min-height: 200px;
     padding: 0 30px;
-    padding-top: 80px;
 }
 .woocommerce-shop  .products li.line::after {
     content: '';
-    height: 620px;
+    height: 700px;
     width: 1px;
     border-right: 1px solid #a5a5a5;
     display: inline-block;
@@ -911,7 +910,7 @@ main{
 .woocommerce ul.products li.product .woocommerce-loop-product__title{
     font-family: Regular;
     font-size: 1.4rem;
-    min-height: 110px;
+    min-height: 50px;
     margin-bottom: 0;
 }
 .woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price{
@@ -1365,10 +1364,16 @@ input[type=number] {
 }
 
 /* read more */
+
+.description-title h2{
+    margin-bottom: 0;
+}
+.text-content-short .load-more, .text-content-short .recolher{
+    color: #d2795b;;
+}
 .woocommerce div.product .text-content {
     display: none;
 }
-
 
 .woocommerce div.product form.cart .button:hover{
     background-color: #d2795b;
