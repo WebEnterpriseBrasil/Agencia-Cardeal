@@ -65,6 +65,14 @@ jQuery('.content-mobile .menu-action i').on('click', function () {
 jQuery('.overlay, .content-mobile .action-bar .close i').on('click', function () {
   closeMenuMobile(); // closeMenuMobileCart();
 });
+/* pdp */
+
+var pdp = function pdp() {
+  var content = jQuery('.product .text-content p');
+  var newText = content.text().substring(0, 190);
+  jQuery('.product .text-content p').html("".concat(newText, "...<br /><a href=\"javascript:void(0)\" class=\"load-more\">Mais...</a>"));
+};
+
 window.addEventListener('resize', function (event) {
   closeMenuMobile(); // closeMenuMobileCart();
 });
@@ -80,4 +88,6 @@ window.addEventListener('load', function (event) {
     showSearchBar();
     closeSearchBar();
   }
+
+  pdp();
 });

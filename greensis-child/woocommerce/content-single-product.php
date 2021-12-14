@@ -63,9 +63,12 @@ if ( post_password_required() ) {
 			<div class="description-title">
 				<h2 class="heading-4">Descrição</h2>
 			</div>
+			<div class="text-content">
 			<?php
 			the_content();
 			?>
+			</div>
+			
 		</div>
 	</div>
 </div>

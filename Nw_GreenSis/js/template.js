@@ -64,6 +64,15 @@ jQuery('.overlay, .content-mobile .action-bar .close i').on('click', function() 
     // closeMenuMobileCart();
 })
 
+
+/* pdp */
+const pdp = () => {
+    let content = jQuery('.product .text-content p');
+    let newText = content.text().substring(0,190)
+    jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`)
+}
+
+
 window.addEventListener('resize', function(event) {
     closeMenuMobile();
     // closeMenuMobileCart();
@@ -82,5 +91,7 @@ window.addEventListener('load', function(event) {
         showSearchBar();
         closeSearchBar();
     }
+
+    pdp();
  });
  
