@@ -7,60 +7,68 @@ Template Name: Home
 ?>
 
 <?php get_header(); ?>
+    <?php
+    if( have_rows('home_blocks') ):
+        $count = 0;
+    // Loop through rows.
+    while( have_rows('home_blocks') ) : the_row();
 
-<section class="foto-sorriso">
+        $text = get_sub_field('home_blocks_text');
+        $image = get_sub_field('home_blocks_image');
+        $count ++;
+    ?>
 
-            <div class="block text left">
-                <div class="inner">
-                    <article>
-                        <h2 class="heading-2">Permita-se <br> experimentar <br> um novo universo <br> de beleza.</h2>
-                    </article>
+        <?php if ($count == 1 || $count == 2) { ?>
+            <section class="<?php 
+                if ($count == 1) {
+                    echo "foto-sorriso";
+                }
+                if ($count === 2) {
+                    echo 'segunda-sessao';
+                }    
+            ?>"> 
+                <div class="block text left">
+                    <div class="inner">
+                        <article>
+                            <?php echo $text ?>
+                        </article>
+                    </div>
                 </div>
-            </div>
-            <div class="block image right"> 
-                <div class="inner">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/box-home-1.jpg" class="img-responsive" alt="Sorriso">
+                <div class="block image right"> 
+                    <div class="inner">
+                        <?php 
+                            if( !empty( $image ) ): ?>
+                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="img-responsive"  />
+                            <?php endif; ?>
+                    </div>
                 </div>
-            </div>
-
-    </section>
-
-    <section class="segunda-sessao">
-            <div class="block text left">
-                <div class="inner">
-                    <article>
-                <p class="heading-3"> Oferecemos os melhores cosméticos <br> alinhados com o nosso propósito: trazer para <br> si um novo olhar para o mercadode beleza. <br> Produtos voltados para o clean beauty <br> (beleza limpa) e cruety free. </p>
-                <?php $events_page = get_post(5); ?>
-                    <a href="<?php echo get_permalink($events_page->ID); ?>" class="btn-gs">Conheça a loja</a>
-                </article>  
-                </div>
-            </div>
-            <div class="block image right">
-                <div class="inner">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/box-home-2.jpg" class="img-responsive" alt="Herbes">
-                </div>
-            </div>
-    </section>
-
-    <section class="terceira-sessao">
-            
-            
+            </section>
+        <?php }
+        
+        if ($count == 3) { ?>
+        <section class="terceira-sessao"> 
             <div class="block text right">
                 <div class="inner">
                     <article>
-                        <h2 class="heading-2">Sis</h2>
-                        <h3 class="heading-3">Duas irmãs e um sonho: <br> trabalhar com propósito</h3>
+                        <?php echo $text ?>
                     </article>
                 </div>
             </div>
-
-            <div class="block image left">
-                <div class="inner" >
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/box-home-3.jpg" class="img-responsive" alt="Beiramar">
+            <div class="block image left"> 
+                <div class="inner">
+                    <?php 
+                        if( !empty( $image ) ): ?>
+                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="img-responsive"  />
+                        <?php endif; ?>
                 </div>
-            </div>    
-            
+            </div>
+        </section>
 
-    </section>
+    <?php }
 
+    // End loop.
+    endwhile;
+
+    endif;
+    ?>
 <?php get_footer(); ?>
