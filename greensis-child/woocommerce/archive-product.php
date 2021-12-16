@@ -4,10 +4,15 @@
 <div class="container">
     <section class="loja-texto">
         <div>
+        <?php 
+        $page_id = 5;  //Page ID
+        $page_data = get_page( $page_id ); 
+
+        //store page title and content in variables
+        $content = apply_filters('the_content', $page_data->post_content);
+        ?>
             <h1>Loja</h1>
-            <div>
-                <p> Nossos produtos foram cuidadosamente escolhidos a pensar em nossas clientes<br>
-                Selecionamos os fornecedores e os melhores produtos clean beauty (beleza limpa) e cruety free do mercado:</p>
+            <?php echo $content; ?>
             </div>
         </div>
     </section>
