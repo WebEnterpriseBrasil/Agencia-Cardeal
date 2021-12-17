@@ -19,7 +19,7 @@ Template Name: Home
     ?>
 
         <?php if ($count == 1 || $count == 2) { ?>
-            <section class="<?php 
+            <section class="acf <?php 
                 if ($count == 1) {
                     echo "foto-sorriso";
                 }
