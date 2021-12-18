@@ -64,9 +64,8 @@
     
                         <nav class="icons">                            
                             <a href="javascript:void(0)" class="search"></i></a>
-                            <a href="/minha-conta/" class="user"></a>
-                            <?php $events_page = get_post(6); ?>
-                            <a href="<?php echo get_permalink($events_page->ID); ?>" class="cart">
+                            <a href="<?php echo get_permalink( get_page_by_path( 'minha-conta' ) ); ?>" class="user"></a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'meu-carrinho' ) ); ?>" class="cart">
                                 <?php echo do_shortcode("[woo_cart_but]"); ?>
                             </a>
                         </nav>
@@ -83,7 +82,7 @@
                         <a class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo-mobile.png"/></a>
                     </div>
                     <nav class="menu-action-cart icons">                            
-                        <a href="/meu-carrinho" class="cart">
+                        <a href="<?php echo get_permalink( get_page_by_path( 'meu-carrinho' ) ); ?>" class="cart">
                             <?php echo do_shortcode("[woo_cart_but]"); ?>
                         </a>
                     </nav>
