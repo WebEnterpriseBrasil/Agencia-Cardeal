@@ -737,7 +737,8 @@ header, section, footer, main {
     padding: 5%;
 }
 
-.terceira-sessao h2 {
+.terceira-sessao h2,
+.terceira-sessao h2 a {
     color: white;
 }
 .terceira-sessao h3 {
