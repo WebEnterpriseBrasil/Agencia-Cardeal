@@ -877,6 +877,9 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
+    float: none;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 .woocommerce-shop {
     position: relative;

@@ -20,6 +20,4 @@ function QL_customize_add_to_cart_button_woocommerce(){
   }
 add_filter('woocommerce_product_single_add_to_cart_text','QL_customize_add_to_cart_button_woocommerce');
 add_filter('woocommerce_product_add_to_cart_text','QL_customize_add_to_cart_button_woocommerce');
-  
-
 ?>
