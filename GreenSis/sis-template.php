@@ -13,14 +13,14 @@ Template Name: Sis
         <h2 class="heading-2">Sis</h2>
         <div class="boxes">
             <div class="box left">                
-            <p> Idealizado pelas irmãs Bia e Carol Senger, resultado da busca de um trabalho com propósito e<br />
-                        sentido para contribuição de um mundo melhor e mais ético: <em>Queremos ser um importante canal<br />
-                            para o despertar da consciência para um mundo mais limpo. Que as pessoas se sintam confortáveis e<br />
+            <p> Idealizado pelas irmãs Bia e Carol Senger, resultado da busca de um trabalho com propósito e<br class="hidden-mobile"/>
+                        sentido para contribuição de um mundo melhor e mais ético: <em>Queremos ser um importante canal<br class="hidden-mobile"/>
+                            para o despertar da consciência para um mundo mais limpo. Que as pessoas se sintam confortáveis e<br class="hidden-mobile" />
                             seguras com os nossos produtos.</em><br><br>
-                    Os cuidados com a saúde e beleza sempre estiveram presentes no nosso dia a dia, mas com o<br />
-                    tempo percebemos que eles não precisariam estar atrelados a sacrifícios e prejuízos a si e ao<br />
-                    planeta. Aos poucos nossos hábitos mudaram e trouxeram uma imensa sensação de bem-estar.<br />
-                    Decidimos então que poderíamos contribuir para que outras mulheres assim como nós, também<br />
+                    Os cuidados com a saúde e beleza sempre estiveram presentes no nosso dia a dia, mas com o<br class="hidden-mobile"/>
+                    tempo percebemos que eles não precisariam<br> estar atrelados a sacrifícios e prejuízos a si e ao<br class="hidden-mobile"/>
+                    planeta. Aos poucos nossos hábitos mudaram e trouxeram uma imensa sensação de bem-estar.<br class="hidden-mobile"/>
+                    Decidimos então que poderíamos contribuir para que outras mulheres assim como nós, também<br class="hidden-mobile"/>
                     pudessem conhecer uma outra forma de cuidado pessoal.</p>
             </div>
             <div class="box right">
@@ -49,7 +49,7 @@ Template Name: Sis
                 <div class="box left">                
                    <figure>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/P2_One_Bia.jpg" class="One img-responsive"  alt="Bia Senger" >
-                    <a href="#" class="btn-gs">Fale com a Bia </a> 
+                    <a href="mailto:#" class="btn-gs">Fale com a Bia </a> 
                    </figure>
                      
                 </div>
@@ -78,7 +78,7 @@ Template Name: Sis
                      <figure>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/P2_Two.jpeg"  class="Two img-responsive" alt="Carol Senger">
                   
-                        <a href="#" class="btn-gs">Fale com a Carol</a>
+                        <a href="mailto:#" class="btn-gs">Fale com a Carol</a>
                      </figure>
                  </div>
             </div> 
