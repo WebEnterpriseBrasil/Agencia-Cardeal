@@ -393,6 +393,16 @@ header  .icons .cart .cart-contents-count {
     min-width: 12px;
     text-align: center;
 }
+header .menu-cart-menu-container{
+    float: right;
+}
+header #menu-cart-menu{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
 
 header  .icons .search {
     background-image: url('img/lupa-icon.png');
@@ -1185,9 +1195,7 @@ color: white;
 .woocommerce button.button.update_cart {
     background: #000 !important
 }
-.woocommerce-cart .woocommerce #content table.cart td.actions .coupon {
 
-}
 /* pagina minha conta */
 
 .page-template-my-account .woocommerce{

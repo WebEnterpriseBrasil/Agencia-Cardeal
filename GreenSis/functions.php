@@ -22,7 +22,8 @@ function greensis_config(){
 		array(
 			'my_main_menu' => __( 'Main Menu', 'greensis' ),
 			'my_mobile_menu' => __( 'Mobile Menu', 'greensis' ),
-			'my_footer_menu' => __( 'Footer Menu', 'greensis' )
+			'my_footer_menu' => __( 'Footer Menu', 'greensis' ),
+			'my_cart_menu' => __( 'Cart Menu', 'greensis' )
 		)
 	);
 
