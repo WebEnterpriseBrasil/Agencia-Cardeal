@@ -370,13 +370,26 @@ header  .icons a {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
-    transition: width 0.3s, height 0.3s;
+    transition: transform 0.3s;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
 header .icons a:hover{
-    width: 24px;
-    height: 24px;
-    filter: brightness(0);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); 
+    /* filter: brightness(0); */
 }
+header .icons a:hover .cart-contents-count{
+    color: #fff;
+    filter: none;
+}
+
 header  .icons .cart {
     background-image: url('img/cart-icon.png');
     position: relative;
@@ -1446,6 +1459,10 @@ input[type=number] {
     left: -1px;
 }
 
+.woocommerce #review_form #respond .comment-notes {
+    display: none;
+}
+
 /* read more */
 
 .description-title h2{
@@ -1523,7 +1540,10 @@ input[type=number] {
     float: left;
 }
 
-.page-template-cart-template .woocommerce span{
+.woocommerce-checkout .woocommerce-notices-wrapper .close,
+.woocommerce-checkout .woocommerce-info .close,
+.page-template-cart-template .woocommerce-notices-wrapper .close,
+.page-template-cart-template .woocommerce-info .close {
     position: absolute;
     display: inline-block;
     top: 1.5em;
@@ -1539,6 +1559,7 @@ input[type=number] {
     background-color: #b76145;
     cursor: pointer;
 }
+
 .woocommerce-cart table.cart td.actions .coupon .input-text{
     width: 200px;
     padding: 6px 10px 6px;

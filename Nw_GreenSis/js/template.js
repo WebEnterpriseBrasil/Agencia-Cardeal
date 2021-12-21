@@ -51,7 +51,7 @@ const shop = () => {
 // woocommerce message
 const woocommerceMessage = () => {
     if(jQuery('body').hasClass('woocommerce-cart')) {
-        elem = jQuery(".woocommerce-notices-wrapper")[0];  
+        elem = jQuery(".woocommerce-notices-wrapper")[0]
         let resizeObserver = new ResizeObserver(() => {     
         jQuery('.woocommerce .woocommerce-message').each(function() {
             var self = this;
@@ -73,6 +73,20 @@ const woocommerceMessage = () => {
     
         });
         resizeObserver.observe(elem);
+    }
+
+    if(jQuery('body').hasClass('woocommerce-checkout')) {
+        
+        jQuery('.woocommerce-form-coupon-toggle .woocommerce-info').each(function() {
+            var self = this;
+            jQuery(this).find( ".close" ).remove();
+            jQuery(this).append( "<span class='close'>x</span>" );
+
+            jQuery(this).find('.close').on('click', function() {
+                jQuery(self).hide();
+            })
+        });
+    
     }
 
     
@@ -111,8 +125,12 @@ const pdp = () => {
     jQuery('.product .recolher').on('click', function() {
         jQuery('.product .text-content').hide()
         jQuery('.product .text-content-short').show();
-    });
+    });    
 
+    jQuery('.single-product #review_form #respond .comment-notes').html('<p class="comment-notes"><span id="email-notes">O seu endereço de email não será publicado.</span><br /><span class="comment-notes-span">Campos obrigatórios marcados com <span class="required">*</span></span></p>');
+
+    jQuery('.single-product #review_form #respond .comment-notes').show();
+ 
     /*
 
     
