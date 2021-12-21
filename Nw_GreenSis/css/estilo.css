@@ -360,6 +360,7 @@ header .content-desktop .nav-social {
 header .icons {
     float: left;
     width: 100%;
+    position: relative;
 }
 header  .icons a {
     color: #f89f77;
@@ -393,8 +394,9 @@ header .icons a:hover .cart-contents-count{
 header  .icons .cart {
     background-image: url('img/cart-icon.png');
     position: relative;
+    z-index: 2;
 }
-header  .icons .cart .cart-contents-count {
+header  .icons .cart-contents-count {
     top: -15px;
     right: -3px;
     font-size: 10px;
@@ -415,6 +417,29 @@ header #menu-cart-menu{
     margin: 0;
     padding: 0;
     float: left;
+}
+header .menu-cart-menu-container{
+    position: absolute;
+    top: -15px;
+    right: 0;
+}
+header .menu-cart-menu-container .cart{
+    display: none;
+}
+header #menu-cart-menu .cart{
+    display: none;
+}
+header #menu-cart-menu .cartcontents{
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    color: white;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    font-size: 8px;
+    border-radius: 50%;
+    line-height: 1.8;
 }
 
 header  .icons .search {

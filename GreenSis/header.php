@@ -63,10 +63,7 @@
                         <nav class="icons">                            
                             <a href="javascript:void(0)" class="search"></i></a>
                             <a href="<?php echo get_permalink( get_page_by_path( 'minha-conta' ) ); ?>" class="user"></a>
-                            <!--  <a href="<?php echo get_permalink( get_page_by_path( 'meu-carrinho' ) ); ?>" class="cart">
-                            -->
-                            
-                            </a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'meu-carrinho' ) ); ?>" class="cart">
                             <?php 
                                 wp_nav_menu( 
                                     array( 
@@ -74,6 +71,8 @@
                                     ) 
                                 ); 
                             ?>  
+                            </a>
+                            
                         </nav>
                         
                     </div>
@@ -89,10 +88,7 @@
                         <a class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo-mobile.png"/></a>
                     </div>
                     <nav class="menu-action-cart icons">                            
-                       <!-- <a href="<?php echo get_permalink( get_page_by_path( 'meu-carrinho' ) ); ?>" class="cart">
-                        
-                        </a> -->
-
+                        <a href="<?php echo get_permalink( get_page_by_path( 'meu-carrinho' ) ); ?>" class="cart">
                         <?php 
                                 wp_nav_menu( 
                                     array( 
@@ -100,6 +96,9 @@
                                     ) 
                                 ); 
                             ?> 
+                        </a> 
+
+                        
                     </nav>
                 </div>
                 <div class="boxes_">
