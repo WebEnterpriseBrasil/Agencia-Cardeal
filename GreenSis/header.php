@@ -22,8 +22,6 @@
     <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/css/img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <?php wp_head(); ?>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" integrity="sha512-QAV866KcCo2YSgj8D7BW+Zn3Fe5wVKTWwzKtWy8mkW+tePcJL7JYilvdfrBFQcdz4ODD48GpIPnhTp9UDI37uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 </head>
 
 <!-- Início do body -->
