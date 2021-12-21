@@ -48,6 +48,36 @@ const shop = () => {
     });
 }
 
+// woocommerce message
+const woocommerceMessage = () => {
+    if(jQuery('body').hasClass('woocommerce-cart')) {
+        elem = jQuery(".woocommerce-notices-wrapper")[0];  
+        let resizeObserver = new ResizeObserver(() => {     
+        jQuery('.woocommerce .woocommerce-message').each(function() {
+            var self = this;
+            jQuery(this).find( ".close" ).remove();
+            jQuery(this).append( "<span class='close'>x</span>" );
+
+            jQuery(this).find('.close').on('click', function() {
+                jQuery(self).hide();
+            })
+        });
+        jQuery('.woocommerce .woocommerce-info').each(function() {
+            var self = this;
+            jQuery(this).find( ".close" ).remove();
+            jQuery(this).append( "<span class='close'>x</span>" );
+            jQuery(this).find('.close').on('click', function() {
+                jQuery(self).hide();
+            })
+        }) 
+    
+        });
+        resizeObserver.observe(elem);
+    }
+
+    
+}
+
 // abrir menu mobile
 jQuery('.content-mobile .menu-action i').on('click', function() {
     openMenuMobile()
@@ -85,14 +115,10 @@ const pdp = () => {
 
     /*
 
-
     
     jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`);
 
     jQuery('.product .text-content').show();
-
-
-    
 
     jQuery('.product .text-content .recolher').on('click', function() {
         jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`);
@@ -123,5 +149,8 @@ window.addEventListener('load', function(event) {
     }
 
     pdp();
+    woocommerceMessage();
  });
- 
+
+
+
