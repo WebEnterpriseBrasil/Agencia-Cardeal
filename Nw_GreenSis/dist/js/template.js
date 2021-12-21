@@ -50,6 +50,32 @@ var shop = function shop() {
     jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
     jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
   });
+}; // woocommerce message
+
+
+var woocommerceMessage = function woocommerceMessage() {
+  if (jQuery('body').hasClass('woocommerce-cart')) {
+    elem = jQuery(".woocommerce-notices-wrapper")[0];
+    var resizeObserver = new ResizeObserver(function () {
+      jQuery('.woocommerce .woocommerce-message').each(function () {
+        var self = this;
+        jQuery(this).find(".close").remove();
+        jQuery(this).append("<span class='close'>x</span>");
+        jQuery(this).find('.close').on('click', function () {
+          jQuery(self).hide();
+        });
+      });
+      jQuery('.woocommerce .woocommerce-info').each(function () {
+        var self = this;
+        jQuery(this).find(".close").remove();
+        jQuery(this).append("<span class='close'>x</span>");
+        jQuery(this).find('.close').on('click', function () {
+          jQuery(self).hide();
+        });
+      });
+    });
+    resizeObserver.observe(elem);
+  }
 }; // abrir menu mobile
 
 
@@ -81,10 +107,9 @@ var pdp = function pdp() {
     jQuery('.product .text-content-short').show();
   });
   /*
-    
+   
   jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`);
    jQuery('.product .text-content').show();
-    
    jQuery('.product .text-content .recolher').on('click', function() {
       jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`);
   });
@@ -108,4 +133,5 @@ window.addEventListener('load', function (event) {
   }
 
   pdp();
+  woocommerceMessage();
 });
