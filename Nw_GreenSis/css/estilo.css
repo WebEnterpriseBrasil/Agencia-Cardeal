@@ -183,6 +183,9 @@ header .content-desktop {
 header .logo a{
     margin-left: -103px;
 }
+.woocommerce-page header .logo img{
+    max-width: none;
+}
 header #menu {
     float: left;
     min-width: 200px;
@@ -973,17 +976,22 @@ main{
 
 .woocommerce-shop  .loja-texto{
     width: 100%;
-    padding: 5% 0;
+    padding: 0 0 5% 0;
     padding-bottom: 0;
     text-align: left;
+}
+.woocommerce-shop  .loja-texto h1{
+    margin-top: 0;
+    color: #d2795b !important;
 }
 .woocommerce-shop  .rodape{
     text-align: left;
 }
-.loja-texto h1, .product-summary .product_title{
+.loja-texto h1, .product-summary .product_title, .page-template-docs-template h2{
     font-family: Regular;
     font-size: 2.0em;
     color: #d2795b;
+    margin-top: 0;
 }
 .summary .text-content-short{
     padding-right: 22%;
@@ -1446,6 +1454,10 @@ input[type=number] {
 .woocommerce  #reviews #comments ol.commentlist {
     padding-left: 0;
 }
+.comment-reply-title{
+    color: #d2795b !important;
+    font-size: 1.2rem !important;
+}
 .woocommerce #reviews #comments h2 {
     font-size: 1rem;
 }
@@ -1496,8 +1508,7 @@ input[type=number] {
     float: left;
 }
 
-.page-template-cart-template .woocommerce-message::after{
-    content: 'x';
+.page-template-cart-template .woocommerce span{
     position: absolute;
     display: inline-block;
     top: 1.5em;
@@ -1512,7 +1523,6 @@ input[type=number] {
     border-radius: 50%;
     background-color: #b76145;
     cursor: pointer;
-    display: none;
 }
 .woocommerce-cart table.cart td.actions .coupon .input-text{
     width: 200px;
@@ -1522,4 +1532,7 @@ input[type=number] {
 .woocommerce-cart-form .coupon button{
     background-color: #b76145!important;
     color: white !important;
+}
+.woocommerce-MyAccount-navigation-link--downloads{
+    display: none;
 }

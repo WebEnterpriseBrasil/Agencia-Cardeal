@@ -12,8 +12,8 @@ Template Name: Loja
         <div>
             <h1>Loja</h1>
             <div>
-                <p> Nossos produtos foram cuidadosamente escolhidos a pensar em nossas clientes<br>
-                Selecionamos os fornecedores e os melhores produtos clean beauty (beleza limpa) e cruety free do mercado:</p>
+                <p> Nossos produtos foram cuidadosamente escolhidos a pensar em nossas clientes.<br>
+                Selecionamos os fornecedores e os melhores produtos clean beauty (beleza limpa) e cruelty free do mercado:</p>
             </div>
         </div>
     </section>

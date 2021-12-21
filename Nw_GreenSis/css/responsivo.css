@@ -269,11 +269,16 @@
         display: block;
         
     }
-
+    
     .woocommerce-shop .woocommerce .products {
         flex-direction: column;
     }
-
+    .woocommerce-shop .woocommerce .products .product{
+        min-height: auto;
+    }
+    .servicos .products .box-product{
+        min-height: auto;
+    }
     .woocommerce-shop .products li.line {
         display: none;
     }
