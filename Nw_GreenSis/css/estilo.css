@@ -370,6 +370,12 @@ header  .icons a {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
+    transition: width 0.3s, height 0.3s;
+}
+header .icons a:hover{
+    width: 24px;
+    height: 24px;
+    filter: brightness(0);
 }
 header  .icons .cart {
     background-image: url('img/cart-icon.png');
