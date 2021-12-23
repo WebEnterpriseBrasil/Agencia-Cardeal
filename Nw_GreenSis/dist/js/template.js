@@ -124,6 +124,9 @@ var pdp = function pdp() {
   });
   jQuery('.single-product #review_form #respond .comment-notes').html('<p class="comment-notes"><span id="email-notes">O seu endereço de email não será publicado.</span><br /><span class="comment-notes-span">Campos obrigatórios marcados com <span class="required">*</span></span></p>');
   jQuery('.single-product #review_form #respond .comment-notes').show();
+  jQuery('.single-product .product').css({
+    opacity: 1
+  });
   /*
    
   jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`);

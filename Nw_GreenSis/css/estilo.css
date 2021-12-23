@@ -141,7 +141,7 @@ a:hover {
 /* loader */
 .content-loader {
     text-align: center;
-    padding: 200px 0;
+    padding: 300px 0 200px 0;
 }
 .content-loader span {
     display: inline-block;
@@ -463,17 +463,17 @@ header .menu-cart-menu-container .cart{
 header #menu-cart-menu .cart{
     display: none;
 }
-header #menu-cart-menu .cartcontents{
-    background-color: black;
-    width: 15px;
-    height: 15px;
-    color: white;
-    display: block;
-    text-align: center;
-    overflow: hidden;
-    font-size: 9px;
-    border-radius: 50%;
-    line-height: 1.8;
+header .cartcontents{
+    background-color: black !important;
+    width: 15px !important;
+    height: 15px !important;
+    color: white !important;
+    display: block !important;
+    text-align: center !important;
+    overflow: hidden !important;
+    font-size: 9px !important;
+    border-radius: 50% !important;
+    line-height: 1.8 !important;
 }
 
 header  .icons .search {
@@ -1406,6 +1406,7 @@ color: white;
 .single-product .product{
     width: 100%;
     float: left;
+    opacity: 0;
 }
 .single-product .product .woocommerce-product-gallery{
     width: 50% !important;
