@@ -346,6 +346,10 @@
         margin-left: 0;
     }
 
+    header .menu-cart-menu-container{
+        top: 10px;
+    }
+
     .page-template-home-template section .text .inner article {
         padding: 2rem 0;
     }
@@ -457,7 +461,6 @@
     .rodape .menu-footer-menu-container {
         min-height: 120px;
     }
- HEAD
 
     /* woocommerce-orders*/ 
     .page-template-my-account .woocommerce .woocommerce-MyAccount-content{
@@ -477,5 +480,9 @@
         padding-top: 130px;
         float: left;
         display: block;
+    }
+    .content-loader span {
+        width: 6px;
+        height: 6px;
     }
 }

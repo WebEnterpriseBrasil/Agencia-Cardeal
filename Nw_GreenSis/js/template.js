@@ -39,6 +39,10 @@ const closeSearchBar = () => {
     });
 }
 
+const loader = () => {
+    jQuery('.content-loader').hide();
+}
+
 
 // shop
 const shop = () => {
@@ -46,6 +50,8 @@ const shop = () => {
        jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
        jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
     });
+
+    jQuery('.woocommerce-shop .servicos').show();
 }
 
 // woocommerce message
@@ -130,6 +136,8 @@ const pdp = () => {
     jQuery('.single-product #review_form #respond .comment-notes').html('<p class="comment-notes"><span id="email-notes">O seu endereço de email não será publicado.</span><br /><span class="comment-notes-span">Campos obrigatórios marcados com <span class="required">*</span></span></p>');
 
     jQuery('.single-product #review_form #respond .comment-notes').show();
+
+    jQuery('.single-product .product').css({ opacity: 1 });
  
     /*
 
@@ -154,6 +162,8 @@ window.addEventListener('resize', function(event) {
 
 
 window.addEventListener('load', function(event) {
+    loader();
+    
     shop();
 
     jQuery('.content-mobile .aws-search-field').on('click', function(e) {
