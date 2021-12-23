@@ -137,8 +137,42 @@ a:hover {
     padding: 8px 18px;
     border-radius: 16px 0px 16px 0px;
 }
-/* *** /generics *** */
 
+/* loader */
+.content-loader {
+    text-align: center;
+    padding: 200px 0;
+}
+.content-loader span {
+    display: inline-block;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow:  12.8557520113px 15.3208893599px 0 #d5d5d5, 19.6961549775px 3.4729645503px 0 #d5d5d5, 17.320508433px -9.99999891px 0 #d5d5d5, 6.8404037618px -18.7938515169px 0 #d5d5d5, -6.8404017451px -18.7938412951px 0 #d5d5d5, -17.3205072084px -9.9997757649px 0 #d5d5d5, -19.6961501101px 3.4729634947px 0 #d5d5d5, -12.8556419681px 15.320888671px 0 #d5d5d5, 0px 20px 0 #d5d5d5, 0 0 0 transparent;;
+    -webkit-animation: rot 1.6s cubic-bezier(0.6, 0.3, 0.3, 0.6) infinite;;
+            animation: rot 1.6s cubic-bezier(0.6, 0.3, 0.3, 0.6) infinite;
+}
+@-webkit-keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  
+/* /loader */
+
+/* *** /generics *** */
 /* *** forms *** */
 .search-field {
     width: 100%;
@@ -437,7 +471,7 @@ header #menu-cart-menu .cartcontents{
     display: block;
     text-align: center;
     overflow: hidden;
-    font-size: 8px;
+    font-size: 9px;
     border-radius: 50%;
     line-height: 1.8;
 }
@@ -938,7 +972,9 @@ main{
     float: none;
     margin: 0 auto;
     max-width: 1280px;
+    display: none;
 }
+
 .woocommerce-shop {
     position: relative;
 }

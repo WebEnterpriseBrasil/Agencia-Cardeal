@@ -42,6 +42,10 @@ var closeSearchBar = function closeSearchBar() {
     jQuery('header .gsearchfield').hide();
     jQuery('header .menu-lista').fadeIn();
   });
+};
+
+var loader = function loader() {
+  jQuery('.content-loader').hide();
 }; // shop
 
 
@@ -50,6 +54,7 @@ var shop = function shop() {
     jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
     jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
   });
+  jQuery('.woocommerce-shop .servicos').show();
 }; // woocommerce message
 
 
@@ -133,6 +138,7 @@ window.addEventListener('resize', function (event) {
   closeMenuMobile(); // closeMenuMobileCart();
 });
 window.addEventListener('load', function (event) {
+  loader();
   shop();
   jQuery('.content-mobile .aws-search-field').on('click', function (e) {
     console.log('foo');
