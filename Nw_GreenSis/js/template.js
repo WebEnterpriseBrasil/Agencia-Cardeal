@@ -154,6 +154,14 @@ const pdp = () => {
 
 }
 
+// footer
+const footer = () => {
+    const currentYear = new Date().getFullYear();
+    jQuery('footer').each(function() {
+        jQuery(this).find('.year').text(currentYear)
+    })
+}
+
 
 window.addEventListener('resize', function(event) {
     closeMenuMobile();
@@ -175,7 +183,7 @@ window.addEventListener('load', function(event) {
         showSearchBar();
         closeSearchBar();
     }
-
+    footer();
     pdp();
     woocommerceMessage();
  });

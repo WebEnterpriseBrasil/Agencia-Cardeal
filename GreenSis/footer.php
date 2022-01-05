@@ -19,7 +19,7 @@
                         ); 
                 ?>
                 </nav>
-                <p class="heading-7">Copyright 2021 © greensis</p>
+                <p class="heading-7">Copyright <span class="year"></span> © greensis</p>
             </div>
             <div class="g-letter"></div>
         </div>
@@ -47,7 +47,7 @@
                             ); 
                     ?>
                 </nav>
-                <p class="heading-7">Copyright 2021 © greensis</p>
+                <p class="heading-7">Copyright <span class="year"></span> © greensis</p>
             </div>
             <div class="g-letter-pequeno"></div>
 
@@ -77,7 +77,7 @@
                                     ); 
                             ?>
                         </nav>
-                        <p class="heading-7">Copyright 2021 © greensis</p>
+                        <p class="heading-7">Copyright <span class="year"></span> © greensis</p>
                     </div>
                     <div class="g-letter-pequeno"></div>
 
