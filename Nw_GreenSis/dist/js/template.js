@@ -135,6 +135,14 @@ var pdp = function pdp() {
       jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`);
   });
   */
+}; // footer
+
+
+var footer = function footer() {
+  var currentYear = new Date().getFullYear();
+  jQuery('footer').each(function () {
+    jQuery(this).find('.year').text(currentYear);
+  });
 };
 
 window.addEventListener('resize', function (event) {
@@ -154,6 +162,7 @@ window.addEventListener('load', function (event) {
     closeSearchBar();
   }
 
+  footer();
   pdp();
   woocommerceMessage();
 });

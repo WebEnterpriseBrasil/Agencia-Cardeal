@@ -17,18 +17,17 @@ Template Name: Contato
             <p>
                 Horário de atendimento: segunda a sexta, das 9h às 18h<br>
                 Email: atendimento@greensis.pt <br>
-                Whats app: (351) 000.000.000 <br>
-                Portugal <br>
-                <a class="heading-6" href="https://leigdpr.pt/">Lei RGPD</a>
-            </p>
-            <h2>Comentários ou sugestões:</h2>
-            <section class="content">
-                <div class="contato">
-                    <?php echo do_shortcode('[contact-form-7 id="28" title="Formulário de contacto"]'); ?>
-                </div>
-            </section>
-        </div>
-    </main>
+                Whats app: <a href="https://wa.me/351915332628" target="_blank">(351) 915.332.628</a> <br>
+                Portugal </p>
+                <h2>Comentários ou sugestões:</h2>
+                <section class="content">
+                    <div class="contato">
+                        <?php echo do_shortcode('[contact-form-7 id="28" title="Formulário de contacto"]'); ?>
+                    </div>
+                </section>
+            </div>
+
+        </main>
 </div>
 </div>
 <?php get_footer(); ?>
