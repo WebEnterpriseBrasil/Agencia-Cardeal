@@ -17,7 +17,7 @@ Template Name: Contato
             <div>  
                 <p>Horário de atendimento: segunda a sexta, das 9h às 18h<br>
                 Email: atendimento@greensis.pt <br>
-                Whats app: (351) 000.000.000 <br>
+                Whats app: <a href="https://wa.me/351915332628" target="_blank">(351) 915.332.628</a> <br>
                 Portugal </p>
                 <h2>Comentários ou sugestões:</h2>
                 <section class="content">
