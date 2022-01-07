@@ -49,7 +49,7 @@ Template Name: Sis
                 <div class="box left">                
                    <figure>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/P2_One_Bia.jpg" class="One img-responsive"  alt="Bia Senger" >
-                    <a href="mailto:#" class="btn-gs">Fale com a Bia </a> 
+                    <a href="/teste/contato" class="btn-gs">Fale com a Bia </a> 
                    </figure>
                      
                 </div>
@@ -78,7 +78,7 @@ Template Name: Sis
                      <figure>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/P2_Two.jpeg"  class="Two img-responsive" alt="Carol Senger">
                   
-                        <a href="mailto:#" class="btn-gs">Fale com a Carol</a>
+                        <a href="/teste/contato" class="btn-gs">Fale com a Carol</a>
                      </figure>
                  </div>
             </div> 
