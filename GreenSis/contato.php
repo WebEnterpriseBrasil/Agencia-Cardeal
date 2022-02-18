@@ -15,10 +15,7 @@ Template Name: Contato
             <H1 class="heading-2">Contacto</H1>
             <h2 class="heading-3">Tens dúvida? Adoramos conversar com as nossas clientes :)</h2>
             <div>  
-                <p>Horário de atendimento: segunda a sexta, das 9h às 18h<br>
-                Email: atendimento@greensis.pt <br>
-                Whats app: (351) 000.000.000 <br>
-                Portugal </p>
+                <?php the_content() ?>
                 <h2>Comentários ou sugestões:</h2>
                 <section class="content">
                     <div class="contato">
