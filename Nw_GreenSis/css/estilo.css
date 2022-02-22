@@ -1101,11 +1101,9 @@ main{
 .woocommerce-shop  .woocommerce {
     margin-bottom: 100px;
 }
-.woocommerce-shop  .woocommerce .products{
-}
+
 .woocommerce-shop  .woocommerce .products .product{
     min-height: 730px;
-    padding: 0 1%;
 }
 .woocommerce-shop  .woocommerce .products .product.first{
     padding-left: 0;
