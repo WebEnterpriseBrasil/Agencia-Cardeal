@@ -39,19 +39,25 @@ const closeSearchBar = () => {
     });
 }
 
+const loader = () => {
+    jQuery('.content-loader').hide();
+}
+
 
 // shop
 const shop = () => {
    jQuery('.woocommerce-shop .woocommerce').each(function() {     
-       jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
-       jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
+       // jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
+       // jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
     });
+
+    jQuery('.woocommerce-shop .servicos').show();
 }
 
 // woocommerce message
 const woocommerceMessage = () => {
     if(jQuery('body').hasClass('woocommerce-cart')) {
-        elem = jQuery(".woocommerce-notices-wrapper")[0];  
+        elem = jQuery(".woocommerce-notices-wrapper")[0]
         let resizeObserver = new ResizeObserver(() => {     
         jQuery('.woocommerce .woocommerce-message').each(function() {
             var self = this;
@@ -73,6 +79,22 @@ const woocommerceMessage = () => {
     
         });
         resizeObserver.observe(elem);
+    }
+
+    if(jQuery('body').hasClass('woocommerce-checkout')) {
+        
+        jQuery('.woocommerce-form-coupon-toggle .woocommerce-info').each(function() {
+            var self = this;
+            jQuery(this).find( ".close" ).remove();
+            jQuery(this).append( "<span class='close'>x</span>" );
+
+            jQuery(this).find('.close').on('click', function() {
+                jQuery(self).hide();
+            })
+        });
+
+        jQuery('.woocommerce-billing-fields').find('#billing_city_field').append('<div class="other-country"><p>Para compras fora da União Europeia entrar em contacto pelo email: <a href="mailto:atendimento@greensis.pt">atendimento@greensis.pt /</a></p><p>For purchases outside the European Union, contact us by email: <a href="mailto:atendimento@greensis.pt">atendimento@greensis.pt </a></p></div>')
+    
     }
 
     
@@ -111,8 +133,14 @@ const pdp = () => {
     jQuery('.product .recolher').on('click', function() {
         jQuery('.product .text-content').hide()
         jQuery('.product .text-content-short').show();
-    });
+    });    
 
+    jQuery('.single-product #review_form #respond .comment-notes').html('<p class="comment-notes"><span id="email-notes">O seu endereço de email não será publicado.</span><br /><span class="comment-notes-span">Campos obrigatórios marcados com <span class="required">*</span></span></p>');
+
+    jQuery('.single-product #review_form #respond .comment-notes').show();
+
+    jQuery('.single-product .product').css({ opacity: 1 });
+ 
     /*
 
     
@@ -128,6 +156,14 @@ const pdp = () => {
 
 }
 
+// footer
+const footer = () => {
+    const currentYear = new Date().getFullYear();
+    jQuery('footer').each(function() {
+        jQuery(this).find('.year').text(currentYear)
+    })
+}
+
 
 window.addEventListener('resize', function(event) {
     closeMenuMobile();
@@ -136,6 +172,8 @@ window.addEventListener('resize', function(event) {
 
 
 window.addEventListener('load', function(event) {
+    loader();
+    
     shop();
 
     jQuery('.content-mobile .aws-search-field').on('click', function(e) {
@@ -147,7 +185,7 @@ window.addEventListener('load', function(event) {
         showSearchBar();
         closeSearchBar();
     }
-
+    footer();
     pdp();
     woocommerceMessage();
  });

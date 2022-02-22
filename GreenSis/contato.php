@@ -14,8 +14,22 @@ Template Name: Contato
                
             <H1 class="heading-2">Contacto</H1>
             <h2 class="heading-3">Tens dúvida? Adoramos conversar com as nossas clientes :)</h2>
-            <div>  
-                <?php the_content() ?>
+            <div class="contacto-info">  
+                <p>Horário de atendimento: segunda a sexta, das 9h às 18h<br>
+                Email: atendimento@greensis.pt<br></p>
+                <div class="whatsapp-footer"> 
+                    <p> Whats app: </p>
+                    <?php 
+                        wp_nav_menu( 
+                            array( 
+                                'theme_location' => 'my_whatsapp' 
+                            ) 
+                        ); 
+                    ?>
+                </div>
+                <div class="portugal">
+                    <p><br> Portugal </p>
+                </div>
                 <h2>Comentários ou sugestões:</h2>
                 <section class="content">
                     <div class="contato">

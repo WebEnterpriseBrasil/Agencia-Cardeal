@@ -25,6 +25,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 <li <?php wc_product_class( '', $product ); ?>>
+	<div class="product-li-content">
 	<div class="box-product">
 		<?php
 		/**
@@ -70,4 +71,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
+	<div class="li-line"></div>
+	</div>
 </li>

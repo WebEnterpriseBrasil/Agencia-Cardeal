@@ -6,9 +6,22 @@
         <div class="container">
             <h2 class="heading-2">Contacto</h2>
             <h3 class="heading-3">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
-            <div>
-                <p class="heading-6">Horario de atendimento: segunda a sexta, das 9hs às 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
-                
+            <div class="footer-info">
+                <p class="heading-6">Horario de atendimento: segunda a sexta, das 9hs às 18hs. <br> Email: atendimento@greensis.pt
+                <div class="whatsapp-footer"> 
+                    <p> Whats app: </p>
+                    <?php 
+                        wp_nav_menu( 
+                            array( 
+                                'theme_location' => 'my_whatsapp' 
+                            ) 
+                        ); 
+                    ?>
+                </div>
+                <div class="portugal">
+                    <p><br> Portugal </p>
+                </div>
+
                 
                 <nav class="heading-6">
                 <?php 
@@ -66,8 +79,21 @@
                 <div class="container">
                     <h2 class="heading-2">Contacto</h2>
                     <h3 class="heading-3">Tens dúvida? Adoramos conversar com as nossas clientes :)</h3>
-                    <div>
-                        <p class="heading-6">Horario de atendimento: segunda a sexta, das 9hs às 18hs. <br> Email: atendimento@greensis.pt <br> Whats app: (351) 000.000.000 <br> Portugal </p>
+                    <div class="footer-info">
+                            <p class="heading-6">Horario de atendimento: segunda a sexta, das 9hs às 18hs. <br> Email: atendimento@greensis.pt</p>
+                            <div class="whatsapp-footer"> 
+                                <p> Whats app: </p>
+                                <?php 
+                                    wp_nav_menu( 
+                                        array( 
+                                            'theme_location' => 'my_whatsapp' 
+                                        ) 
+                                    ); 
+                                ?>
+                            </div>
+                            <div class="portugal">
+                                <p><br> Portugal </p>
+                            </div>
                         <nav class="heading-6">
                             <?php 
                                 wp_nav_menu( 

@@ -32,47 +32,43 @@ Template Name: Sis
         </section>
 
         <?php
-                endwhile;
+            endwhile;
             else :
             endif;
         ?>
         <?php 
             if( have_rows('fale_com') ):
+                $count = 0;
                 while ( have_rows('fale_com') ) : the_row();
                     $name = get_sub_field('name');
                     $photo = get_sub_field('photo');
                     $about_fc = get_sub_field('about');
+                    $email = get_sub_field('mail');
+                    $count ++;
         ?>  
-        <section class="One">
-            <div class="boxes reverse">
-                <div class="box right">
+
+        <section class="
+            <?php 
+                if ($count == 1) {
+                    echo "One";
+                }
+                if ($count == 2) {
+                    echo 'Two';
+                }    
+            ?>"> 
+            <div class="boxes <?php  if ($count == 1) { echo "reverse";} ?>">
+                <div class="box <?php  if ($count == 1) { echo "right";} if ($count == 2) { echo 'left';}  ?>">
                     <p> <strong class="heading-4"><?php echo $name ?> </strong> <BR>
                     <?php echo $about_fc?> </p>
                 </div>
-                <div class="box left">                
+                <div class="box <?php  if ($count == 1) { echo "left";} if ($count == 2) { echo 'right';}  ?>">                
                    <figure>
-                        <img src="<?php echo $photo ?>" class="One img-responsive"  alt="Entrevistado" >
-                        <a href="mailto:#" class="btn-gs">Fale com a Bia </a> 
+                        <img src="<?php echo $photo ?>" class="One img-responsive"  >
+                        <a href="mailto:<?php echo $email ?>" class="btn-gs">Fale com a <?php  if ($count == 1) { echo "Bia";} if ($count == 2) { echo 'Carol';}  ?></a> 
                    </figure>
                      
                 </div>
             </div>
-        </section>
-        
-        <section class="Two">
-            <div class="boxes">
-                <div class="box left">                
-                    <p> <strong class="heading-4"><?php echo $name ?> </strong><br>
-                    <?php echo $about_fc?> </p>
-                 </div>
-                 <div class="box right">
-                     <figure>
-                     <img src="<?php echo $photo ?>" class="Two img-responsive"  alt="Entrevistado" >
-                  
-                        <a href="mailto:#" class="btn-gs">Fale com a Carol</a>
-                     </figure>
-                 </div>
-            </div> 
         </section>
         <?php 
                 endwhile;
@@ -80,4 +76,6 @@ Template Name: Sis
         ?>
 </div>
 </main>
+
+
 <?php get_footer(); ?>

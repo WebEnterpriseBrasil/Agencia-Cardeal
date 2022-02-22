@@ -269,11 +269,16 @@
         display: block;
         
     }
-
+    
     .woocommerce-shop .woocommerce .products {
         flex-direction: column;
     }
-
+    .woocommerce-shop .woocommerce .products .product{
+        min-height: auto;
+    }
+    .servicos .products .box-product{
+        min-height: auto;
+    }
     .woocommerce-shop .products li.line {
         display: none;
     }
@@ -339,6 +344,10 @@
     }
     header .logo a {
         margin-left: 0;
+    }
+
+    header .menu-cart-menu-container{
+        top: 10px;
     }
 
     .page-template-home-template section .text .inner article {
@@ -452,7 +461,6 @@
     .rodape .menu-footer-menu-container {
         min-height: 120px;
     }
- HEAD
 
     /* woocommerce-orders*/ 
     .page-template-my-account .woocommerce .woocommerce-MyAccount-content{
@@ -472,5 +480,25 @@
         padding-top: 130px;
         float: left;
         display: block;
+    }
+    .content-loader span {
+        width: 6px;
+        height: 6px;
+    }
+    .woocommerce-cart table.cart td.actions .coupon .input-text{
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .woocommerce-page table.cart td.actions .coupon .input-text+.button {
+        width: 100%;
+        float: left;
+    }
+    .product-quantity .quantity{
+        width: 88%;
+    }
+
+    .woocommerce-cart .cart_item .product-quantity .quantity div button{
+        top: -1px;
     }
 }

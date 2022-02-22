@@ -42,14 +42,18 @@ var closeSearchBar = function closeSearchBar() {
     jQuery('header .gsearchfield').hide();
     jQuery('header .menu-lista').fadeIn();
   });
+};
+
+var loader = function loader() {
+  jQuery('.content-loader').hide();
 }; // shop
 
 
 var shop = function shop() {
-  jQuery('.woocommerce-shop .woocommerce').each(function () {
-    jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
-    jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
+  jQuery('.woocommerce-shop .woocommerce').each(function () {// jQuery(this).find('.product').eq(0).after('<li class="line"></li>');
+    // jQuery(this).find('.product').eq(1).after('<li class="line"></li>');
   });
+  jQuery('.woocommerce-shop .servicos').show();
 }; // woocommerce message
 
 
@@ -75,6 +79,18 @@ var woocommerceMessage = function woocommerceMessage() {
       });
     });
     resizeObserver.observe(elem);
+  }
+
+  if (jQuery('body').hasClass('woocommerce-checkout')) {
+    jQuery('.woocommerce-form-coupon-toggle .woocommerce-info').each(function () {
+      var self = this;
+      jQuery(this).find(".close").remove();
+      jQuery(this).append("<span class='close'>x</span>");
+      jQuery(this).find('.close').on('click', function () {
+        jQuery(self).hide();
+      });
+    });
+    jQuery('.woocommerce-billing-fields').find('#billing_city_field').append('<div class="other-country"><p>Para compras fora da União Europeia entrar em contacto pelo email: <a href="mailto:atendimento@greensis.pt">atendimento@greensis.pt /</a></p><p>For purchases outside the European Union, contact us by email: <a href="mailto:atendimento@greensis.pt">atendimento@greensis.pt </a></p></div>');
   }
 }; // abrir menu mobile
 
@@ -106,6 +122,11 @@ var pdp = function pdp() {
     jQuery('.product .text-content').hide();
     jQuery('.product .text-content-short').show();
   });
+  jQuery('.single-product #review_form #respond .comment-notes').html('<p class="comment-notes"><span id="email-notes">O seu endereço de email não será publicado.</span><br /><span class="comment-notes-span">Campos obrigatórios marcados com <span class="required">*</span></span></p>');
+  jQuery('.single-product #review_form #respond .comment-notes').show();
+  jQuery('.single-product .product').css({
+    opacity: 1
+  });
   /*
    
   jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`);
@@ -114,12 +135,21 @@ var pdp = function pdp() {
       jQuery('.product .text-content p').html(`${newText}...<br /><a href="javascript:void(0)" class="load-more">Mais...</a>`);
   });
   */
+}; // footer
+
+
+var footer = function footer() {
+  var currentYear = new Date().getFullYear();
+  jQuery('footer').each(function () {
+    jQuery(this).find('.year').text(currentYear);
+  });
 };
 
 window.addEventListener('resize', function (event) {
   closeMenuMobile(); // closeMenuMobileCart();
 });
 window.addEventListener('load', function (event) {
+  loader();
   shop();
   jQuery('.content-mobile .aws-search-field').on('click', function (e) {
     console.log('foo');
@@ -132,6 +162,7 @@ window.addEventListener('load', function (event) {
     closeSearchBar();
   }
 
+  footer();
   pdp();
   woocommerceMessage();
 });

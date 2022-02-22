@@ -2,13 +2,10 @@
 
     function load_scripts(){
         wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '1.0', 'all' );
-		wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/fontawesome-free-5.15.4-web/css/all.min.css', array(), '1.0', 'all' );
-		wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/fontawesome-free-5.15.4-web/css/fontawesome.min.css', array(), '1.0', 'all' );
+		// wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/fontawesome-free-5.15.4-web/css/all.min.css', array(), '1.0', 'all' );
+		// wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/fontawesome-free-5.15.4-web/css/fontawesome.min.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'estilo', get_template_directory_uri() . '/css/estilo.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'responsivo', get_template_directory_uri() . '/css/responsivo.css', array(), '1.0', 'all' );
-        /* wp_enqueue_style( 'estilo-min', get_template_directory_uri() . '/dist/css/estilo.min.css', array(), '1.0', 'all' );
-        wp_enqueue_style( 'responsivo-min', get_template_directory_uri() . '/dist/css/responsivo.min.css', array(), '1.0', 'all' );
-		wp_enqueue_style( 'normalize-min', get_template_directory_uri() . '/dist/css/normalize.min.css', array(), '1.0', 'all' ); */
     
 	}
 
@@ -22,7 +19,9 @@ function greensis_config(){
 		array(
 			'my_main_menu' => __( 'Main Menu', 'greensis' ),
 			'my_mobile_menu' => __( 'Mobile Menu', 'greensis' ),
-			'my_footer_menu' => __( 'Footer Menu', 'greensis' )
+			'my_footer_menu' => __( 'Footer Menu', 'greensis' ),
+			'my_cart_menu' => __( 'Cart Menu', 'greensis' ),
+			'my_whatsapp' => __( 'WhatsApp', 'greensis' ),
 		)
 	);
 
@@ -36,7 +35,6 @@ function greensis_config(){
 	add_theme_support( 'post-formats', array( 'video', 'image' ) );
 	add_theme_support( 'title-tag');
 	add_theme_support( 'custom-logo', array( 'height' => 230, 'width' => 470 ) );
-
 }
 add_action( 'after_setup_theme', 'greensis_config', 0 );
 
@@ -44,7 +42,6 @@ add_action( 'after_setup_theme', 'greensis_config', 0 );
 // remover menus
 function remove_menus(){
 	remove_menu_page( 'edit.php' );                   //Posts  
-	remove_menu_page( 'edit-comments.php' );          //Comments
 }  
 add_action( 'admin_menu', 'remove_menus' );
 
@@ -131,3 +128,4 @@ function woo_cart_but_count( $fragments ) {
      
     return $fragments;
 }
+?>
